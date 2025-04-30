@@ -1,0 +1,24 @@
+Name,Representation,Description,Segment Class
+Flat Hand (B),3200 (95%),"5 fingers extended, palm open",Handshape
+Fist Hand (A),2890 (90%),All fingers closed into a fist,Handshape
+3-Handshape,2750 (87%),"Index and middle extended, thumb out",Handshape
+Spread-5 Hand,2600 (85%),"All fingers extended, spread apart",Handshape
+Arc Movement,2950 (89%),Hand moves in an arc,Movement
+Straight Movement,2900 (87%),Linear hand motion,Movement
+Circular Movement,2750 (86%),Hand moves in a circle,Movement
+Repeated Motion,2600 (85%),Hand repeats movement,Movement
+Palm Up,2700 (88%),Palm faces upward,Orientation
+Palm Down,2500 (85%),Palm faces downward,Orientation
+Palm Facing Out,2400 (83%),Palm faces away from body,Orientation
+Palm Facing In,2300 (80%),Palm faces inward,Orientation
+Forehead,3100 (92%),Hand touches forehead,Location
+Chin,2900 (88%),Hand touches chin,Location
+Chest,2800 (91%),Hand positioned near chest,Location
+Neutral Space,2700 (89%),Hand moves in neutral signing space,Location
+Shoulder,2600 (86%),Hand touches shoulder,Location
+Eyebrows Raised,2800 (90%),Raised eyebrows (Yes/No Qs),Non-Manual
+Head Tilt,2600 (85%),Head tilts slightly,Non-Manual
+Mouth Open,2400 (80%),Open mouth (Negation),Non-Manual
+One-Handed (●○),N/A,Sign is performed with one hand,Symmetry Operator
+Parallel (●→●),N/A,Both hands move together in the same direction,Symmetry Operator
+Mirrored (●●),N/A,Both hands mirror each other,Symmetry Operator

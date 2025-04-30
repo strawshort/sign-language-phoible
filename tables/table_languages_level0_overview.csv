@@ -1,0 +1,13 @@
+Name,Family,Latitude,Longitude,Macroarea,Glottocode,ISO639P3code,ID
+American Sign Language,French Sign Language Family,38,-97,North America,amer1248,ase,L1
+Chinese Sign Language,Chinese Sign Language Family,35,104,East Asia,chin1436,csl,L2
+Hong Kong Sign Language,Chinese Sign Language Family,22.3,114.2,East Asia,hong1246,hks,L3
+Taiwan Sign Language,Chinese Sign Language Family,23.7,121,East Asia,taiw1244,tss,L4
+Korean Sign Language,Korean Sign Language Family,37.5,127,East Asia,kore1277,kvk,L5
+German Sign Language,German Sign Language Family,51.2,10.4,Europe,germ1280,gsg,L6
+Danish Sign Language,Danish Sign Language Family,55.7,12.6,Europe,dani1246,dsl,L7
+Swedish Sign Language,Swedish Sign Language Family,59.3,18.1,Europe,swed1236,swl,L8
+Sign Language of the Netherlands (NGT),Dutch Sign Language Family,52.4,5.5,Europe,dutc1251,dse,L9
+British Sign Language,British Sign Language Family,51.5,-0.1,Europe,brit1235,bfi,L10
+Australian Sign Language (Auslan),Auslan Family,-25.3,133.8,Australia,aust1300,asf,L11
+New Zealand Sign Language (NZSL),Auslan Family,-41.3,174.8,Australia,newz1235,nzs,L12

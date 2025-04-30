@@ -1,0 +1,13 @@
+Inventory,Language,# Segments,# Symmetry Operators,# Nonmanual Features,# Handshapes,#Orientation,# Location,# Movement,Contributor,Cite
+ASL ([Dataset Ref]) ,American Sign Language,62,2,3,25,10,12,10,Longqian Ming,[cite]
+CSL ([Dataset Ref]),Chinese Sign Language,59,3,2,20,15,11,8,Longqian Ming,[cite]
+HKSL ([Dataset Ref]),Hong Kong Sign Language,54,5,4,18,10,10,7,Longqian Ming,[cite]
+TSL ([Dataset Ref]),Taiwan Sign Language,67,4,5,19,20,11,8,Longqian Ming,[cite]
+KSL ([Dataset Ref]),Korean Sign Language,44,2,3,17,5,10,7,Longqian Ming,[cite]
+DGS ([Dataset Ref]),German Sign Language,55,1,2,21,10,12,9,Longqian Ming,[cite]
+DSL ([Dataset Ref]),Danish Sign Language,54,4,4,16,15,9,6,Longqian Ming,[cite]
+SSL ([Dataset Ref]),Swedish Sign Language,57,3,5,20,10,11,8,Longqian Ming,[cite]
+NGT ([Dataset Ref]),Sign Language of the Netherlands (NGT),72,6,3,22,20,12,9,Longqian Ming,[cite]
+BSL ([Dataset Ref]),British Sign Language,58,4,2,24,5,13,10,Longqian Ming,[cite]
+Auslan ([Dataset Ref]),Australian Sign Language (Auslan),63,2,4,23,13,12,9,Longqian Ming,[cite]
+NZSL ([Dataset Ref]),New Zealand Sign Language (NZSL),58,3,5,19,12,11,8,Longqian Ming,[cite]

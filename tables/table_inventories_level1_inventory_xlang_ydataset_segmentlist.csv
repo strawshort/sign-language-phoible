@@ -1,0 +1,24 @@
+Segment Class,Segment,Marginal,Allophones,Representation
+Handshape,Flat Hand (B),FALSE,Slightly curved fingers,3200 (95%)
+Handshape,Fist Hand (A),FALSE,Thumb slightly outward,2890 (90%)
+Handshape,3-Handshape,FALSE,None,2750 (87%)
+Handshape,Spread-5 Hand,FALSE,None,2600 (85%)
+Movement,Arc Movement,FALSE,Slightly wider arc,2950 (89%)
+Movement,Straight Movement,FALSE,Slightly diagonal motion,2900 (87%)
+Movement,Circular Movement,FALSE,Elliptical movement,2750 (86%)
+Movement,Repeated Motion,FALSE,Slight movement repetition,2600 (85%)
+Orientation,Palm Up,FALSE,Palm slightly tilted,2700 (88%)
+Orientation,Palm Down,FALSE,Palm slightly tilted inward,2500 (85%)
+Orientation,Palm Facing Out,FALSE,Palm rotated slightly,2400 (83%)
+Orientation,Palm Facing In,FALSE,Palm angled,2300 (80%)
+Location,Forehead,FALSE,Forehead (higher/lower),3100 (92%)
+Location,Chin,FALSE,Chin (closer to mouth),2900 (88%)
+Location,Chest,FALSE,Chest (closer to shoulder),2800 (91%)
+Location,Neutral Space,FALSE,Neutral space (closer to body),2700 (89%)
+Location,Shoulder,FALSE,Shoulder (closer to neck),2600 (86%)
+Non-Manual,Eyebrows Raised,FALSE,Partially raised eyebrows,2800 (90%)
+Non-Manual,Head Tilt,FALSE,Slight head tilt,2600 (85%)
+Non-Manual,Mouth Open,FALSE,Slightly open mouth,2400 (80%)
+Symmetry Operator,One-Handed (●○),FALSE,None,N/A
+Symmetry Operator,Parallel (●→●),FALSE,None,N/A
+Symmetry Operator,Mirrored (●●),FALSE,None,N/A
