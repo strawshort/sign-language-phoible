@@ -54,13 +54,16 @@ and symbol conventions refer to the structure and format of identifiers (e.g., S
   to look up symbols using a visual index
   (a table arranged by FSW key or Unicode code point, showing each SWU-font-rendered glyph and Unicode name)
 
+- [ISWA 2010 International SignWriting Alphabet](https://www.signbank.org/iswa/)
+  to explore the structure, classification, and encoding of all 652 base SignWriting symbols,
+  organized into symbol group, base symbol, and full symbol tables
+
 ## HamNoSys Tools
 
 - [HamNoSys Input Tool](https://www.sign-lang.uni-hamburg.de/hamnosys/input/)
   to compose a transcription visually by selecting symbols
   (organized by handshape, orientation, location, movement, and two-handed features) in a panel
   and export it as a HamNoSys string
-
 
 ## Other Notation Systems
 
@@ -71,3 +74,18 @@ and symbol conventions refer to the structure and format of identifiers (e.g., S
   [Ways to Write (Notation Systems)](https://aslfont.github.io/Symbol-Font-For-ASL/ways-to-write.html)
   to compare how ASL handshapes, palm orientations, and locations are represented across multiple writing systems (e.g., SignWriting, HamNoSys, Stokoe, si5s);
   includes visual comparison tables and an overview of each notation system
+
+## Datasets
+
+_Structured resources containing sign language data that can support manual lookup 
+or automated extraction of transcriptions such as FSW and HamNoSys for use in phoneme analysis._
+
+- [Dicta-Sign Lexicon](https://www.sign-lang.uni-hamburg.de/lr/compendium/lex/dictasignlex.html)
+A multilingual dataset of approximately 1,000 isolated signs each for four sign languages: BSL, DGS, GSL, and LSF.
+Each sign includes a video recording, gloss, HamNoSys transcription, and translations
+in English, German, French, and Greek. Signs are aligned across languages by concept.
+
+- [SignPuddle Online](https://www.signbank.org/signpuddle/)
+A collection of dictionary and literature datasets for over 40 sign languages.
+Entries include a gloss and a Formal SignWriting (FSW) string, and are grouped by language-specific puddles.
+Data is available in JSON, XML, and plain text formats.
