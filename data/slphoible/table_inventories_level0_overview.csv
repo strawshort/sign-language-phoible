@@ -1,5 +1,5 @@
 Inventory_id,language_code,Inventory,Language,# Segments,# Symmetry Operators,# Nonmanual Features,# Handshapes,#Orientation,# Location,# Movement,Contributor,Cite
-,,ASL ([Dataset Ref]) ,American Sign Language,62,2,3,25,10,12,10,Longqian Ming,[cite]
+,ase,ASL ([Dataset Ref]) ,American Sign Language,62,2,3,25,10,12,10,Longqian Ming,[cite]
 ,,CSL ([Dataset Ref]),Chinese Sign Language,59,3,2,20,15,11,8,Longqian Ming,[cite]
 ,,HKSL ([Dataset Ref]),Hong Kong Sign Language,54,5,4,18,10,10,7,Longqian Ming,[cite]
 ,,TSL ([Dataset Ref]),Taiwan Sign Language,67,4,5,19,20,11,8,Longqian Ming,[cite]
