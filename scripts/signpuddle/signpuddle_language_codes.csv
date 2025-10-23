@@ -1,0 +1,87 @@
+country_code,country,ui,sgn,url,Confirmed as,index_page,language_code,alt_txt,notes
+MM,Myanmar,1,2,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=2,Myanmar,php,,,
+CA-en,Canada,1,4,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=4,US/Canada,index.html,ASL,English-Canada,manually added due to country code vs sign language code difference
+US,USA,1,4,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=4,US/Canada,index.html,ASL,,manually added due to country code vs sign language code difference
+SG,Singapore,1,11,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=11,Singapore,index.html,,,
+HK,Hong Kong,1,12,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=12,Hong Kong,index.html,,,
+HN,Honduras,5,16,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=16,Honduras,php,,,Manually changed to ui = 5 (Spanish) since original page link default was ui = 1 (English)
+ET,Ethiopia,1,18,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=18,Ethiopia,index2.html,,,
+PL,Poland,7,19,https://www.signbank.org/signpuddle2.0/index.php?ui=7&sgn=19,Poland,index.html,PJM,,manually added due to country code vs sign language code difference
+AT,Austria,5,29,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=29,Austria,php,,,
+DK,Denmark,3,30,https://www.signbank.org/signpuddle2.0/index.php?ui=3&sgn=30,Denmark,index3.html,,,
+MT,Malta,1,31,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=31,Malta,index4.html/php,,,
+NG,Nigeria,1,32,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=32,Nigeria,php,,,
+PT,Portugal,12,33,https://www.signbank.org/signpuddle2.0/index.php?ui=12&sgn=33,Portugal,index3.html,,,
+TH,Thailand,1,34,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=34,Thailand,php,,,
+WO,Signs Used Worldwide,1,35,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=35,International,index1.html,WORLD,International Sign Language,manually added
+SA,Saudi Arabia,1,40,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=40,Saudi Arabia,index1.html,,,manually searched for ui and sgn because the flag link in the main page incorrectly poins to Sweden
+AR,Argentina,5,41,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=41,Argentina,index5.html,,,
+AU,Australia,1,42,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=42,Australia,php,,,
+BE-fr,French Belgium,4,43,https://www.signbank.org/signpuddle2.0/index.php?ui=4&sgn=43,Belgium (FR),index2.html,,French-Belgium,
+BE-nl,"Flanders, Belgium",1,44,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=44,Belgium (NL),index2.html,,Flemish-Belgium,
+BO,Bolivia,5,45,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=45,Bolivia,php,,,
+BR,Brazil,12,46,https://www.signbank.org/signpuddle2.0/index.php?ui=12&sgn=46,Brazil,index3.html,,,
+CA‑fr,Canada,10,47,https://www.signbank.org/signpuddle2.0/index.php?ui=10&sgn=47,Canada (FR),index1.html,Quebec,French-Canada,manually added due to country code vs sign language code difference
+CH-de,German Switzerland,8,48,https://www.signbank.org/signpuddle2.0/index.php?ui=8&sgn=48,Switzerland (DE),index2.html,,"German-Switzerland, Chde",
+CH‑fr,French‑Switzerland,4,49,https://www.signbank.org/signpuddle2.0/index.php?ui=4&sgn=49,Switzerland (FR),index.html,LSF‑CH,French-Swiss,manually added due to country code vs sign language code difference
+CH-it,Italian-Swiss,1,50,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=50,Switzerland (IT),php,,Italian-Switzerland,
+CO,Colombia,5,51,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=51,Colombia,php,,,
+CZ,Czech Republic,6,52,https://www.signbank.org/signpuddle2.0/index.php?ui=6&sgn=52,Czech Republic,index.html,CZJ,,manually added due to country code vs sign language code difference
+DE,"Deutschland, Germany",8,53,https://www.signbank.org/signpuddle2.0/index.php?ui=8&sgn=53,Germany,index.html,DGS,Germany,manually added due to country code vs sign language code difference
+EO,Esperanto-SignUno,11,54,https://www.signbank.org/signpuddle2.0/index.php?ui=11&sgn=54,Esperanto,php,,SignUno,
+ES,"España, Spain",5,55,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=55,Spain,index1.html,LSE,Spain-Madrid,manually added due to country code vs sign language code difference
+ES‑ct,"Catalonia, Barcelona",5,56,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=56,Catalan,index1.html,LSC‑ES,Catalunya,manually added due to country code vs sign language code difference
+FI,Finland,1,57,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=57,Finland,php,,,
+FR,France,4,58,https://www.signbank.org/signpuddle2.0/index.php?ui=4&sgn=58,France,index4.html,,,
+GB,Great Britain,1,59,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=59,Great Britain,index4.html,,,
+GB-ie,Northern Ireland,1,60,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=60,N. Ireland,php,,,
+GR,Greece,1,61,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=61,Greece,php,,Greek,
+IE,Ireland,1,62,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=62,Ireland,php,,,
+IT,Italy,1,63,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=63,Italy,php,,,
+JP,Japan,1,64,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=64,Japan,index2.html,,,
+MX,Mexico,5,65,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=65,Mexico,index3.html,,,manually added; last script missed the country entirely (but original script had it)
+MY,Malaysia,1,66,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=66,Malaysia,php,,,
+NI,Nicaragua,5,67,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=67,Nicaragua,index3.html,,,
+NL,Netherlands,1,68,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=68,Netherlands,php,,,manually searched for ui and sgn because main page link (country flags) incorrectly points to Latvia
+NO,"Norge, Norway",3,69,https://www.signbank.org/signpuddle2.0/index.php?ui=3&sgn=69,Norway,index.html,NTS,Norway,manually added due to country code vs sign language code difference
+NZ,New Zealand,1,70,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=70,New Zealand,php,,,
+PE,Peru,5,71,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=71,Peru,php,,,Manually changed to ui = 5 (Spanish) since original page link default was ui = 1 (English)
+PH,Philippines,1,72,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=72,Philippines,php,,,
+SE,Sweden,1,73,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=73,Sweden,php,,,removed duplicate from SA (Saudi Arabia) due to a labeling mistake in the HTML
+SI,Slovenia,13,74,https://www.signbank.org/signpuddle2.0/index.php?ui=13&sgn=74,Slovenia,index5.html,,,
+TW,Taiwan,1,75,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=75,Taiwan,php,,,
+VE,Venezuela,5,76,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=76,Venezuela,php,,,
+ZA,South Africa,1,77,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=77,South Africa,php,,,
+KR,South Korea,1,78,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=78,S. Korea,php,,,
+KE,Kenya,1,79,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=79,Kenya,php,,,
+AL,Albania,1,82,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=82,Albania,php,,,
+CN,China,1,83,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=83,China,php,,,
+EG,Egypt,1,84,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=84,Egypt,php,,,
+IN,India,1,85,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=85,India,php,,,
+JO,Jordan,1,86,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=86,Jordan,index1.html,,,
+PK,Pakistan,1,87,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=87,Pakistan,php,,,
+RU,Russia,1,88,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=88,Russia,index5.html,,,
+SK,Slovakia,1,89,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=89,Slovakia,php,,,
+TR,Turkey,1,90,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=90,Turkey,php,,,
+CR,Costa Rica,5,101,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=101,Costa Rica,index.html,,,manually added on 2025 Oct 23 as was not in original list
+TN,Tunisia,4,104,https://www.signbank.org/signpuddle2.0/index.php?ui=4&sgn=104,Tunisia,index4.html,,,manually added sgn due to url having two sgn and script only pulling the first (ui=4&sgn=0&sgn=104)
+AF,Afghanistan,1,106,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=106,Afghanistan,php,,,
+LT,Lithuania,1,107,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=107,Lithuania,php,,,
+LV,Latvia,1,108,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=108,Latvia,php,,,
+EE,Estonia,1,109,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=109,Estonia,php,,,
+IL,Israel,1,110,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=110,Israel,php,,,
+GT,Guatemala,5,112,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=112,Guatemala,php,,,
+HT,Haiti,1,113,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=113,Haiti,php,,,
+HU,Hungary,1,122,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=122,Hungary,index4.html,,,manually added sgn due to url having two sgn and script only pulling the first (ui=1&sgn=0&sgn=122)
+MW,Malawi,1,128,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=128,Malawi,php,,,
+PY,Paraguay,5,129,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=129,Paraguay,php,,,
+UA,Ukraine,1,130,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=130,Ukraine,php,,,manually added; last script missed the country entirely (but original script had it)
+IS,Iceland,1,131,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=131,Iceland,php,,,manually added sgn due to url having two sgn and script only pulling the first (ui=1&sgn=0&sgn=131)
+RO,Romania,1,132,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=132,Romania,index5.html,,,manually added sgn due to url having two sgn and script only pulling the first (ui=1&sgn=0&sgn=132)
+NP,Nepal,1,133,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=133,Nepal,php,,,manually added sgn due to url having two sgn and script only pulling the first (ui=1&sgn=0&sgn=133)
+BG,Bulgaria,1,134,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=134,Bulgaria,php,,,manually added sgn due to url having two sgn and script only pulling the first (ui=1&sgn=0&sgn=134)
+CL,Chile,5,135,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=135,Chile,php,,,manually added sgn due to url having two sgn and script only pulling the first (ui=5&sgn=0&sgn=135)
+EC,Ecuador,5,136,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=136,Ecuador,php,,,manually added sgn due to url having two sgn and script only pulling the first (ui=5&sgn=0&sgn=136)
+SV,El Salvador,5,137,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=137,El Salvador,php,,,manually added sgn due to url having two sgn and script only pulling the first (ui=5&sgn=0&sgn=137)
+UY,Uruguay,5,143,https://www.signbank.org/signpuddle2.0/index.php?ui=5&sgn=143,Uruguay,index5.html,,,
+VN,Vietnam,1,153,https://www.signbank.org/signpuddle2.0/index.php?ui=1&sgn=153,Vietnam,php,,,
