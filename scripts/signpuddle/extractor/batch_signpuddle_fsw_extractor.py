@@ -5,6 +5,8 @@ from urllib.parse import urlparse, parse_qs, quote_plus
 import pandas as pd
 from concurrent.futures import ThreadPoolExecutor
 
+__version__ = "1.1.1"
+
 # ——— CONFIG —————————————————————————————————————————————————————————
 BASE       = 'https://www.signbank.org/signpuddle2.0/'
 UI, SGN    = 5, 55               # change these per language/dictionary
