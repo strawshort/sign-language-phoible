@@ -1,0 +1,36 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S14c,17,11.89%,10,12.35%,"5 (sid_12), AANHEBBEN kleding (wearing clothes) (sid_75), AANHOUDEN / AANHOUDING verdachte (sid_79), AU (ouch) (sid_28), gebaren (sid_45), geel (sid_5), haan (hen) (thema: DIER) (sid_31), herfst (sid_7), koe (cow) (thema: DIER) (sid_20), schaap (sheep) (thema: DIER) (sid_37)",17,11.89
+S100,15,10.49%,11,13.58%,"1 (one) (sid_52), 1 (sid_2), hert (deer) (thema: DIER) (sid_21), hij (zij) (sid_55), ik (sid_51), jullie (jullie allemaal) (sid_56), paard (horse) (thema: DIER) (sid_32), papa (sid_78), weten (sid_72), wie (sid_43), wij (sid_58)",32,22.38
+S15a,11,7.69%,9,11.11%,"bedankt (dankjewel, dank) (sid_69), cursus (sid_73), goudvis (goldfish) (thema: DIER) (sid_26), huis (sid_41), lezen (sid_60), mama (sid_77), muis (mouse) (thema: DIER) (sid_34), schrijven (sid_50), wind (sid_13)",43,30.07
+S16d,9,6.29%,5,6.17%,"APPEL (apple) (sid_49), ezel (donkey) (thema: DIER) (sid_23), hamster (hamster) (thema: DIER) (sid_29), olifant (elephant) (thema: DIER) (sid_24), varken (pig) (thema: DIER) (sid_35)",52,36.36
+S15d,8,5.59%,5,6.17%,"Vis-levend (fish-alive) (thema: DIER) (sid_27), bedankt (sid_1), vis (sid_66), vlinder (thema: DIER) (sid_17), vogel (thema: DIER) (sid_16)",60,41.96
+S14a,6,4.2%,4,4.94%,"Gerard (sid_80), Gerard (sid_81), Meijssen (sid_82), Meijssen (sid_83)",66,46.15
+S10e,6,4.2%,6,7.41%,"2 (sid_11), 2 (two) (sid_53), lezen (sid_60), lopen (sid_46), slang (snake) (thema: DIER) (sid_38), wij-twee (sid_57)",72,50.35
+S1ea,5,3.5%,3,3.7%,"AANDOEN kleding (putting clothes on) (sid_61), AANGIFTE / AANGEVEN () (sid_68), Spanje (Spaans, Spaanse) (sid_63)",77,53.85
+S154,5,3.5%,3,3.7%,"dier (animal) (thema: DIER) (sid_40), dier (sid_15), muis (mouse) (thema: DIER) (sid_34)",82,57.34
+S182,5,3.5%,3,3.7%,"AAP (monkey) (sid_30), hond (dog) (thema: DIER) (sid_22), weten (sid_71)",87,60.84
+S1f5,5,3.5%,4,4.94%,"6 (sid_10), drinken (sid_48), goed (sid_44), melk (sid_65)",92,64.34
+S192,4,2.8%,2,2.47%,"Meijssen (sid_82), Meijssen (sid_83)",96,67.13
+S115,4,2.8%,2,2.47%,"bruin (sid_4), konijn (rabbit) (thema: DIER) (sid_36)",100,69.93
+S185,4,2.8%,2,2.47%,"Nederland (Nederlands, Nederlandse) (sid_62), schaap (sheep) (thema: DIER) (sid_37)",104,72.73
+S11a,4,2.8%,2,2.47%,"Gerard (sid_80), Gerard (sid_81)",108,75.52
+S1d4,4,2.8%,3,3.7%,"kat (cat) (thema: DIER) (sid_19), schrijven (sid_50), schrijven (sid_67)",112,78.32
+S14e,2,1.4%,1,1.23%,leeuw (lion) (thema: DIER) (sid_33),114,79.72
+S171,2,1.4%,1,1.23%,kameel (thema: DIER) (sid_18),116,81.12
+S18d,2,1.4%,2,2.47%,"Meijssen (sid_82), Meijssen (sid_83)",118,82.52
+S119,2,1.4%,2,2.47%,"Meijssen (sid_82), Meijssen (sid_83)",120,83.92
+S17d,2,1.4%,1,1.23%,"Nederland (Nederlands, Nederlandse) (sid_62)",122,85.31
+S150,2,1.4%,1,1.23%,"Knuffelen (Beer, Knuffelbeer) (sid_25)",124,86.71
+S1d1,2,1.4%,1,1.23%,kat (cat) (thema: DIER) (sid_19),126,88.11
+S1f0,2,1.4%,2,2.47%,"Gerard (sid_80), Gerard (sid_81)",128,89.51
+S101,2,1.4%,2,2.47%,"Gerard (sid_80), Gerard (sid_81)",130,90.91
+S1f7,2,1.4%,2,2.47%,"Gerard (sid_80), Gerard (sid_81)",132,92.31
+S186,2,1.4%,2,2.47%,"3 (sid_6), 3 (three) (sid_54)",134,93.71
+S110,2,1.4%,1,1.23%,tijger (tiger) (thema: DIER) (sid_39),136,95.1
+S1c5,1,0.7%,1,1.23%,goudvis (goldfish) (thema: DIER) (sid_26),137,95.8
+S152,1,0.7%,1,1.23%,AAN licht (light on) (sid_59),138,96.5
+S18e,1,0.7%,1,1.23%,9 (sid_8),139,97.2
+S11e,1,0.7%,1,1.23%,8 (sid_9),140,97.9
+S1dc,1,0.7%,1,1.23%,7 (sid_3),141,98.6
+S144,1,0.7%,1,1.23%,4 (sid_14),142,99.3
+S147,1,0.7%,1,1.23%,ook (sid_64),143,100.0

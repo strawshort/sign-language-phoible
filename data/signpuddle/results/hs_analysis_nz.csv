@@ -1,0 +1,15 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S14c,16,23.19%,11,29.73%,"A (sid_36), E (sid_35), I (sid_33), J (sid_19), NZSL (sid_1), NZSL (sid_2), NZSL (sid_26), O (sid_16), U (sid_7), W (sid_13), sign (sid_21)",16,23.19
+S15a,16,23.19%,11,29.73%,"H (sid_5), L (sid_14), M (sid_10), N (sid_9), New-Zealand (sid_24), R (sid_32), T (sid_22), V (sid_6), Z (sid_12), born (sid_4), new (sid_8)",32,46.38
+S100,9,13.04%,8,21.62%,"D (sid_17), J (sid_19), K (sid_34), L (sid_14), P (sid_15), T (sid_22), X (sid_23), Y (sid_25)",41,59.42
+S1ce,5,7.25%,3,8.11%,"B (sid_11), Q (sid_27), translate (sid_3)",46,66.67
+S1dc,4,5.8%,1,2.7%,language (sid_18),50,72.46
+S182,4,5.8%,3,8.11%,"New-Zealand (sid_24), Z (sid_12), new (sid_8)",54,78.26
+S1ec,3,4.35%,3,8.11%,"C (sid_31), D (sid_17), word (sid_37)",57,82.61
+S115,3,4.35%,2,5.41%,"F (sid_29), N (sid_9)",60,86.96
+S106,3,4.35%,3,8.11%,"K (sid_34), Q (sid_27), R (sid_32)",63,91.3
+S198,2,2.9%,1,2.7%,S (sid_28),65,94.2
+S18c,1,1.45%,1,2.7%,M (sid_10),66,95.65
+S1eb,1,1.45%,1,2.7%,P (sid_15),67,97.1
+S10e,1,1.45%,1,2.7%,V (sid_6),68,98.55
+S15d,1,1.45%,1,2.7%,Y (sid_25),69,100.0

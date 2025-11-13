@@ -1,0 +1,58 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S14c,43,20.09%,30,22.73%,"5 (sid_18), A (sid_145), Afternoon (Good Afternoon) (sid_54), Anything (sid_96), Auslan (sid_1), Australia (sid_15), Australia (sid_2), Australia (sid_20), Australia (sid_9), Doctor (sid_108), Fine (sid_72), Give (sid_74), Have (sid_89), Hello (sid_88), Help (sid_75), Hi--Hallo (sid_13), How (sid_63), Please (sid_84), Primary (sid_114), Problem (sid_83), Schedule (sid_116), Seafood (fish) (sid_60), Sure (sid_118), Take (sid_69), Thanks (sid_61), Today (sid_67), V (sid_127), With (sid_80), Yes (sid_55), work (sid_130)",43,20.09
+S100,35,16.36%,28,21.21%,"1 (sid_136), 1 (sid_5), A (sid_145), And (sid_79), Can (sid_94), D (sid_148), Day (sid_107), Did (sid_92), Else (sid_78), Follow (sid_91), Go (sid_65), I (sid_70), It (sid_77), J (sid_99), K (sid_100), L (sid_103), Long (sid_86), One (sid_98), Q (sid_120), Tomorrow (sid_119), Tomorrow (sid_97), Unbelievable--huh--wow- (sid_3), Yes (sid_55), Yesterday (Last) (sid_53), You (sid_64), Z (sid_104), about (sid_39), who (sid_129)",78,36.45
+S1bb,12,5.61%,6,4.55%,"Australia (sid_15), Australia (sid_2), Australia (sid_20), Australia (sid_25), Australia (sid_26), Australia (sid_9)",90,42.06
+S10e,9,4.21%,7,5.3%,"2 (sid_137), 2 (sid_17), Adelaide (sid_45), Can (sid_94), F (sid_150), ant (sid_4), die (sid_24)",99,46.26
+S115,7,3.27%,5,3.79%,"Friday (sid_90), H (sid_111), H (sid_152), Name (sid_153), U (sid_125)",106,49.53
+S15a,6,2.8%,4,3.03%,"H (sid_154), a lot of (lots) (sid_38), add (sid_43), address (sid_44)",112,52.34
+S1f5,6,2.8%,5,3.79%,"6 (sid_14), Better (sid_95), Please (sid_84), Some (sid_82), know (sid_7)",118,55.14
+S176,5,2.34%,4,3.03%,"Auslan (sid_1), Have (sid_89), O (sid_115), Q (sid_120)",123,57.48
+S106,4,1.87%,4,3.03%,"Eat (dinner, meal, dine) (sid_58), K (sid_100), Will (shall, would) (sid_59), X (sid_101)",127,59.35
+S1f8,4,1.87%,2,1.52%,"Fine (sid_72), brother (sid_23)",131,61.21
+S153,4,1.87%,2,1.52%,"Hospital (sid_71), afraid (sid_46)",135,63.08
+S185,4,1.87%,3,2.27%,"Some (sid_82), Soon (sid_81), accept (sid_40)",139,64.95
+S14d,4,1.87%,2,1.52%,"Australia (sid_25), Australia (sid_26)",143,66.82
+S144,4,1.87%,4,3.03%,"4 (sid_138), 4 (sid_21), 9 (sid_144), B (sid_146)",147,68.69
+S15d,3,1.4%,2,1.52%,"Sure (sid_118), accept (sid_40)",150,70.09
+S14f,3,1.4%,2,1.52%,"Milk (sid_57), Morning (sid_62)",153,71.5
+S152,3,1.4%,3,2.27%,"5 (sid_139), Did (sid_92), With (sid_80)",156,72.9
+S183,3,1.4%,3,2.27%,"Help (sid_75), Soon (sid_81), Today (sid_67)",159,74.3
+S10a,3,1.4%,3,2.27%,"Care (sid_105), Try (sid_11), Try (sid_16)",162,75.7
+S123,2,0.93%,2,1.52%,"8 (sid_141), 8 (sid_142)",164,76.64
+S14e,2,0.93%,1,0.76%,Milk (sid_57),166,77.57
+S174,2,0.93%,2,1.52%,"Medicine (sid_76), Take (sid_69)",168,78.5
+S113,2,0.93%,2,1.52%,"May (sid_112), V (sid_127)",170,79.44
+S1ce,2,0.93%,1,0.76%,Plan (sid_85),172,80.37
+S165,2,0.93%,1,0.76%,Hope (sid_87),174,81.31
+S186,2,0.93%,2,1.52%,"3 (sid_8), W (sid_128)",176,82.24
+S11e,2,0.93%,2,1.52%,"8 (sid_12), Doctor (sid_108)",178,83.18
+S18c,2,0.93%,2,1.52%,"3 (sid_135), M (sid_106)",180,84.11
+S17e,2,0.93%,1,0.76%,With (sid_80),182,85.05
+S1dc,2,0.93%,2,1.52%,"7 (sid_6), a lot of (lots) (sid_38)",184,85.98
+S116,2,0.93%,2,1.52%,"7 (sid_143), Primary (sid_114)",186,86.92
+S118,2,0.93%,2,1.52%,"D (sid_148), address (sid_44)",188,87.85
+S112,2,0.93%,1,0.76%,N (sid_110),190,88.79
+S13d,1,0.47%,1,0.76%,Time (sid_68),191,89.25
+S1bd,1,0.47%,1,0.76%,T (sid_124),192,89.72
+S11a,1,0.47%,1,0.76%,R (sid_122),193,90.19
+S12e,1,0.47%,1,0.76%,U (sid_121),194,90.65
+S101,1,0.47%,1,0.76%,unbelievable-2 (sid_19),195,91.12
+S134,1,0.47%,1,0.76%,No (sid_56),196,91.59
+S179,1,0.47%,1,0.76%,Problem (sid_83),197,92.06
+S1b7,1,0.47%,1,0.76%,P (sid_117),198,92.52
+S13f,1,0.47%,1,0.76%,No (sid_56),199,92.99
+S157,1,0.47%,1,0.76%,When (sid_126),200,93.46
+S1ab,1,0.47%,1,0.76%,Else (sid_78),201,93.93
+S124,1,0.47%,1,0.76%,Nine (sid_113),202,94.39
+S196,1,0.47%,1,0.76%,M (sid_106),203,94.86
+S15b,1,0.47%,1,0.76%,L (sid_103),204,95.33
+S14b,1,0.47%,1,0.76%,How much (sid_155),205,95.79
+S154,1,0.47%,1,0.76%,Hospital (sid_71),206,96.26
+S141,1,0.47%,1,0.76%,For (sid_109),207,96.73
+S1a4,1,0.47%,1,0.76%,Feel (sid_73),208,97.2
+S145,1,0.47%,1,0.76%,E (sid_149),209,97.66
+S107,1,0.47%,1,0.76%,Comeback (sid_93),210,98.13
+S14a,1,0.47%,1,0.76%,C (sid_147),211,98.6
+S1fa,1,0.47%,1,0.76%,ant (sid_4),212,99.07
+S1f9,1,0.47%,1,0.76%,6 (sid_140),213,99.53
+S16e,1,0.47%,1,0.76%,Y (sid_102),214,100.0

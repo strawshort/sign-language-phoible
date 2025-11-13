@@ -1,0 +1,64 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S1f5,52,14.13%,39,18.22%,"ADOPT-A-BOY (sid_155), ADOPT-A-BOY (sid_27), ADOPT-A-BOY (sid_93), ADOPT-BOY (sid_151), BABY (sid_76), BOY (sid_63), COURTSHIP-DATING (sid_49), DIVORCE (sid_132), FIFTH-CHILD-MALE (sid_19), FIRST-CHILD-FEMALE (sid_13), FIRST-CHILD-MALE (sid_102), FOURTH-CHILD-MALE (sid_121), GRANDDAUGHTER (sid_68), GRANDFATHER (sid_55), GRANDSON (sid_87), MAN-MARRY-INTO-WOMAN-'S-FAMILY (sid_115), OLDER-BROTHER---YOUNGER-BROTHER (sid_103), OLDER-BROTHER---YOUNGER-BROTHER (sid_9), OLDER-BROTHER---YOUNGER-SISTER (sid_179), OLDER-BROTHER---YOUNGER-SISTER (sid_90), OLDER-BROTHER-YOUNGER-BROTHER- (sid_41), OLDER-SISTER---YOUNGER-BROTHER (sid_61), OLDER-SISTER---YOUNVER-BROTHER (sid_42), OLDEST (sid_67), SECOND-CHILD-MALE (sid_58), THIRD-CHILD-MALE (sid_99), TWINS (sid_160), TWINS (sid_83), Thank you, thanks (謝謝) (sid_192), WOMAN-MARRY-INTO-MAN-'S-FAMILY (sid_164), YELLOW (sid_21), boy (sid_46), boy-child (sid_176), first-born-male-'s-wife (sid_2), scold (罵) (sid_189), second-wife (sid_24), third-child-females-'-husband (sid_28), twins (sid_140), 五 (five) (sid_201)",52,14.13
+S15a,46,12.5%,34,15.89%,"BABY (sid_130), BABY (sid_5), BABY (sid_76), BLOOD-FAMILY (sid_177), BLOOD-FAMILY (sid_66), CALENDAR (sid_139), COPY (sid_31), DOCTOR (sid_91), DRINK (sid_44), FAMILY (sid_50), FULL-COMPLETE (sid_77), GIVE (sid_113), IMMEDIATELY (sid_89), JUMP (sid_131), JUMP (sid_69), KITCHEN (sid_48), KNOW (sid_82), MIDDLE-AGE (sid_72), MONEY (sid_134), NEVER (sid_40), PANTS (sid_33), PLEASE (sid_149), READ (sid_108), READ (sid_16), RECEIVE (sid_70), RUG (sid_12), STAND-UP (sid_159), STAND-UP (sid_98), TV (sid_80), WILL-NOT--CAN-NOT (sid_184), WRITE (sid_3), YOURE-WELCOME (sid_114), YOURE-WELCOME (sid_183), have (有) (sid_185)",98,26.63
+S14c,39,10.6%,29,13.55%,"AGED (sid_36), CHILDREN (sid_142), CHILDREN (sid_161), COPY (sid_31), CROWD-CL (sid_25), DONT (sid_127), FIFTH-CHILD-FEMALE (sid_123), FIFTH-CHILD-MALE (sid_19), FORGOT (sid_158), FORGOT (sid_45), FOURTH-CHILD-FEMALE (sid_14), FOURTH-CHILD-MALE (sid_121), MATURE (sid_147), MICROWAVE (sid_26), NET (sid_84), NEVER (sid_40), RUG (sid_12), TODAY (sid_165), WILL-NOT--CAN-NOT (sid_184), boy-child (sid_176), dog (狗) (sid_186), girl-child (sid_23), love (愛 慈愛) (sid_194), not, no (不) (sid_193), young (sid_144), 五 (five) (sid_202), 快樂 (happy) (sid_208), 新 (new) (sid_206), 發財 (make a fortune) (sid_211)",137,37.23
+S192,23,6.25%,21,9.81%,"ADOPT-A-GIRL (sid_180), ADOPT-A-GIRL (sid_181), ADOPT-GIRL (sid_97), BUG (sid_73), COURTSHIP-DATING (sid_49), DIVORCE (sid_132), FIFTH-CHILD-FEMALE (sid_123), FIRST-CHILD-FEMALE (sid_13), FOURTH-CHILD-FEMALE (sid_14), GRANDDAUGHTER (sid_68), MAN-MARRY-INTO-WOMAN-'S-FAMILY (sid_115), MARRIAGE (sid_81), SECOND-CHILD-FEMALE (sid_153), THIRD-CHILD-FEMALE (sid_11), THOUSAND (sid_137), WOMAN-MARRY-INTO-MAN-'S-FAMILY (sid_164), first-born-male-'s-wife (sid_2), girl (sid_6), girl-child (sid_23), second-wife (sid_24), third-child-females-'-husband (sid_28)",160,43.48
+S100,23,6.25%,21,9.81%,"GRANDMOTHER (sid_146), God, god (神) (sid_197), HE (sid_85), HIGH-BLOOD-PRESSURE (sid_141), MAY-I (sid_122), MONDAY (sid_32), MONDAY (sid_47), MOTHER (sid_100), ONE (sid_101), POINTED-OBJECT-CL (sid_152), RED (sid_79), THINK (sid_128), TOMORROW (sid_170), TWINS (sid_160), WHERE (sid_169), YELLOW (sid_21), YESTERDAY (sid_167), YESTERDAY (sid_62), YOU (sid_117), 一 (one) (sid_111), 年 (year) (sid_207)",183,49.73
+S15d,18,4.89%,7,3.27%,"BEDROOM (sid_88), COURTSHIP (sid_163), KITCHEN (sid_48), LIVING-ROOM (sid_143), WASH-FACE (sid_135), WATCH (sid_71), WINDOW (sid_35)",201,54.62
+S115,12,3.26%,7,3.27%,"BELIEVE (sid_18), DOCTOR (sid_91), LIVING-ROOM (sid_143), TWINS (sid_160), TWINS (sid_83), hope (望) (sid_196), twins (sid_140)",213,57.88
+S10e,12,3.26%,10,4.67%,"JUMP (sid_131), JUMP (sid_69), LOOK (sid_94), READ (sid_108), READ (sid_16), SCISSORS (sid_43), STAND-UP (sid_159), STAND-UP (sid_98), second-wife (sid_24), 二 (two) (sid_133)",225,61.14
+S1ae,12,3.26%,10,4.67%,"GRANDMOTHER (sid_146), MOTHER (sid_100), OLDER-BROTHER---YOUNGER-SISTER (sid_179), OLDER-BROTHER---YOUNGER-SISTER (sid_90), OLDER-SISTER (sid_20), OLDER-SISTER---YOUNGER-BROTHER (sid_61), OLDER-SISTER---YOUNGER-SISTER (sid_104), OLDER-SISTER---YOUNGER-SISTER (sid_53), OLDER-SISTER---YOUNVER-BROTHER (sid_42), SISTER (sid_1)",237,64.4
+S153,9,2.45%,7,3.27%,"ADOPT-A-BOY (sid_155), ADOPT-A-BOY (sid_93), ADOPT-A-GIRL (sid_180), PREGNANT (sid_60), TOGETHER (sid_120), UPSET-STOMACH (sid_78), scold (罵) (sid_189)",246,66.85
+S1c6,7,1.9%,6,2.8%,"AIRPLANE (sid_175), BABY (sid_5), BROTHER (sid_118), BROTHER (sid_7), fathers-older-brother (sid_57), younger-sister (sid_116)",253,68.75
+S15c,7,1.9%,6,2.8%,"FORGOT (sid_158), FORGOT (sid_45), FULL-COMPLETE (sid_77), HOW-ARE-YOU (sid_52), HOW-MANY (sid_64), SOAP (sid_37)",260,70.65
+S1ce,6,1.63%,3,1.4%,"NO-PROBLEM (sid_15), NO-PROBLEM (sid_74), 發財 (make a fortune) (sid_211)",266,72.28
+S1dc,6,1.63%,6,2.8%,"GRANDFATHER (sid_55), LAUGH (sid_162), SECOND-CHILD-FEMALE (sid_153), SECOND-CHILD-MALE (sid_58), fathers-older-brother (sid_57), six (六, 6) (sid_203)",272,73.91
+S11e,4,1.09%,4,1.87%,"THIRD-CHILD-FEMALE (sid_11), THIRD-CHILD-MALE (sid_99), third-child-females-'-husband (sid_28), 七 (seven) (sid_204)",276,75.0
+S176,4,1.09%,4,1.87%,"ADOPT-A-BOY (sid_27), ADOPT-A-GIRL (sid_181), BOY (sid_63), ZERO (sid_119)",280,76.09
+S16f,4,1.09%,4,1.87%,"EAT (sid_138), EAT (sid_166), WHO (sid_109), WHO (sid_22)",284,77.17
+S173,4,1.09%,4,1.87%,"EAT (sid_138), EAT (sid_166), PATIENT (sid_29), VIDEOTAPE (sid_150)",288,78.26
+S1de,4,1.09%,2,0.93%,"NO (sid_173), NO (sid_4)",292,79.35
+S1da,3,0.82%,3,1.4%,"BLOOD-FAMILY (sid_177), BLOOD-FAMILY (sid_66), MONEY (sid_134)",295,80.16
+S1a3,3,0.82%,2,0.93%,"BED (sid_182), DRAGON (sid_75)",298,80.98
+S19a,3,0.82%,3,1.4%,"BEDROOM (sid_88), NOT-BAD (sid_59), TELEPHONE (sid_17)",301,81.79
+S144,3,0.82%,3,1.4%,"HOW-MANY (sid_64), PLEASE (sid_157), 四 (four) (sid_200)",304,82.61
+S11a,3,0.82%,2,0.93%,"PEN (sid_38), WIRE (sid_107)",307,83.42
+S106,3,0.82%,3,1.4%,"die, dead (逝 殂 身亡) (sid_191), faith (信) (sid_195), fathers-older-brother (sid_57)",310,84.24
+S167,3,0.82%,2,0.93%,"PREGNANT (sid_39), UPSET-STOMACH (sid_110)",313,85.05
+S1eb,3,0.82%,3,1.4%,"TAINAN (sid_129), WANT (sid_112), 年 (year) (sid_207)",316,85.87
+S185,3,0.82%,3,1.4%,"COPY (sid_31), MIDDLE-AGE (sid_72), 新 (new) (sid_206)",319,86.68
+S11d,2,0.54%,1,0.47%,PhD (sid_65),321,87.23
+S17e,2,0.54%,2,0.93%,"ADOPT-BOY (sid_151), ADOPT-GIRL (sid_97)",323,87.77
+S1ec,2,0.54%,1,0.47%,Kaohsiung (高雄) (sid_190),325,88.32
+S1f7,2,0.54%,2,0.93%,"AGED (sid_36), MATURE (sid_147)",327,88.86
+S158,2,0.54%,1,0.47%,VEGTABLE (sid_145),329,89.4
+S171,2,0.54%,2,0.93%,"作揖 (女) (恭喜 (女), salute (female), congratulations (female)) (sid_214), 作揖 (男) (恭喜 (男), salute (male), congratulations (male)) (sid_210)",331,89.95
+S140,2,0.54%,2,0.93%,"BORROW (sid_8), OWE (sid_124)",333,90.49
+S1d0,2,0.54%,2,0.93%,"BATHROOM (sid_168), WATCH (sid_71)",335,91.03
+S157,2,0.54%,2,0.93%,"Do you have or not? (有沒有?) (sid_188), don't have (沒有) (sid_187)",337,91.58
+S150,2,0.54%,2,0.93%,"FRUIT (sid_154), KITCHEN (sid_48)",339,92.12
+S16c,2,0.54%,2,0.93%,"DRINK (sid_44), DRINK (sid_51)",341,92.66
+S147,2,0.54%,1,0.47%,DOOR (sid_54),343,93.21
+S1d5,2,0.54%,2,0.93%,"DONT (sid_127), DONT (sid_86)",345,93.75
+S1ea,2,0.54%,2,0.93%,"CRY (sid_56), CRY (sid_92)",347,94.29
+S16b,1,0.27%,1,0.47%,TEN-THOUSAND (sid_148),348,94.57
+S170,1,0.27%,1,0.47%,"作揖 (女) (恭喜 (女), salute (female), congratulations (female)) (sid_214)",349,94.84
+S18c,1,0.27%,1,0.47%,BOY-SCOUT (sid_178),350,95.11
+S186,1,0.27%,1,0.47%,三 (three) (sid_199),351,95.38
+S1fa,1,0.27%,1,0.47%,WRITE (sid_3),352,95.65
+S10b,1,0.27%,1,0.47%,WRITE (sid_3),353,95.92
+S1a1,1,0.27%,1,0.47%,BUDDHA (sid_105),354,96.2
+S128,1,0.27%,1,0.47%,TIGER (sid_10),355,96.47
+S187,1,0.27%,1,0.47%,THREE (sid_172),356,96.74
+S101,1,0.27%,1,0.47%,BUDDHA (sid_105),357,97.01
+S19c,1,0.27%,1,0.47%,GERMANY (sid_126),358,97.28
+S16d,1,0.27%,1,0.47%,COURTSHIP (sid_163),359,97.55
+S102,1,0.27%,1,0.47%,"God, god (神) (sid_197)",360,97.83
+S1fb,1,0.27%,1,0.47%,MARRIAGE (sid_81),361,98.1
+S13d,1,0.27%,1,0.47%,DUCK (sid_34),362,98.37
+S110,1,0.27%,1,0.47%,JUMP (sid_69),363,98.64
+S1bf,1,0.27%,1,0.47%,FAMILY (sid_50),364,98.91
+S1bb,1,0.27%,1,0.47%,IMMEDIATELY (sid_89),365,99.18
+S1f9,1,0.27%,1,0.47%,FIFTY-CENTS (sid_30),366,99.46
+S156,1,0.27%,1,0.47%,HAIR (sid_96),367,99.73
+S1d7,1,0.27%,1,0.47%,八 (eight) (sid_205),368,100.0
