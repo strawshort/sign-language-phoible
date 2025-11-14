@@ -1,0 +1,53 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S100,56,21.71%,22,15.83%,"Black (sil2007) (sid_92), Bread (sid_41), ETHIOPIAN-SIGN-LANGUAGE (sid_89), FALSE (sid_134), Ghana (sid_80), Happy-Birthday (sid_74), Happy_Birthday (sid_13), I (me) (sid_113), KBGOYTA (sid_126), Lie - receptive (sid_79), MONTH (sid_21), THUNDER (sid_135), Truth (sid_8), WEEK (sid_7), bad (sid_12), he (sid_116), red (sid_111), there-under (sid_142), they (sid_117), you (sid_115), you (sid_118), you (sid_123)",56,21.71
+S15a,45,17.44%,19,13.67%,"8th-EMA (sid_51), Bread (sid_41), Doctor (sid_30), Ghana (sid_80), God (sid_1), God (sid_18), SCHOOL (sid_64), Thanks (sid_17), Thanks-- (sid_31), Tree (sid_38), WEEK (sid_7), Window (sil2007) (sid_93), city (sil2007) (sid_96), elephant (sid_137), garbage (sil2007) (sid_95), thank you (sid_143), there-under (sid_142), walk (sid_141), we (sid_114)",101,39.15
+S185,20,7.75%,11,7.91%,"27th-EMA- (sid_14), 27th-EMA- (sid_73), 28th-EMA (sid_42), Birr (sid_62), Gossip-Backbite (sid_86), HOUSE (sid_85), Happy-Birthday (sid_74), Happy_Birthday (sid_13), Hello-- (sid_22), greeting (sid_72), hello (sid_125)",121,46.9
+S1f7,10,3.88%,6,4.32%,"A-A-3 (sid_48), ETHIOPIA-2nd-retry (sid_76), ETHIOPIAN-SIGN-LANGUAGE (sid_89), Eyasu (sid_104), he (sid_116), you (sid_123)",131,50.78
+S14c,10,3.88%,6,4.32%,"FATHER (sid_56), GRAND-FATHER-2 (GRAND-FATHER) (sid_27), GRAND-MOTHER (sid_70), KNOW (sid_130), MOTHER (sid_37), fire (sil2007) (sid_102)",141,54.65
+S1f5,10,3.88%,6,4.32%,"16th-EMA (sid_28), A-A- (sid_29), Addis Ababa (sid_110), Eyasu (sid_47), Which (sid_121), bad (sid_12)",151,58.53
+S176,8,3.1%,4,2.88%,"Tea (sid_34), Tea (sid_52), greeting (sid_140), greeting (sid_145)",159,61.63
+S15d,8,3.1%,6,4.32%,"26th-EMA (sid_53), Gerawork (sid_24), TREE (sid_133), Thank you (sid_124), University (sid_6), school (sil2007) (sid_97)",167,64.73
+S101,6,2.33%,4,2.88%,"Doctor (sid_30), SOMETHING (sid_128), SOMETHING (sid_129), city (sil2007) (sid_96)",173,67.05
+S115,6,2.33%,4,2.88%,"16th-EMA (sid_60), University (sid_6), deaf (sid_119), knife (sil2007) (sid_94)",179,69.38
+S1fb,5,1.94%,5,3.6%,"11th-EMA (sid_61), 12th-EMA (sid_82), A-A--2 (sid_36), Eyasu 2 (sid_103), Secret (sid_88)",184,71.32
+S153,4,1.55%,2,1.44%,"Bread-2 (sid_77), hearing (sid_120)",188,72.87
+S152,3,1.16%,2,1.44%,"Happy (sid_90), TREE (sid_133)",191,74.03
+S12d,3,1.16%,2,1.44%,"15th-EMA (sid_32), 6th-EMA (sid_78)",194,75.19
+S18c,3,1.16%,2,1.44%,"7th-EMA (sid_40), green (sid_112)",197,76.36
+S192,2,0.78%,2,1.44%,"Handshape Test 1 (sid_107), Handshape Test 3 (sid_109)",199,77.13
+S1f9,2,0.78%,1,0.72%,Lover (sid_50),201,77.91
+S1de,2,0.78%,1,0.72%,Neguse (sid_11),203,78.68
+S19d,2,0.78%,1,0.72%,Sick (sid_49),205,79.46
+S113,2,0.78%,1,0.72%,SIGN LANGUAGE (sid_132),207,80.23
+S1da,2,0.78%,2,1.44%,"Friday (sid_65), Tea (sid_52)",209,81.01
+S1c7,2,0.78%,1,0.72%,EMA 3 (sid_106),211,81.78
+S128,2,0.78%,1,0.72%,egg-3 (sid_136),213,82.56
+S1cf,2,0.78%,2,1.44%,"EGG (sid_81), EGG-2 (sid_16)",215,83.33
+S107,2,0.78%,2,1.44%,"SOMETHING (sid_128), SOMETHING (sid_129)",217,84.11
+S187,2,0.78%,2,1.44%,"Water (sid_87), water (sid_84)",219,84.88
+S19a,2,0.78%,1,0.72%,COW (sid_9),221,85.66
+S18d,2,0.78%,1,0.72%,Handshape Test 1 (sid_107),223,86.43
+S186,2,0.78%,1,0.72%,water (sil2007) (sid_101),225,87.21
+S1a0,2,0.78%,1,0.72%,21st-EMA (sid_63),227,87.98
+S17d,2,0.78%,1,0.72%,1st-EMA (sid_71),229,88.76
+S184,2,0.78%,1,0.72%,4th-EMA (sid_144),231,89.53
+S1df,2,0.78%,1,0.72%,14th-EMA (sid_33),233,90.31
+S173,2,0.78%,1,0.72%,17th-EMA (sid_25),235,91.09
+S177,2,0.78%,2,1.44%,"29th-EMA (sid_23), 32nd-EMA (sid_66)",237,91.86
+S175,2,0.78%,2,1.44%,"24th-EMA (sid_5), 25th-EMA (sid_67)",239,92.64
+S138,2,0.78%,1,0.72%,23rd-EMA (sid_39),241,93.41
+S19c,2,0.78%,1,0.72%,18th-EMA (sid_35),243,94.19
+S129,2,0.78%,1,0.72%,19th-EMA (sid_69),245,94.96
+S102,1,0.39%,1,0.72%,13th-EMA (sid_45),246,95.35
+S1d2,1,0.39%,1,0.72%,Tea (sid_34),247,95.74
+S10d,1,0.39%,1,0.72%,SICK (sid_127),248,96.12
+S13d,1,0.39%,1,0.72%,10th-EMA (sid_4),249,96.51
+S10b,1,0.39%,1,0.72%,LIP (sid_131),250,96.9
+S1ae,1,0.39%,1,0.72%,island (sil2007) (sid_100),251,97.29
+S1ce,1,0.39%,1,0.72%,5th-EMA (sid_46),252,97.67
+S14b,1,0.39%,1,0.72%,Handshape Test 2 (sid_108),253,98.06
+S1b0,1,0.39%,1,0.72%,2nd-EMA (sid_43),254,98.45
+S105,1,0.39%,1,0.72%,33rd-EMA (sid_3),255,98.84
+S1b1,1,0.39%,1,0.72%,EMA 2 (sid_105),256,99.22
+S162,1,0.39%,1,0.72%,4th-EMS (sid_15),257,99.61
+S14a,1,0.39%,1,0.72%,3 (sid_10),258,100.0

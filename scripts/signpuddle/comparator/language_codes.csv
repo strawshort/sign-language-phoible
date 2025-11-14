@@ -1,86 +1,87 @@
 country_code,country
-MM,Myanmar
-CAen,Canada
-US,USA
-SG,Singapore
-HK,Hong Kong
-ET,Ethiopia
-MT,Malta
-NG,Nigeria
-TH,Thailand
-WO,Signs Used Worldwide
-SA,Saudi Arabia
+AF,Afghanistan
+AL,Albania
+AR,Argentina
+AT,Austria
 AU,Australia
+BEfr,French Belgium
 BEnl,"Flanders, Belgium"
+BG,Bulgaria
+BO,Bolivia
+BR,Brazil
+CAen,Canada
+CAfr,Canada
 CHde,German Switzerland
+CHfr,French Switzerland
 CHit,Italian Switzerland
+CL,Chile
+CN,China
+CO,Colombia
+CR,Costa Rica
+CZ,Czech Republic
+DE,Germany
+DK,Denmark
+EC,Ecuador
+EE,Estonia
+EG,Egypt
+EO,Esperanto
+ES,Spain
+ESct,"Catalonia, Barcelona"
+ET,Ethiopia
 FI,Finland
+FR,France
 GB,Great Britain
 GBie,Northern Ireland
 GR,Greece
+GT,Guatemala
+HK,Hong Kong
+HN,Honduras
+HT,Haiti
+HU,Hungary
 IE,Ireland
+IL,Israel
+IN,India
+IS,Iceland
 IT,Italy
+JO,Jordan
 JP,Japan
+KE,Kenya
+KR,South Korea
+LT,Lithuania
+LV,Latvia
+MM,Myanmar
+MT,Malta
+MW,Malawi
+MX,Mexico
 MY,Malaysia
+NG,Nigeria
+NI,Nicaragua
 NL,Netherlands
+NO,Norway
+NP,Nepal
 NZ,New Zealand
 PE,Peru
 PH,Philippines
-SE,Sweden
-TW,Taiwan
-ZA,South Africa
-KR,South Korea
-KE,Kenya
-AL,Albania
-CN,China
-EG,Egypt
-IN,India
-JO,Jordan
 PK,Pakistan
-RU,Russia
-SK,Slovakia
-TR,Turkey
-AF,Afghanistan
-LT,Lithuania
-LV,Latvia
-EE,Estonia
-IL,Israel
-HT,Haiti
-HU,Hungary
-MW,Malawi
-UA,Ukraine
-IS,Iceland
-RO,Romania
-NP,Nepal
-BG,Bulgaria
-VN,Vietnam
-DK,Denmark
-NO,Norway
-BEfr,French Belgium
-CHfr,French Switzerland
-FR,France
-TN,Tunisia
-HN,Honduras
-AT,Austria
-AR,Argentina
-BO,Bolivia
-CO,Colombia
-ES,Spain
-ESct,"Catalonia, Barcelona"
-MX,Mexico
-NI,Nicaragua
-VE,Venezuela
-GT,Guatemala
-PY,Paraguay
-CL,Chile
-EC,Ecuador
-SV,El Salvador
-UY,Uruguay
-CZ,Czech Republic
 PL,Poland
-DE,Germany
-CAfr,Canada
-EO,Esperanto
 PT,Portugal
-BR,Brazil
+PY,Paraguay
+RO,Romania
+RU,Russia
+SA,Saudi Arabia
+SE,Sweden
+SG,Singapore
 SI,Slovenia
+SK,Slovakia
+SV,El Salvador
+TH,Thailand
+TN,Tunisia
+TR,Turkey
+TW,Taiwan
+UA,Ukraine
+US,USA
+UY,Uruguay
+VE,Venezuela
+VN,Vietnam
+WO,Signs Used Worldwide
+ZA,South Africa

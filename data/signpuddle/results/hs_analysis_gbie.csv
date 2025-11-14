@@ -1,0 +1,23 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S15d,7,8.64%,4,7.55%,"Northern-Ireland (sid_17), Northern-Ireland (sid_54), happy (sid_18), hat (sid_31)",7,8.64
+S115,6,7.41%,3,5.66%,"Easter (sid_10), Easter (sid_33), Pope (sid_8)",13,16.05
+S118,6,7.41%,3,5.66%,"Northern-Ireland (sid_17), Northern-Ireland (sid_53), Northern-Ireland (sid_54)",19,23.46
+S1f7,6,7.41%,5,9.43%,"11 (sid_30), birthday (sid_42), eleven (sid_5), my (sid_20), my (sid_48)",25,30.86
+S1c6,6,7.41%,3,5.66%,"available (sid_14), available (sid_21), available (sid_28)",31,38.27
+S15a,5,6.17%,4,7.55%,"Christmas (sid_25), Christmas (sid_46), Northern-Ireland (sid_53), nine (sid_22)",36,44.44
+S18e,5,6.17%,5,9.43%,"14 (sid_51), 4 (sid_55), four (sid_36), fourteen (sid_29), fourteen (sid_49)",41,50.62
+S185,5,6.17%,5,9.43%,"11 (sid_30), Christmas (sid_25), Christmas (sid_9), eleven (sid_41), eleven (sid_5)",46,56.79
+S14c,4,4.94%,3,5.66%,"fifteen (sid_7), five (sid_37), sign (sid_34)",50,61.73
+S100,4,4.94%,4,7.55%,"1 (sid_3), blood (sid_39), one (sid_47), twelve (sid_1)",54,66.67
+S176,4,4.94%,4,7.55%,"14 (sid_51), fourteen (sid_49), ten (sid_11), zero (sid_19)",58,71.6
+S11e,4,4.94%,4,7.55%,"3 (sid_16), Hoegaarden (sid_4), thirteen (sid_6), three (sid_45)",62,76.54
+S1cd,3,3.7%,3,5.66%,"eight (sid_35), eight (sid_40), eighteen (sid_44)",65,80.25
+S17c,2,2.47%,2,3.77%,"Christmas (sid_25), Christmas (sid_9)",67,82.72
+S10e,2,2.47%,2,3.77%,"2 (sid_43), two (sid_50)",69,85.19
+S16d,2,2.47%,1,1.89%,ball (sid_52),71,87.65
+S182,2,2.47%,1,1.89%,house (sid_23),73,90.12
+S1b0,2,2.47%,2,3.77%,"seven (sid_12), seventeen (sid_26)",75,92.59
+S192,2,2.47%,2,3.77%,"six (sid_2), sixteen (sid_32)",77,95.06
+S1dc,2,2.47%,1,1.89%,Tokyo (sid_13),79,97.53
+S147,1,1.23%,1,1.89%,nineteen (sid_15),80,98.77
+S1de,1,1.23%,1,1.89%,twelve (sid_27),81,100.0

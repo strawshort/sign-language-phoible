@@ -1,0 +1,44 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S100,27,13.43%,20,13.7%,"DIFICIL (dificil, difícil, Difícil) (sid_137), Hermano (hermano) (sid_127), Hombre (varón, hombre) (sid_126), No (sid_33), Padre (sid_12), Silencio (silencio, SILENCIO) (sid_131), Yo (sid_14), cien (100) (sid_104), diferente (sid_65), igual (sid_59), loco (sid_100), mentiroso (sid_85), no (No, NO) (sid_130), palabra (sid_47), pastor (sid_6), sordo (sid_25), sordo (sid_73), sordo (sid_8), uno (1) (sid_49), uno (sid_17)",27,13.43
+S15d,19,9.45%,15,10.27%,"Bebé (bebé) (sid_128), DIENTES (sid_7), Quien (quien) (sid_72), Sicuani (sid_94), aprender (Aprender, APRENDER) (sid_150), ayudar (Ayudar, AYUDAR) (sid_151), ayudar (sid_76), fácil (sid_109), gracias (¡Gracias!) (sid_62), gracias (¡Gracias!) (sid_63), ley (sid_69), muchas  gracias (sid_79), muchas  gracias (sid_80), vaso (sid_115), árbol (sid_66)",46,22.89
+S15a,17,8.46%,10,6.85%,"Bajar (bajar, BAJAR) (sid_132), Bebé (bebe, bebé) (sid_129), Casa (sid_13), Madre (sid_10), Tiempo (fútbol, voley) (tiempo, TIEMPO) (sid_136), blanco (sid_155), leer (Leer, LEER) (sid_149), libro (LIBRO, Libro) (sid_142), libro (sid_118), papá (padre) (sid_36)",63,31.34
+S14c,14,6.97%,11,7.53%,"cinco (5) (sid_44), cinco (sid_22), colores (sid_116), diez (sid_32), esperar (sid_46), flor (sid_67), hacer señas (sid_34), nueve (sid_31), seis (sid_28), sol (sid_75), árbol (sid_66)",77,38.31
+S10e,12,5.97%,12,8.22%,"PERÚ (sid_152), Perú (sid_147), Perú (sid_16), dos (2) (sid_50), dos (sid_18), doscientos (200) (sid_108), leer (Leer, LEER) (sid_149), segundo grado (sid_15), verde (sid_154), verde (sid_9), viernes (sid_110), viernes (sid_159)",89,44.28
+S1f5,9,4.48%,9,6.16%,"Hermano (hermano) (sid_127), a (A) (sid_92), agua (sid_64), ayudar (Ayudar, AYUDAR) (sid_151), ayudar (sid_76), azul (sid_153), diez (10) (sid_53), domingo (sid_111), faltar (sid_83)",98,48.76
+S1ed,7,3.48%,5,3.42%,"humano (ser_humano) (sid_88), humanos (sid_90), persona (sid_87), personas (sid_89), policía (sid_106)",105,52.24
+S1f7,6,2.99%,4,2.74%,"Hermano (Hermana, brother, sister) (sid_4), NÚMERO (número, Número, numero) (sid_139), marrón (sid_157), piedra (sid_68)",111,55.22
+S19a,6,2.99%,5,3.42%,"Yo (yo) (sid_114), Yo (yop) (sid_113), ahora (sid_58), igual (sid_60), telefonear (TELEFONEAR, Telefonear, llamar por teléfono) (sid_144)",117,58.21
+S11a,6,2.99%,3,2.05%,"respeto (A_Ich_brauche_Hilfe_Woe?_Die_Haende_und_Pfeile_Keine_Ahnung..) (sid_86), rojo (sid_156), rojo (sid_45)",123,61.19
+S176,6,2.99%,6,4.11%,"Ok (ok) (sid_77), cero (zero) (sid_52), cero (zero) (sid_55), flor (sid_67), o (O) (sid_102), sol (sid_75)",129,64.18
+S192,5,2.49%,5,3.42%,"Sicuani (sid_94), i (I) (sid_103), miércoles (sid_158), miércoles (sid_57), seis (sid_28)",134,66.67
+S115,5,2.49%,3,2.05%,"Nombre (sid_35), azúcar (sid_91), nombre (sid_54)",139,69.15
+S1a3,4,1.99%,2,1.37%,"cama (sid_1), cama (sid_71)",143,71.14
+S150,4,1.99%,3,2.05%,"QUERER (Querer, querer) (sid_138), chancho (sid_121), molestar (sid_70)",147,73.13
+S16d,4,1.99%,4,2.74%,"buscar (sid_99), cien (100) (sid_104), doscientos (200) (sid_108), vaso (sid_115)",151,75.12
+S147,4,1.99%,4,2.74%,"b (B) (sid_101), baño (sid_120), policía (sid_105), policía (sid_106)",155,77.11
+S18d,4,1.99%,4,2.74%,"Mamá (mamá) (sid_81), martes (sid_26), miércoles (sid_158), miércoles (sid_57)",159,79.1
+S144,4,1.99%,4,2.74%,"Cuatro (cuatro, CUATRO, 4) (sid_133), cuatro (4) (sid_51), cuatro (sid_21), nueve (sid_31)",163,81.09
+S140,3,1.49%,3,2.05%,"Kristina (sid_95), Ok (ok) (sid_77), Perú (sid_5)",166,82.59
+S1ce,3,1.49%,3,2.05%,"Nada (nada) (sid_82), nueve (9) (sid_41), rico (sid_61)",169,84.08
+S160,2,1.0%,2,1.37%,"flor (sid_67), olvidar (sid_96)",171,85.07
+S1f0,2,1.0%,2,1.37%,"g (G) (sid_140), palabra (sid_47)",173,86.07
+S1d4,2,1.0%,1,0.68%,gato (sid_74),175,87.06
+S187,2,1.0%,2,1.37%,"Seis (seis, SEIS, 6) (sid_134), seis (6) (sid_38)",177,88.06
+S185,2,1.0%,2,1.37%,"aprender (Aprender, APRENDER) (sid_150), olvidar (sid_96)",179,89.05
+S1dc,2,1.0%,2,1.37%,"amarillo (sid_11), lunes (sid_20)",181,90.05
+S1a5,2,1.0%,2,1.37%,"Siete (siete, SIETE, 7) (sid_135), siete (7) (sid_23)",183,91.04
+S1f4,2,1.0%,2,1.37%,"pavo (PAVO, Pavo) (sid_145), pollo (sid_97)",185,92.04
+S19c,2,1.0%,2,1.37%,"Hola (sid_24), Hola (sid_39)",187,93.03
+S1ea,2,1.0%,1,0.68%,DIENTES (sid_7),189,94.03
+S1cd,1,0.5%,1,0.68%,tres (sid_19),190,94.53
+S11e,1,0.5%,1,0.68%,tres (3) (sid_27),191,95.02
+S17e,1,0.5%,1,0.68%,"votar (VOTAR, Votar) (sid_143)",192,95.52
+S1f1,1,0.5%,1,0.68%,"pavo (PAVO, Pavo) (sid_145)",193,96.02
+S1b8,1,0.5%,1,0.68%,Yo (yo) (sid_117),194,96.52
+S1bb,1,0.5%,1,0.68%,ocho (8) (sid_40),195,97.01
+S1de,1,0.5%,1,0.68%,ley (sid_69),196,97.51
+S106,1,0.5%,1,0.68%,dificil (sid_93),197,98.01
+S157,1,0.5%,1,0.68%,"aprender (Aprender, APRENDER) (sid_150)",198,98.51
+S1d1,1,0.5%,1,0.68%,"Abuela (Abuelo, granfather, granmother) (sid_3)",199,99.0
+S119,1,0.5%,1,0.68%,H (h) (sid_141),200,99.5
+S180,1,0.5%,1,0.68%,"votar (VOTAR, Votar) (sid_143)",201,100.0

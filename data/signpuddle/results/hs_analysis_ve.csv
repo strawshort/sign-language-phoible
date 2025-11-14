@@ -1,0 +1,46 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S15a,31,14.35%,17,12.69%,"Biblia (Bible) (sid_88), Jesús (Jesus) (sid_87), Mil (sid_133), Sign--also-sign-language- (sid_6), abril (april) (sid_54), bebé (baby) (sid_82), casa (house) (sid_119), cristiano (christian) (sid_90), edificio (building) (sid_120), habitación, cuarto (bedroom) (sid_123), hipócrita (hipocrite) (sid_77), hola (hello) (sid_111), importante (important) (sid_79), jueves (thursday) (sid_46), leer  (to read) (sid_83), marzo (march) (sid_53), mesa (table) (sid_128)",31,14.35
+S100,23,10.65%,17,12.69%,"For (sid_5), Mil (sid_133), habitación, cuarto (bedroom) (sid_123), hermana (sister) (sid_71), hermano (brother) (sid_70), hora, tiempo (hour, time) (sid_80), hotel (hotel) (sid_122), igual (equal, same) (sid_78), mamá (mom) (sid_68), morado (purple) (sid_105), necesitar, faltar (to need, to miss an object)) (sid_85), octubre (october) (sid_60), papá (dad) (sid_69), tía (aunt) (sid_93), tío (uncle) (sid_92), verdad (truth) (sid_129), viernes (friday) (sid_48)",54,25.0
+S15d,11,5.09%,6,4.48%,"Biblia (Bible) (sid_88), gracias (thank you) (sid_117), jueves (thursday) (sid_47), ley (law) (sid_127), martes (tuesday) (sid_44), perdón (sorry) (sid_116)",65,30.09
+S1ce,11,5.09%,6,4.48%,"Familia (Family) (sid_91), buenas tardes (good afternoon) (sid_114), nada (nothing) (sid_81), septiembre (september) (sid_59), verdad (truth) (sid_129), verde (green) (sid_103)",76,35.19
+S1f7,10,4.63%,5,3.73%,"A (sid_137), Anaranjado (orange color) (sid_104), a (sid_9), agua (water) (sid_126), bautismo (Baptism) (sid_89)",86,39.81
+S115,9,4.17%,8,5.97%,"H (sid_134), h (sid_17), junio (june) (sid_56), n (sid_24), negro (black) (sid_106), noviembre (november) (sid_61), u (sid_35), ñ (sid_25)",95,43.98
+S176,9,4.17%,7,5.22%,"O (sid_135), blanco (white) (sid_101), buenas noches (good night) (sid_115), buenas tardes (good afternoon) (sid_114), buenos días (good morning) (sid_113), mayo (may) (sid_55), o (sid_26)",104,48.15
+S106,8,3.7%,5,3.73%,"agosto (august) (sid_58), buscar (to seek) (sid_73), esposa (wife) (sid_99), esposo (husband) (sid_98), rosado (pink) (sid_110)",112,51.85
+S16d,8,3.7%,6,4.48%,"Dios (God) (sid_64), buenas noches (good night) (sid_115), c (sid_11), cristiano (christian) (sid_90), diciembre (december) (sid_62), mayo (may) (sid_55)",120,55.56
+S192,7,3.24%,6,4.48%,"feliz (happy) (sid_84), i (sid_18), j (sid_19), julio (july) (sid_57), junio (june) (sid_56), z (sid_40)",127,58.8
+S10e,7,3.24%,6,4.48%,"Venezuela (sid_4), hotel (hotel) (sid_122), leer  (to read) (sid_83), nuevo (new) (sid_65), v (sid_36), viernes (friday) (sid_48)",134,62.04
+S1dc,7,3.24%,7,5.22%,"L (sid_136), baño (bathroom) (sid_125), hombre (man) (sid_76), julio (july) (sid_57), l (sid_21), ley (law) (sid_127), ll (sid_22)",141,65.28
+S14c,7,3.24%,6,4.48%,"adiós, chao (bye) (sid_118), azul (blue) (sid_102), blanco (white) (sid_101), colores (colors) (sid_74), febrero (february) (sid_52), mayo (may) (sid_55)",148,68.52
+S1d4,7,3.24%,7,5.22%,"abuela (grandmother) (sid_95), amarillo (yellow) (sid_107), esposa (wife) (sid_99), hermana (sister) (sid_71), mujer (woman) (sid_75), sobrina (niece) (sid_97), tía (aunt) (sid_93)",155,71.76
+S1c5,6,2.78%,3,2.24%,"Biblia (Bible) (sid_88), Jesús (Jesus) (sid_87), abril (april) (sid_54)",161,74.54
+S19a,5,2.31%,3,2.24%,"hija (daughter) (sid_67), hijo (son) (sid_66), y (sid_39)",166,76.85
+S16c,5,2.31%,5,3.73%,"buenos días (good morning) (sid_113), cristiano (christian) (sid_90), día (day) (sid_41), enero (january) (sid_51), g (sid_15)",171,79.17
+S1bb,4,1.85%,3,2.24%,"azul (blue) (sid_102), dolor (pain) (sid_132), idea (idea) (sid_86)",175,81.02
+S11a,3,1.39%,3,2.24%,"For (sid_5), r (sid_31), rr (sid_32)",178,82.41
+S1f5,3,1.39%,3,2.24%,"domingo (sunday) (sid_50), semana (week) (sid_42), sábado (saturday) (sid_49)",181,83.8
+S101,2,0.93%,2,1.49%,"Dios (God) (sid_64), d (sid_12)",183,84.72
+S157,2,0.93%,1,0.75%,rancho (poor people's house) (sid_121),185,85.65
+S14e,2,0.93%,1,0.75%,miércoles (wednesday) (sid_45),187,86.57
+S18c,2,0.93%,2,1.49%,"m (sid_23), p (sid_28)",189,87.5
+S185,2,0.93%,2,1.49%,"pensar (to think) (sid_72), q (sid_29)",191,88.43
+S1ea,2,0.93%,2,1.49%,"hombre (man) (sid_76), t (sid_33)",193,89.35
+S16f,2,0.93%,1,0.75%,amigo (friend) (sid_100),195,90.28
+S108,2,0.93%,2,1.49%,"Seek (sid_2), x (sid_38)",197,91.2
+S150,2,0.93%,2,1.49%,"sobrina (niece) (sid_97), sobrino (nephew) (sid_96)",199,92.13
+S1c3,2,0.93%,2,1.49%,"f (sid_14), gris (grey) (sid_109)",201,93.06
+S13d,1,0.46%,1,0.75%,no (no) (sid_131),202,93.52
+S10a,1,0.46%,1,0.75%,rojo (red) (sid_108),203,93.98
+S1ef,1,0.46%,1,0.75%,q (sid_30),204,94.44
+S19c,1,0.46%,1,0.75%,Te quiero (I love you) (sid_63),205,94.91
+S12c,1,0.46%,1,0.75%,p (sid_27),206,95.37
+S140,1,0.46%,1,0.75%,k (sid_20),207,95.83
+S182,1,0.46%,1,0.75%,Mil (sid_133),208,96.3
+S1a0,1,0.46%,1,0.75%,lunes (monday) (sid_43),209,96.76
+S1da,1,0.46%,1,0.75%,I-don-'t-know (sid_1),210,97.22
+S189,1,0.46%,1,0.75%,hija (daughter) (sid_67),211,97.69
+S147,1,0.46%,1,0.75%,b (sid_10),212,98.15
+S17e,1,0.46%,1,0.75%,g (sid_16),213,98.61
+S160,1,0.46%,1,0.75%,baño (bathroom) (sid_124),214,99.07
+S166,1,0.46%,1,0.75%,e (sid_13),215,99.54
+S186,1,0.46%,1,0.75%,w (sid_37),216,100.0

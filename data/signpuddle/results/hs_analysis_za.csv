@@ -1,0 +1,64 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S100,26,9.92%,20,12.99%,"Careless (sid_24), Happen (sid_3), One (sid_18), Plus (sid_19), Proof (sid_21), Test (sid_22), Train (sid_34), Understand (sid_12), Vocabulary (sid_8), Xhosa (xhosa) (sid_151), ask (I ask you) (sid_136), ask (you ask me) (sid_137), bored (sid_64), eleven (11) (sid_76), every (sid_128), from (sid_158), how long (sid_110), one (1) (sid_75), thousand (sid_95), why (sid_109)",26,9.92
+S15a,23,8.78%,18,11.69%,"Hello (sid_25), cook (pap) (sid_101), cook (sid_102), country (sid_130), enough (sid_143), fifteen (15) (sid_84), how often (sid_113), know (sid_103), lockdown (sid_67), man (father) (sid_118), million (sid_96), motivation (sid_70), new (sid_99), problem (sid_138), speaker (lecturer, preacher) (sid_147), tree (sid_148), woman (mother) (sid_117), woman (sid_116)",49,18.7
+S14c,22,8.4%,16,10.39%,"-south-africa (sid_36), America (sid_20), Careless (sid_24), Happy-2 (sid_16), Phumie (sid_53), any (sid_129), cheese (sid_155), colours (colors) (sid_104), example (sid_122), expensive (sid_146), fifteen (15) (sid_84), five (5) (sid_83), important (sid_56), speaker (lecturer, preacher) (sid_147), ten (10) (sid_90), tree (sid_148)",71,27.1
+S15d,22,8.4%,15,9.74%,"All (sid_6), Arrive (sid_4), Clean (sid_17), Clean (sid_26), French (sid_2), Happen (sid_3), Happy- (sid_38), Hungry (sid_15), Proof (sid_21), Sweep (sid_39), Uganda (uganda) (sid_159), engaged (sid_121), meat (sid_132), meat (sid_133), month (sid_105)",93,35.5
+S115,11,4.2%,7,4.55%,"Deafsa (sid_50), Friday (sid_72), depends (sid_124), toilet (sid_123), tool (tools) (sid_135), train (sid_100), video (sid_69)",104,39.69
+S10e,8,3.05%,7,4.55%,"Pairs (sid_14), Vocabulary (sid_8), disappoint (disappointment, disappointed, disappointing) (sid_144), tool (tools) (sid_135), twelve (12) (sid_77), two (2) (sid_78), video (sid_69)",112,42.75
+S11a,7,2.67%,3,1.95%,"Remember (sid_7), ready (sid_126), room (sid_142)",119,45.42
+S1f5,7,2.67%,5,3.25%,"Science (sid_45), important (sid_56), month (sid_105), six (6) (sid_86), sixteen (16) (sid_91)",126,48.09
+S1ea,7,2.67%,3,1.95%,"Kaapstad (sid_46), become (sid_152), expensive (sid_146)",133,50.76
+S147,6,2.29%,5,3.25%,"Belgium (sid_40), Brazil (sid_43), Brazil-2 (sid_13), Bruno (sid_47), Wilma (sid_48)",139,53.05
+S106,6,2.29%,5,3.25%,"Fight (sid_30), ask (I ask you) (sid_136), ask (you ask me) (sid_137), hungry-2 (sid_33), old (how old) (sid_114)",145,55.34
+S19a,6,2.29%,4,2.6%,"country (sid_130), cow (sid_54), now (sid_141), try (sid_127)",151,57.63
+S192,5,1.91%,3,1.95%,"Idea (sid_27), Instagram (instagram) (sid_97), sign name (signname, sign-name) (sid_134)",156,59.54
+S185,5,1.91%,4,2.6%,"Zulu (sid_51), family (sid_125), number (sid_108), problem (sid_138)",161,61.45
+S1d4,5,1.91%,4,2.6%,"Clean (sid_17), Find (sid_29), Girl-friend (sid_11), interpret (sid_68)",166,63.36
+S1f9,4,1.53%,2,1.3%,"Boy-friend (sid_10), Girl-friend (sid_11)",170,64.89
+S14d,4,1.53%,1,0.65%,how (sid_112),174,66.41
+S1ce,4,1.53%,3,1.95%,"France (sid_37), Home (sid_9), bull (sid_66)",178,67.94
+S1cd,4,1.53%,4,2.6%,"Monday (sid_55), Monday (sid_62), thirteen (13) (sid_79), three (3) (sid_80)",182,69.47
+S150,4,1.53%,2,1.3%,"Climb (sid_32), Worry (sid_31)",186,70.99
+S10c,4,1.53%,2,1.3%,"now (sid_140), today (sid_139)",190,72.52
+S1f7,3,1.15%,3,1.95%,"-south-africa (sid_36), Canada (sid_35), Deafsa (sid_50)",193,73.66
+S182,3,1.15%,2,1.3%,"Sunday (sid_73), new (sid_99)",196,74.81
+S11e,3,1.15%,3,1.95%,"Denmark (sid_41), eight (8) (sid_88), eighteen (18) (sid_93)",199,75.95
+S14e,3,1.15%,2,1.3%,"Angry (sid_28), cheese (sid_155)",202,77.1
+S186,3,1.15%,2,1.3%,"Thursday (sid_60), Whatsapp (whatsapp) (sid_98)",205,78.24
+S181,3,1.15%,2,1.3%,"video (sid_69), who (sid_111)",208,79.39
+S160,3,1.15%,1,0.65%,psychological (sid_71),211,80.53
+S10a,2,0.76%,1,0.65%,Zulu (zulu) (sid_149),213,81.3
+S176,2,0.76%,2,1.3%,"Phumie (sid_53), zero (O) (sid_85)",215,82.06
+S18e,2,0.76%,2,1.3%,"nine (9) (sid_89), nineteen (19) (sid_94)",217,82.82
+S177,2,0.76%,2,1.3%,"Interst (sid_23), try (sid_127)",219,83.59
+S1ba,2,0.76%,2,1.3%,"Saturday (sid_63), Tuesday (sid_58)",221,84.35
+S18c,2,0.76%,1,0.65%,mother (sid_115),223,85.11
+S1dc,2,0.76%,2,1.3%,"seven (7, L) (sid_87), seventeen (17) (sid_92)",225,85.88
+S1f6,2,0.76%,1,0.65%,social (sid_131),227,86.64
+S1a3,2,0.76%,2,1.3%,"meat (sid_132), meat (sid_133)",229,87.4
+S140,2,0.76%,1,0.65%,Kimberley (sid_157),231,88.17
+S1d2,2,0.76%,1,0.65%,father (dad) (sid_119),233,88.93
+S1eb,2,0.76%,1,0.65%,Zulu (zulu) (sid_150),235,89.69
+S16d,2,0.76%,1,0.65%,Communicate (sid_5),237,90.46
+S144,2,0.76%,2,1.3%,"four (4) (sid_82), fourteen (14) (sid_81)",239,91.22
+S1fb,2,0.76%,2,1.3%,"Boy-friend (sid_10), Train (sid_34)",241,91.98
+S1f0,2,0.76%,2,1.3%,"Braam (sid_52), Uganda (uganda) (sid_159)",243,92.75
+S157,1,0.38%,1,0.65%,Afrikaans (sid_49),244,93.13
+S187,1,0.38%,1,0.65%,Wilma (sid_48),245,93.51
+S1a4,1,0.38%,1,0.65%,Wednesday (sid_59),246,93.89
+S1f8,1,0.38%,1,0.65%,Canada (sid_154),247,94.27
+S1e4,1,0.38%,1,0.65%,cheap (sid_145),248,94.66
+S1f4,1,0.38%,1,0.65%,cheap (sid_145),249,95.04
+S1c3,1,0.38%,1,0.65%,Clean (sid_26),250,95.42
+S1ee,1,0.38%,1,0.65%,Instagram (instagram) (sid_97),251,95.8
+S122,1,0.38%,1,0.65%,Hear (sid_42),252,96.18
+S180,1,0.38%,1,0.65%,Disturb (sid_1),253,96.56
+S16f,1,0.38%,1,0.65%,"pap (sadza, ugali) (sid_107)",254,96.95
+S101,1,0.38%,1,0.65%,Durban (sid_106),255,97.33
+S156,1,0.38%,1,0.65%,engaged (sid_121),256,97.71
+S153,1,0.38%,1,0.65%,example (sid_122),257,98.09
+S155,1,0.38%,1,0.65%,family (sid_125),258,98.47
+S1d1,1,0.38%,1,0.65%,Find (sid_29),259,98.85
+S18d,1,0.38%,1,0.65%,million (sid_96),260,99.24
+S1a2,1,0.38%,1,0.65%,meat (sid_133),261,99.62
+S1c5,1,0.38%,1,0.65%,prefer (sid_74),262,100.0

@@ -1,0 +1,11 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S14c,5,20.83%,2,14.29%,"father (padar, پدر) (sid_4), world (dunyA, دنيا) (sid_8)",5,20.83
+S15a,5,20.83%,4,28.57%,"Muslim (muselmAn, مسلمان) (sid_11), mother (mAdar, مادر) (sid_2), sister (khwar, خواهر) (sid_6), woman (zan, زن) (sid_1)",10,41.67
+S100,3,12.5%,2,14.29%,"God (khudA, خدا) (sid_5), sister (khwar, خواهر) (sid_6)",13,54.17
+S157,3,12.5%,2,14.29%,"healthy (sEhatmand) (sid_7), sad (sid_9)",16,66.67
+S1f5,2,8.33%,2,14.29%,"Afghanistan (sid_15), help (kOmak, كمك) (sid_10)",18,75.0
+S185,2,8.33%,2,14.29%,"family (fAmIl, فاميل) (sid_3), sad (sid_9)",20,83.33
+S16d,1,4.17%,1,7.14%,"family (fAmIl, فاميل) (sid_3)",21,87.5
+S182,1,4.17%,1,7.14%,"help (kOmak, كمك) (sid_10)",22,91.67
+S15d,1,4.17%,1,7.14%,"Muslim (muselmAn, مسلمان) (sid_11)",23,95.83
+S140,1,4.17%,1,7.14%,"permission (ejAza, اجازه) (sid_12)",24,100.0

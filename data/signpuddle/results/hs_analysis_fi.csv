@@ -1,0 +1,41 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S100,36,18.18%,30,21.13%,"1 (sid_48), 10 (sid_49), 100 (sid_50), 1000(b) (sid_52), 11 (sid_53), 21 (sid_58), Saksa (sid_150), Sana (= word) (sid_40), Sininen (sid_12), aurinko (sid_44), hanen (sein/ihr) (sid_79), jotain (sid_29), kuinka pitkaan (sid_93), kuuleva (sid_95), kuuro (sid_96), mihin (sid_101), mika (sid_102), mika--mita- (sid_2), mina (sid_138), mina (sid_20), missa (sid_140), mista (sid_141), sina (sid_1), sina (sid_151), sinun (sid_152), syödä (sid_180), tavata (sid_105), tavata (sid_160), tavata (sid_169), tavata piirros (sid_108)",36,18.18
+S15a,26,13.13%,17,11.97%,"Aamu (sid_31), Jyvaskyla (sid_87), Kirja (=book) (sid_35), Nyt-Tanaan (sid_4), Paiva (sid_5), Tietää (sid_175), Tietää (sid_176), Tietää (sid_177), Valerie (sid_23), ei (sid_42), eläin (sid_45), hanen (sein/ihr) (sid_79), oma (dien) (sid_145), oma (sien) (sid_146), routsi (sid_149), sinun (sid_152), uskomatonta (sid_8)",62,31.31
+S14c,24,12.12%,18,12.68%,"5 (sid_63), 50 (sid_64), Amerikka (USA) (sid_73), Kuinka monta (sid_91), Viittomakieli (=Sign Language) (sid_39), aurinko (sid_44), aviomies (sid_43), hei (sid_3), kuinka paljon (sid_92), milloin (sid_137), seurakunta (= parish, church) (Amerikka (=America)) (sid_36), tietää (sid_107), tietää (sid_161), tietää (sid_167), tietää (sid_170), tietää piirros (sid_110), viittoa ( = to sign) (sid_37), virta (sid_46)",86,43.43
+S15d,20,10.1%,11,7.75%,"Ranska (sid_148), ei (nein) (sid_77), kenen (sid_88), kiitos (sid_28), kuka (sid_94), lapsi (sid_97), mihin (sid_101), miksi (sid_103), minun (sid_139), syntya (sid_155), tanaan (sid_156)",106,53.54
+S1ea,13,6.57%,10,7.04%,"aiti (mutter) (sid_72), aiti (sid_14), aiti (sid_26), aviomies (sid_43), isa (Vater) (sid_82), isa (sid_21), isä (sid_17), papa (sid_11), äiti (sid_22), äiti (sid_25)",119,60.1
+S1ce,6,3.03%,3,2.11%,"kuinka (wei) (sid_90), kuinka pitkaan (sid_93), miten (sid_142)",125,63.13
+S10e,6,3.03%,6,4.23%,"12 (sid_54), 2 (sid_55), 200 (sid_56), 2000 (sid_57), 21 (sid_58), Valerie (sid_23)",131,66.16
+S115,6,3.03%,4,2.82%,"Norja (sid_144), n (sid_10), onnitella (sid_30), u (sid_9)",137,69.19
+S180,6,3.03%,4,2.82%,"bussi (bus) (sid_76), linja-auto (sid_99), milloin (sid_137), mista (sid_141)",143,72.22
+S17e,5,2.53%,5,3.52%,"Syödä (sid_112), syödä (sid_106), syödä (sid_162), syödä (sid_171), syödä piirros (sid_109)",148,74.75
+S192,4,2.02%,4,2.82%,"6 (sid_65), 60 (sid_66), i (sid_33), tiistai (sid_158)",152,76.77
+S10a,4,2.02%,4,2.82%,"Suomi (= Finland) (suomi (= Finnish)) (sid_38), Suomi (sid_154), eilen (gestern) (sid_78), huomenna (sid_81)",156,78.79
+S1f7,3,1.52%,3,2.11%,"90 (sid_70), a (sid_24), a (sid_71)",159,80.3
+S1f2,3,1.52%,3,2.11%,"1000 (sid_51), tiistai (sid_158), torstai (sid_159)",162,81.82
+S1f5,3,1.52%,2,1.41%,"9 (sid_69), Eetu (sid_6)",165,83.33
+S1cf,2,1.01%,2,1.41%,"8 (sid_67), 80 (sid_68)",167,84.34
+S101,2,1.01%,2,1.41%,"d (sid_27), perjantai (sid_147)",169,85.35
+S144,2,1.01%,2,1.41%,"4 (sid_61), 40 (sid_62)",171,86.36
+S1d4,2,1.01%,1,0.7%,hieno (sid_13),173,87.37
+S185,2,1.01%,2,1.41%,"Syödä (sid_112), routsi (sid_149)",175,88.38
+S182,2,1.01%,1,0.7%,kehittaa (sid_32),177,89.39
+S187,2,1.01%,2,1.41%,"3 (sid_59), 30 (sid_60)",179,90.4
+S1dc,2,1.01%,2,1.41%,"l (sid_16), lauantai (sid_98)",181,91.41
+S156,1,0.51%,1,0.7%,Syödä (sid_178),182,91.92
+S11e,1,0.51%,1,0.7%,Tanska (sid_157),183,92.42
+S176,1,0.51%,1,0.7%,torstai (sid_159),184,92.93
+S1f0,1,0.51%,1,0.7%,Sana (= word) (sid_40),185,93.43
+S17d,1,0.51%,1,0.7%,routsi (sid_149),186,93.94
+S1da,1,0.51%,1,0.7%,p (sid_19),187,94.44
+S153,1,0.51%,1,0.7%,Helsinki (sid_80),188,94.95
+S18d,1,0.51%,1,0.7%,maanantai (sid_100),189,95.45
+S140,1,0.51%,1,0.7%,keskiviikko (sid_89),190,95.96
+S110,1,0.51%,1,0.7%,juna (Bahn) (sid_86),191,96.46
+S1e1,1,0.51%,1,0.7%,Italia (Italien) (sid_85),192,96.97
+S150,1,0.51%,1,0.7%,isoaiti (Oma) (sid_83),193,97.47
+S1fa,1,0.51%,1,0.7%,g (sid_7),194,97.98
+S14a,1,0.51%,1,0.7%,e (sid_15),195,98.48
+S147,1,0.51%,1,0.7%,B (sid_75),196,98.99
+S1f1,1,0.51%,1,0.7%,aviomies (sid_43),197,99.49
+S19a,1,0.51%,1,0.7%,uskomatonta (sid_8),198,100.0

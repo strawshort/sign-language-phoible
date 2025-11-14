@@ -1,0 +1,73 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S15d,54,13.33%,41,15.07%,".. (sid_180), .. (sid_219), .. (sid_222), Aeropuerto (sid_243), Alegría (sid_244), Anotar (sid_191), Apartar (sid_245), Banco (sid_246), Beige (sid_252), Ciudad (sid_147), Dictadura (sid_164), Escribir (sid_122), Escritura de Señas Uruguaya (sid_140), Está (sid_146), Febrero (sid_263), Fracaso (sid_207), Gracias (sid_247), Hablar LSM (sid_114), Hablar LSm 2 (sid_115), Hasta (sid_193), LSM 1.00 (sid_118), LSM 2.00 (sid_120), Ley (sid_145), Mas Tarde (sid_153), Paciencia (sid_156), Pagar (sid_206), País (sid_144), Presidente (sid_205), Rapido LSM (sid_121), Significar LSM (sid_116), Tranquilo (sid_149), adelante (sid_89), adjustar (sid_198), amar (sid_64), amigo (amiga) (sid_80), estudiar (sid_62), gitano (sid_94), impuesto (sid_190), mamá (sid_99), niños (sid_102), sobrino (sid_107)",54,13.33
+S14c,40,9.88%,32,11.76%,".. (sid_209), 10 (sid_228), 10 (sid_41), 5 (sid_36), 6 (sid_37), 60 (sid_236), 7 (sid_225), 7 (sid_38), 70 (sid_237), 8 (sid_226), 8 (sid_39), 80 (sid_238), 9 (sid_227), 9 (sid_40), 90 (sid_239), Agosto (sid_269), Ciudad (sid_147), Figura (sid_171), Historia (sid_217), Marrón (sid_172), Marrón (sid_258), Seis (sid_224), Socializar (sid_170), ananá (sid_75), ananá (sid_76), ananá (sid_77), aplauso (sid_65), escuela (sid_55), internacional (sid_110), levantar (sid_43), llevar (sid_54), Útiles escolares (sid_174)",94,23.21
+S100,27,6.67%,22,8.09%,".. (sid_183), 1 (sid_32), 100 (sid_240), 11 (sid_229), 12 (sid_230), Alemania (sid_63), Bunta del este (sid_148), Figura (sid_171), G (sid_125), Gris (sid_257), Hombre (sid_220), Junio (sid_267), Mes (sid_154), Mojar (sid_109), Socializar (sid_170), g (sid_1), hombre (sid_97), internacional (sid_110), niño (sid_103), novio (sid_104), papá (sid_105), tía (sid_108)",121,29.88
+S11e,24,5.93%,21,7.72%,"13 (sid_231), 3 (sid_34), 8 (sid_226), 8 (sid_39), CH (sid_129), Cortar (sid_173), ESUY (sid_241), ESUY (sid_242), Escritura de Señas Uruguaya (sid_135), Escritura de Señas Uruguaya (sid_136), Escritura de Señas Uruguaya (sid_137), Escritura de Señas Uruguaya (sid_138), Escritura de Señas Uruguaya (sid_139), Escritura de Señas Uruguaya (sid_140), Escritura de Señas Uruguaya (sid_141), Escritura de Señas Uruguaya (sid_142), Escritura de Señas Uruguaya (sid_143), Escritura de Señas Uruguaya (sid_159), H (sid_124), Hijo (sid_212), hijo (sid_45)",145,35.8
+S115,21,5.19%,14,5.15%,"Bordo (sid_254), Escritura de Señas Uruguaya (sid_138), Escritura de Señas Uruguaya (sid_139), Noviembre (sid_272), Otro vez (sid_213), Rosado (sid_261), Uruguay (sid_67), Uruguay (sid_79), h (sid_23), impuesto (sid_190), martes (sid_52), n (sid_22), nombre (sid_18), viernes (sid_48)",166,40.99
+S15a,16,3.95%,13,4.78%,".. (sid_182), Eduardo (sid_78), Virginia (sid_175), abierto (sid_84), casa (sid_66), entrar (sid_50), evaluación (sid_30), hasta (sid_51), menos cuarto (sid_56), niña (sid_101), niño (sid_103), nombre LSU (sid_19), p (sid_12)",182,44.94
+S10e,14,3.46%,12,4.41%,".. (sid_176), .. (sid_185), 12 (sid_230), 2 (sid_33), Verde (sid_250), Visitar (sid_195), cereza (sid_72), cuñado (sid_90), gemelos (sid_93), hijo (sid_96), indio (sid_98), seña (sid_61)",196,48.4
+S177,12,2.96%,10,3.68%,".. (sid_219), Anotar (sid_191), Nuevo (sid_203), ananá (sid_75), ananá (sid_76), ananá (sid_77), comer (sid_57), escuela (sid_55), familia (sid_92), q (sábado) (sid_29)",208,51.36
+S147,12,2.96%,11,4.04%,"Abril (sid_265), Amigo (sid_167), Aprender (sid_204), Cortar (sid_173), Dictadura (sid_164), Mojar (sid_109), P (sid_134), aprender (sid_60), b (sid_5), entrar (sid_50), mujer (sid_100)",220,54.32
+S1f8,11,2.72%,9,3.31%,".. (sid_181), .. (sid_222), Accidente (sid_160), Arrepentirse (sid_162), Banco (sid_246), Golpe de hombro (sid_163), Matar (sid_208), Pagar (sid_206), abrigo (sid_85)",231,57.04
+S1ce,11,2.72%,8,2.94%,"100 (sid_240), 60 (sid_236), Escritura de Señas Uruguaya (sid_143), O (sid_131), Octubre (sid_271), durazno (Durazno) (sid_74), hermano (sid_95), miércoles (sid_46)",242,59.75
+S1dc,10,2.47%,10,3.68%,"7 (sid_225), 7 (sid_38), Fácil (sid_214), Julio (sid_268), LL (sid_130), Ley (sid_145), Montevideo Shopping (sid_69), l (sid_13), ll (sid_25), lunes (sid_31)",252,62.22
+S1f5,9,2.22%,9,3.31%,"60 (sid_236), Ciudad (sid_147), Está (sid_146), Historia (sid_217), Operación (sid_152), País (sid_144), Seis (sid_224), Viejo (sid_215), domingo (sid_49)",261,64.44
+S1ea,9,2.22%,8,2.94%,"Cambiar (sid_117), Edad (sid_165), Enrollado (sid_169), Escribir (sid_122), Escritura de Señas Uruguaya (sid_136), Escritura de Señas Uruguaya (sid_137), Escritura de Señas Uruguaya (sid_139), Escritura de Señas Uruguaya (sid_159)",270,66.67
+S192,7,1.73%,7,2.57%,".. (sid_188), Equivocado (sid_161), Mayo (sid_266), Y (sid_127), Z (sid_128), i (sid_17), j (sid_24)",277,68.4
+S10a,6,1.48%,5,1.84%,"Marzo (sid_264), Rojo (sid_249), X (sid_126), esposa (esposo) (sid_91), tomate (sid_70)",283,69.88
+S155,6,1.48%,3,1.1%,"ananá (sid_75), ananá (sid_76), ananá (sid_77)",289,71.36
+S144,6,1.48%,6,2.21%,"14 (sid_232), 4 (sid_35), 9 (sid_227), 9 (sid_40), 90 (sid_239), Maxi (sid_179)",295,72.84
+S153,6,1.48%,5,1.84%,"Apple (sid_221), Celoso (sid_150), Colores (sid_248), Hasta (sid_193), Pobre (sid_223)",301,74.32
+S157,4,0.99%,4,1.47%,"Abuela (sid_157), Angústia (sid_151), Blanco (sid_158), Blanco (sid_255)",305,75.31
+S118,4,0.99%,4,1.47%,"Carne (sid_166), Cereza (sid_200), Lila (sid_259), Violeta (sid_192)",309,76.3
+S1ee,4,0.99%,3,1.1%,"Amarillo (sid_251), despertar (sid_58), jueves (sid_47)",313,77.28
+S150,3,0.74%,2,0.74%,"Escritura de Señas Uruguaya (sid_141), gato (sid_68)",316,78.02
+S16d,3,0.74%,3,1.1%,"C (sid_6), Famoso (sid_201), Nuevo (sid_203)",319,78.77
+S1ed,3,0.74%,2,0.74%,"Significar LSM (sid_116), tomate (sid_70)",322,79.51
+S167,3,0.74%,3,1.1%,"6 (sid_37), E (sid_8), Enero (sid_262)",325,80.25
+S1cf,3,0.74%,3,1.1%,"S (sid_133), Santiago Val (sid_178), Setiembre (sid_270)",328,80.99
+S1bb,3,0.74%,2,0.74%,"15 (sid_233), Lila (sid_259)",331,81.73
+S152,3,0.74%,2,0.74%,"aburrido (aburrida) (sid_87), aceptar (sid_88)",334,82.47
+S185,3,0.74%,2,0.74%,"abuela (sid_81), aceptar (sid_88)",337,83.21
+S1a0,3,0.74%,3,1.1%,"Leche (sid_211), Uruguay (sid_2), Uruguay (sid_3)",340,83.95
+S1eb,3,0.74%,3,1.1%,"ESUY (sid_241), ESUY (sid_242), frutilla (sid_73)",343,84.69
+S101,3,0.74%,2,0.74%,"d (sid_11), y media (sid_44)",346,85.43
+S182,3,0.74%,3,1.1%,"F LSU (sid_123), m (sid_26), menos cuarto (sid_56)",349,86.17
+S178,3,0.74%,3,1.1%,".. (sid_210), Tímido (sid_218), Vergonzoso (sid_216)",352,86.91
+S133,3,0.74%,2,0.74%,"Enamorado LSM (sid_119), Rapido LSM (sid_121)",355,87.65
+S1d8,2,0.49%,1,0.37%,Family IS (sid_111),357,88.15
+S12d,2,0.49%,2,0.74%,"Conejo (sid_112), conejo (sid_113)",359,88.64
+S112,2,0.49%,2,0.74%,"n (sid_27), ñ (sid_28)",361,89.14
+S1d2,2,0.49%,2,0.74%,"Enseñar (sid_155), f (sid_15)",363,89.63
+S16c,2,0.49%,1,0.37%,CINDE (sid_59),365,90.12
+S1ec,2,0.49%,2,0.74%,"70 (sid_237), LSM 1.00 (sid_118)",367,90.62
+S17d,2,0.49%,2,0.74%,"Votar (sid_202), amigo (amiga) (sid_80)",369,91.11
+S160,2,0.49%,2,0.74%,"abril (sid_86), abuela (sid_81)",371,91.6
+S1d0,2,0.49%,2,0.74%,".. (sid_182), 50 (sid_235)",373,92.1
+S19a,2,0.49%,2,0.74%,"Aeropuerto (sid_243), Azul (sid_253)",375,92.59
+S1f7,2,0.49%,2,0.74%,"A (sid_4), Negro (sid_256)",377,93.09
+S17e,2,0.49%,2,0.74%,".. (sid_197), Pera (sid_199)",379,93.58
+S13d,2,0.49%,2,0.74%,".. (sid_189), adjustar (sid_198)",381,94.07
+S1f4,2,0.49%,2,0.74%,".. (sid_186), jueves (sid_47)",383,94.57
+S1d1,1,0.25%,1,0.37%,Olor (sid_196),384,94.81
+S1d4,1,0.25%,1,0.37%,Niño (sid_168),385,95.06
+S176,1,0.25%,1,0.37%,O (sid_10),386,95.31
+S11a,1,0.25%,1,0.37%,RR (sid_132),387,95.56
+S119,1,0.25%,1,0.37%,Pan (sid_194),388,95.8
+S137,1,0.25%,1,0.37%,30 (sid_234),389,96.05
+S138,1,0.25%,1,0.37%,12 (sid_42),390,96.3
+S14a,1,0.25%,1,0.37%,LSM 2.00 (sid_120),391,96.54
+S1d3,1,0.25%,1,0.37%,t (sid_16),392,96.79
+S1a8,1,0.25%,1,0.37%,niña (sid_101),393,97.04
+S140,1,0.25%,1,0.37%,k (sid_9),394,97.28
+S154,1,0.25%,1,0.37%,manzana (sid_71),395,97.53
+S18c,1,0.25%,1,0.37%,m (sid_14),396,97.78
+S18a,1,0.25%,1,0.37%,gitano (sid_94),397,98.02
+S136,1,0.25%,1,0.37%,80 (sid_238),398,98.27
+S10c,1,0.25%,1,0.37%,.. (sid_177),399,98.52
+S17f,1,0.25%,1,0.37%,.. (sid_184),400,98.77
+S1f0,1,0.25%,1,0.37%,.. (sid_187),401,99.01
+S12b,1,0.25%,1,0.37%,Diciembre (sid_273),402,99.26
+S10d,1,0.25%,1,0.37%,D (sid_7),403,99.51
+S1e1,1,0.25%,1,0.37%,abrigo (sid_85),404,99.75
+S180,1,0.25%,1,0.37%,Votar (sid_202),405,100.0

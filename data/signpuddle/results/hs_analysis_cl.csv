@@ -1,0 +1,43 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S100,42,19.27%,29,23.02%,"Diecisiete (sid_143), Ed. Media (sid_160), Laboral (sid_162), Quince (sid_141), Señor Quiltro (sid_1), Siete (sid_133), Uno (sid_127), Veintiuno (sid_147), difícil (complicado, complicada) (sid_77), hermano (sid_68), hora (tiempo) (sid_71), humillar (marginar) (sid_76), igual (sid_69), no (sid_65), once (11) (sid_30), primero (sid_151), s (sid_101), solo (solitario) (sid_64), sordo (sid_67), tú (te, ti) (sid_75), uno (1) (sid_20), veinte (20) (sid_40), veinticinco (25) (sid_45), veinticuatro (24) (sid_44), veintidós (22) (sid_42), veintitrés (23) (sid_43), veintiuno (21) (sid_72), x (sid_106), yo (mí, me) (sid_73)",42,19.27
+S14c,25,11.47%,14,11.11%,"Cinco (sid_131), Diez (1) (sid_136), Escritura de Señas Chileno (sid_171), Quince (sid_141), cinco (5) (sid_24), diez (10) (sid_29), hola (sid_15), humillar (marginar) (sid_76), quince (15) (sid_35), veinticinco (25) (sid_45), veintinueve (29) (sid_49), veintiocho (28) (sid_48), veintisiete (27) (sid_47), veintiséis (26) (sid_46)",67,30.73
+S10e,15,6.88%,12,9.52%,"Dos (sid_128), Veinte (sid_146), Veintidós (sid_148), Veintitrés (sid_149), Veintiuno (sid_147), doce (12) (sid_31), dos (2) (sid_21), leer (lectura) (sid_78), n (sid_95), v (sid_104), veintidós (22) (sid_42), ñ (sid_96)",82,37.61
+S15a,13,5.96%,7,5.56%,"aplaudir (aplauso, palmotear) (sid_63), bebé (guagua, nene, nena) (sid_18), casa (vivienda) (sid_62), casas (viviendas) (sid_66), leer (lectura) (sid_78), mil (1000) (sid_60), millón (1000000) (sid_81)",95,43.58
+S1f5,12,5.5%,9,7.14%,"Diecisiete (sid_143), Dieciséis (sid_142), Laboral (sid_162), Seis (sid_132), Siete (sid_133), Todas (personas) (todas personas) (sid_167), dieciséis (16) (sid_36), seis (6) (sid_25), veintiséis (26) (sid_46)",107,49.08
+S18e,10,4.59%,6,4.76%,"Diecinueve (sid_145), Nueve (sid_135), diecinueve (19) (sid_39), novecientos (900) (sid_58), nueve (9) (sid_28), veintinueve (29) (sid_49)",117,53.67
+S186,10,4.59%,7,5.56%,"Tres (sid_129), Veintitrés (sid_149), m (sid_94), trece (13) (sid_32), tres (3) (sid_22), veintitrés (23) (sid_43), w (sid_105)",127,58.26
+S15d,9,4.13%,6,4.76%,"Antes o pre (sid_164), En la mañana (sid_168), Escritura de Señas Chileno (sid_171), Nivel (sid_161), mi (mío, mía) (sid_74), tardes (buenas tardes) (en la tarde) (sid_166)",136,62.39
+S1dc,8,3.67%,5,3.97%,"diecisiete (17) (sid_80), l (sid_93), siete (7) (sid_109), siete (7) (sid_79), veintisiete (27) (sid_47)",144,66.06
+S11e,8,3.67%,5,3.97%,"Dieciocho (sid_144), Ocho (sid_134), dieciocho (18) (sid_38), ocho (8) (sid_27), veintiocho (28) (sid_48)",152,69.72
+S144,7,3.21%,4,3.17%,"Cuatro (sid_130), catorce (14) (sid_33), cuatro (4) (sid_23), veinticuatro (24) (sid_44)",159,72.94
+S182,5,2.29%,3,2.38%,"Nivel (sid_161), mil (1000) (sid_60), millón (1000000) (sid_81)",164,75.23
+S176,5,2.29%,3,2.38%,"cero (sid_19), o (sid_97), veinte (20) (sid_40)",169,77.52
+S1ce,4,1.83%,3,2.38%,"Gracia (sid_170), Veinte (sid_146), q (sid_99)",173,79.36
+S1f7,3,1.38%,2,1.59%,"a (sid_82), junto (con, compañía) (sid_70)",176,80.73
+S145,3,1.38%,2,1.59%,"Catorce (sid_140), cuatrocientos (400) (sid_53)",179,82.11
+S18b,3,1.38%,2,1.59%,"Trece (sid_139), trecientos (300) (sid_52)",182,83.49
+S192,3,1.38%,3,2.38%,"i (sid_90), j (sid_91), z (sid_108)",185,84.86
+S122,2,0.92%,1,0.79%,ochocientos (800) (sid_57),187,85.78
+S150,2,0.92%,1,0.79%,quinientos (500) (sid_54),189,86.7
+S1f9,2,0.92%,1,0.79%,seiscientos (600) (sid_55),191,87.61
+S140,2,0.92%,2,1.59%,"Kinder (sid_163), k (sid_92)",193,88.53
+S1e2,2,0.92%,1,0.79%,setecientos (700) (sid_56),195,89.45
+S110,2,0.92%,1,0.79%,docientos (200) (sid_51),197,90.37
+S1ed,2,0.92%,1,0.79%,caballo (sid_126),199,91.28
+S147,2,0.92%,2,1.59%,"Básico (sid_150), b (sid_83)",201,92.2
+S106,2,0.92%,1,0.79%,cien (100) (sid_50),203,93.12
+S1ec,1,0.46%,1,0.79%,g (sid_88),204,93.58
+S1ef,1,0.46%,1,0.79%,u (sid_103),205,94.04
+S1ca,1,0.46%,1,0.79%,t (sid_102),206,94.5
+S185,1,0.46%,1,0.79%,"Buenos (Buenas, Buen) (sid_165)",207,94.95
+S16d,1,0.46%,1,0.79%,c (sid_84),208,95.41
+S11a,1,0.46%,1,0.79%,r (sid_100),209,95.87
+S117,1,0.46%,1,0.79%,p (sid_98),210,96.33
+S1d2,1,0.46%,1,0.79%,f (sid_87),211,96.79
+S10a,1,0.46%,1,0.79%,Once (sid_137),212,97.25
+S1bb,1,0.46%,1,0.79%,Chile (sid_125),213,97.71
+S101,1,0.46%,1,0.79%,d (sid_85),214,98.17
+S118,1,0.46%,1,0.79%,Doce (sid_138),215,98.62
+S167,1,0.46%,1,0.79%,e (sid_86),216,99.08
+S115,1,0.46%,1,0.79%,h (sid_89),217,99.54
+S19a,1,0.46%,1,0.79%,y (sid_107),218,100.0

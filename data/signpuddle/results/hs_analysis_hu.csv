@@ -1,0 +1,21 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S15a,48,27.59%,16,23.88%,"Sapka (Cap) (sid_1), alkalmas (suitable) (sid_22), alkalmas (suitable) (sid_51), anya (mother) (sid_15), asztal (table) (sid_21), dátum (date) (sid_24), eredmény (result, outcome) (sid_19), kivéve (kivétel, except, exception) (sid_56), költ (költség, spend, expense) (sid_29), október (October) (sid_32), október (October) (sid_59), soha (never) (sid_30), szigorú (strict) (sid_31), társ (fellow, companion) (sid_20), új (new) (sid_57), ül (sit) (sid_25)",48,27.59
+S100,30,17.24%,12,17.91%,"Első (First) (sid_5), Isten (God) (sid_12), de (but) (sid_11), este (evening) (sid_26), fél (half) (sid_69), hazudik (hazug, lie, lier) (sid_34), október (October) (sid_32), október (October) (sid_59), piros (vörös, red) (sid_61), szoba (room) (sid_10), te (you) (sid_17), ugyanaz (mint, testvér, rokon, same, like, sibling, relative) (sid_18)",78,44.83
+S14c,22,12.64%,7,10.45%,"egér (mouse) (sid_63), jelnyelv (sign language) (sid_37), jóváhagy (jóváhagyás, approve, approval) (sid_47), kakas (rooster) (sid_39), utál (hate) (sid_41), vendég (guest) (sid_68), ötlet (idea) (sid_64)",100,57.47
+S115,12,6.9%,4,5.97%,"cigaretta (dohányzik, cigarette, to smoke) (sid_42), köp (to spit) (sid_43), siket (Deaf) (sid_14), ünnep (holiday, celebration) (sid_35)",112,64.37
+S1ce,10,5.75%,3,4.48%,"fogalmam-sincs (no-idea) (sid_67), szeptember (September) (sid_66), szeptember (szőlő, szüret, September, grapes, vintage) (sid_38)",122,70.11
+S10e,9,5.17%,4,5.97%,"híres (famous) (sid_62), második (second) (sid_16), szakma (profession) (sid_36), vécé (toilet) (sid_40)",131,75.29
+S1da,8,4.6%,1,1.49%,"Ország (Country, Land) (sid_3)",139,79.89
+S176,6,3.45%,2,2.99%,"cső (tube) (sid_65), ötlet (idea) (sid_64)",145,83.33
+S1ea,4,2.3%,1,1.49%,Magyar (sid_4),149,85.63
+S106,4,2.3%,1,1.49%,"sérül (sérült, sérülés, injure, injured, injury) (sid_44)",153,87.93
+S165,4,2.3%,1,1.49%,mérleg (scales) (sid_54),157,90.23
+S14e,2,1.15%,1,1.49%,paraszt (peasant) (sid_49),159,91.38
+S150,2,1.15%,1,1.49%,király (king) (sid_48),161,92.53
+S16b,2,1.15%,1,1.49%,Lecke (Lesson) (sid_6),163,93.68
+S1dc,2,1.15%,1,1.49%,"lakás (flat, apartment) (sid_46)",165,94.83
+S11e,2,1.15%,1,1.49%,"jóváhagy (jóváhagyás, approve, approval) (sid_47)",167,95.98
+S118,2,1.15%,1,1.49%,intézet (institute) (sid_45),169,97.13
+S10c,2,1.15%,1,1.49%,"édes (finom, sweet, delicious) (sid_33)",171,98.28
+S16e,2,1.15%,1,1.49%,új (new) (sid_57),173,99.43
+S113,1,0.57%,1,1.49%,második (second) (sid_16),174,100.0

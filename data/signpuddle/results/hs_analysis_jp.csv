@@ -1,0 +1,59 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S15a,50,12.95%,31,10.62%,"Daiji (sid_43), Ie (sid_6), Karui (sid_29), Kimeru (sid_28), Michi (sid_125), Rou (sid_175), Satou (sid_51), Taisesu (sid_21), Wakaru (sid_128), Yomu (sid_80), Yoru (sid_79), Yuumei (sid_2), aisatsu (sid_59), amai (sid_3), ewokaku (sid_66), hanashi (sid_50), hikaku (sid_98), hon (sid_44), kaku (sid_35), kitte (sid_26), kiyose (sid_99), kodomo (sid_148), maita (sid_133), name (sid_176), pi-1 (sid_48), roukyou (sid_16), setumei (sid_151), tabun (sid_132), tanomareru (sid_183), wakai (sid_105), 頼む (お願い) (sid_184)",50,12.95
+S100,46,11.92%,38,13.01%,"1 (sid_12), 1 (sid_214), 1 (sid_215), Au (sid_76), Dotti (sid_82), Nani (sid_11), Yubisashi-3 (sid_94), Yubisashi-3-A (sid_155), Yuumei (sid_2), aka (sid_87), anata (sid_115), ashita (sid_126), atteru (sid_109), au (sid_162), hi (sid_106), ichiban (sid_93), kinou (sid_65), meiyo (sid_81), miru (sid_142), no (sid_160), omoidasu (sid_18), so (sid_19), watashi (sid_73), zikan (sid_173), お母さん (ママ, 母, おふくろ, かあちゃん, 母上, 母親) (sid_185), くだらない (sid_203), そ (ソ, so) (sid_235), ぞ (ゾ, zo) (sid_278), の (ノ, no) (sid_245), ひ (ヒ, hi) (sid_247), び (ビ, bi) (sid_285), ぴ (ピ, pi) (sid_290), ん (ン, n) (sid_267), タワーホール船堀 (Tower hall funabori) (sid_190), 意味 (sid_212), 手話 (sid_202), 言う (sid_211), 赤 (aka) (sid_332)",96,24.87
+S14c,23,5.96%,16,5.48%,"Baioman (sid_153), hanasu (iu) (sid_179), iesu (sid_83), matsuhuji (sid_61), ne (sid_33), te (sid_171), くだらない (sid_203), て (テ, te) (sid_239), で (デ, de) (sid_282), ね (ネ, ne) (sid_244), 今 (sid_205), 今 (sid_206), 思い出 (懐かしい, 片思い) (sid_196), 緑 (midori) (sid_316), 薄暗い (sid_324), 趣味 (しゅ​み, shumi, hobby) (sid_217)",119,30.83
+S15d,22,5.7%,14,4.79%,"9 (sid_92), Edogawaku (sid_20), ku (sid_170), morau (uketoru) (sid_180), setumei (sid_151), ありがとう (感謝) (sid_188), タワーホール船堀 (Tower hall funabori) (sid_190), 学校 (がっこー, がっこう, gakkō, gakkou, school) (sid_218), 暗闇 (kurayami) (sid_322), 本 (sid_207), 本 (sid_208), 青 (ao) (sid_319), 青 (ao) (sid_333), 黒 (kuro) (sid_313)",141,36.53
+S115,18,4.66%,15,5.14%,"Kimeru (sid_28), ha (sid_131), hokkaidou (sid_27), hokkaidou (sid_70), to (sid_129), u (sid_161), ぅ (ゥ, -u) (sid_303), う (ウ, u) (sid_223), と (ト, to) (sid_240), ど (ド, do) (sid_283), は (ハ, ha) (sid_246), ば (バ, ba) (sid_284), ぱ (パ, pa) (sid_289), 寿司 (sid_199), 理容 (理髪, 散髪, 床屋) (sid_200)",159,41.19
+S10e,17,4.4%,14,4.79%,"2 (sid_120), Yomu (sid_80), aruku (sid_181), kitte (sid_26), koukou (sid_37), matsuhuji (sid_61), miru (sid_178), na (sid_147), ni (sid_71), ri (sid_88), な (ナ, na) (sid_241), に (ニ, ni) (sid_242), り (リ, ri) (sid_260), 오키니와 (sid_310)",176,45.6
+S1dc,14,3.63%,12,4.11%,"6 (sid_103), Tokyo (sid_36), fu (sid_108), kotae (sid_174), mu (sid_168), ふ (フ, fu) (sid_248), ぶ (ブ, bu) (sid_286), ぷ (プ, pu) (sid_291), む (ム, mu) (sid_253), れ (レ, re) (sid_262), 違う (sid_213), 黄色 (Kiiro) (sid_325)",190,49.22
+S11e,11,2.85%,10,3.42%,"7 (sid_15), basu (sid_96), shi (sid_63), sikaku (sid_111), su (sid_42), し (シ, shi) (sid_232), じ (ジ, ji) (sid_275), す (ス, su) (sid_233), ず (ズ, zu) (sid_276), る (ル, ru) (sid_261)",201,52.07
+S176,11,2.85%,10,3.42%,"0 (number) (零, れい) (sid_308), Pa (sid_114), Pa--mae- (sid_10), Pa--naname-shita- (sid_22), hanasu (iu) (sid_179), o (sid_49), ぉ (ォ, -o) (sid_305), お (オ, o) (sid_225), を (ヲ, wo) (sid_266), オレンジ (Orenji) (sid_318)",212,54.92
+S1ce,10,2.59%,9,3.08%,"Kankei (sid_69), me (sid_31), miru (sid_159), namae (sid_14), name (sid_177), takai (sid_45), yasui (sid_154), め (メ, me) (sid_254), 金色の (ゴールデン, Gōruden, Kin iro no) (sid_321)",222,57.51
+S150,9,2.33%,6,2.05%,"Raion (sid_165), karai (sid_156), つまらない (sid_191), つまらない (sid_210), 仕方ない (しょうがない, やむ得ない) (sid_192), 覚悟を決める (これしかない, 思いきって) (sid_193)",231,59.84
+S1f7,9,2.33%,9,3.08%,"5 (sid_123), a (sid_157), jyama (sid_124), urusai (sid_138), ぁ (ァ, -a) (sid_299), あ (ア, a) (sid_221), た (タ, ta) (sid_301), 少ない (足りない) (sid_195), 貧乏 (sid_197)",240,62.18
+S1eb,9,2.33%,6,2.05%,"kaku (sid_139), kaku (sid_35), mo (sid_104), mondai (sid_146), ふじ色 (Fujiiro) (sid_323), 灰色 (Haiiro, Gurē) (sid_314)",249,64.51
+S1c6,8,2.07%,7,2.4%,"ani (sid_72), kiyose (sid_99), otouto (sid_130), se (sid_17), せ (セ, se) (sid_234), ぜ (ゼ, ze) (sid_277), 兄弟 (きょうだい, kyōdai, brothers) (sid_220)",257,66.58
+S177,8,2.07%,5,1.71%,"Futo (sid_7), 桃色 (ピンク, pinku) (sid_320), 色 (iro) (sid_311), 逆終わり (sid_209), 金色の (ゴールデン, Gōruden, Kin iro no) (sid_321)",265,68.65
+S19a,8,2.07%,8,2.74%,"Po-1 (sid_89), he (sid_68), どうして？ (なぜ？, どうやって？) (sid_198), へ (へ, he) (sid_249), べ (べ, be) (sid_287), ぺ (ペ, pe) (sid_292), ゃ (ャ, -ya) (sid_294), や (ヤ, ya) (sid_256)",273,70.73
+S1f5,8,2.07%,8,2.74%,"Adamu (sid_23), Inaka (sid_4), Minamida (sid_117), name (sid_176), ta (sid_77), た (タ, ta) (sid_236), だ (ダ, da) (sid_279), 通訳 (紹介) (sid_204)",281,72.8
+S192,7,1.81%,6,2.05%,"ane (sid_127), i (sid_172), imouto (sid_119), ぃ (ィ, -i) (sid_300), い (イ, i) (sid_222), お母さん (ママ, 母, おふくろ, かあちゃん, 母上, 母親) (sid_185)",288,74.61
+S186,7,1.81%,6,2.05%,"3 (sid_39), Edogawaku (sid_20), Minamida (sid_117), ゅ (ュ, -yu) (sid_295), わ (ワ, wa) (sid_264), 江戸川 (Edogawa) (sid_189)",295,76.42
+S10a,7,1.81%,6,2.05%,"GImon (sid_57), okashii (sid_64), roukyou (sid_16), shiro (sid_9), shiro-2 (sid_41), 白 (shiro) (sid_312)",302,78.24
+S185,7,1.81%,4,1.37%,"Adamu (sid_23), Taberu (sid_74), matsuhuji (sid_61), 終わり (終了, おしまい) (sid_194)",309,80.05
+S181,6,1.55%,5,1.71%,"ho (sid_144), ほ (ホ, ho) (sid_250), ぼ (ボ, bo) (sid_288), ぽ (ポ, po) (sid_293), 桃色 (ピンク, pinku) (sid_320)",315,81.61
+S1a3,5,1.3%,4,1.37%,"damasu (gomakasu, usotsuki) (sid_182), ki (sid_110), き (キ, ki) (sid_227), ぎ (ギ, gi) (sid_270)",320,82.9
+S180,5,1.3%,5,1.71%,"ko (sid_121), く (ク, ku) (sid_228), ぐ (グ, gu) (sid_271), こ (コ, ko) (sid_230), ご (ゴ, go) (sid_273)",325,84.2
+S1b3,4,1.04%,4,1.37%,"tsu (sid_95), っ (ッ, -tsu) (sid_297), つ (ツ, tsu) (sid_238), づ (ジ, dzu) (sid_281)",329,85.23
+S144,4,1.04%,4,1.37%,"4 (sid_169), ke (sid_52), ょ (ョ, -yo) (sid_296), よ (ヨ, yo) (sid_258)",333,86.27
+S18c,3,0.78%,3,1.03%,"mi (sid_84), み (ミ, mi) (sid_252), ゆ (ユ, yu) (sid_257)",336,87.05
+S16d,3,0.78%,2,0.68%,"ko-hi- (sid_60), パンダ (Panda) (sid_186)",339,87.82
+S154,3,0.78%,2,0.68%,"basyo (sid_101), ふじ色 (Fujiiro) (sid_323)",342,88.6
+S140,3,0.78%,3,1.03%,"ka (sid_46), か (カ, ka) (sid_226), が (ガ, ga) (sid_269)",345,89.38
+S106,3,0.78%,3,1.03%,"10 (十, じゅう) (sid_309), nu (sid_113), ぬ (ヌ, nu) (sid_243)",348,90.16
+S196,3,0.78%,3,1.03%,"chi (sid_25), ち (チ, chi) (sid_237), ぢ (ヂ, ji) (sid_280)",351,90.93
+S101,2,0.52%,1,0.34%,DVD (sid_90),353,91.45
+S147,2,0.52%,2,0.68%,"け (ケ, ke) (sid_229), げ (ゲ, ge) (sid_272)",355,91.97
+S1f4,2,0.52%,2,0.68%,"suki (sid_24), も (モ, mo) (sid_302)",357,92.49
+S110,2,0.52%,2,0.68%,"ろ (ロ, ro) (sid_263), 灰色 (Haiiro, Gurē) (sid_314)",359,93.01
+S1c5,2,0.52%,1,0.34%,iesu (sid_83),361,93.52
+S18d,2,0.52%,2,0.68%,"ma (sid_164), ま (マ, ma) (sid_251)",363,94.04
+S166,2,0.52%,2,0.68%,"e (sid_135), ぇ (ェ, -e) (sid_304)",365,94.56
+S17f,2,0.52%,1,0.34%,gakkou (sid_158),367,95.08
+S10b,2,0.52%,2,0.68%,"watashi-hana (sid_13), 時間 (じかん, jikan, time) (sid_219)",369,95.6
+S1bb,1,0.26%,1,0.34%,試す (sid_201),370,95.85
+S1ec,1,0.26%,1,0.34%,江戸川 (Edogawa) (sid_189),371,96.11
+S11a,1,0.26%,1,0.34%,"ら (ラ, ra) (sid_259)",372,96.37
+S1e4,1,0.26%,1,0.34%,"も (モ, mo) (sid_255)",373,96.63
+S171,1,0.26%,1,0.34%,寿司 (sid_199),374,96.89
+S14a,1,0.26%,1,0.34%,"え (エ, e) (sid_224)",375,97.15
+S10c,1,0.26%,1,0.34%,赤 (aka) (sid_315),376,97.41
+S1d4,1,0.26%,1,0.34%,ko-hi- (sid_60),377,97.67
+S1f0,1,0.26%,1,0.34%,tori (sid_140),378,97.93
+S1ee,1,0.26%,1,0.34%,suki (sid_24),379,98.19
+S1f9,1,0.26%,1,0.34%,sohu (sid_102),380,98.45
+S198,1,0.26%,1,0.34%,sobo (sid_150),381,98.7
+S18e,1,0.26%,1,0.34%,8 (sid_100),382,98.96
+S1ed,1,0.26%,1,0.34%,Edogawaku (sid_20),383,99.22
+S118,1,0.26%,1,0.34%,densya (sid_166),384,99.48
+S1cf,1,0.26%,1,0.34%,Botan (sid_8),385,99.74
+S155,1,0.26%,1,0.34%,逆終わり (sid_209),386,100.0

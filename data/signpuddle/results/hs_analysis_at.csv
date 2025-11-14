@@ -1,0 +1,5 @@
+Handshape,Token Count,% Use,Gloss Count,% Gloss Coverage,Glosses Using this Handshape,Token Ct (cuml),Token Ct (cuml%)
+S100,2,33.33%,1,20.0%,Bruder (sid_2),2,33.33
+S115,2,33.33%,2,40.0%,"Mutter (sid_1), Vater (sid_4)",4,66.67
+S15d,1,16.67%,1,20.0%,danke (sid_32),5,83.33
+S1ce,1,16.67%,1,20.0%,Sohn (sid_3),6,100.0
