@@ -168,10 +168,10 @@ def main():
     segment_fsw_column = choose_one_column(segments_columns, "Select the FSW column from segments.csv")
     segment_class_column = choose_one_column(segments_columns, "Select the segment class column from segments.csv")
 
-    source_file_column = choose_one_column(inventories_columns, "Select the source code column from inventories.csv")
+    source_file_column = choose_one_column(inventories_columns, "Select the data source column from inventories.csv")
     source_folder_column = choose_one_column(inventories_columns, "Select the source folder column from inventories.csv")
     inventory_id_column = choose_one_column(inventories_columns, "Select the inventory ID column from inventories.csv")
-    inventory_title_column = choose_one_column(inventories_columns, "Select the inventory title column from inventories.csv")
+    inventory_title_column = choose_one_column(inventories_columns, "Select the inventory name column from inventories.csv")
 
     first_inventory_file = None
     for inv in inventories_rows[:page_count]:
@@ -222,6 +222,12 @@ def main():
             continue
 
         source_rows = load_csv(source_file)
+
+        source_rows = [
+            row for row in source_rows
+            if row.get(source_fsw_column, "").strip() != ""
+        ]
+
         joined_rows = join_inventory_rows(
             source_rows,
             source_fsw_column=source_fsw_column,
