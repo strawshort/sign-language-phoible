@@ -14,18 +14,25 @@ def show_columns(columns):
         print(f"{i}. {col}")
 
 
-def choose_columns(columns, prompt):
+def choose_columns(columns, prompt, allow_none=False):
     print(f"\n{prompt}")
-    show_columns(columns)
-    raw = input("\nEnter column numbers, separated by commas: ").strip()
+    if allow_none:
+        print("Enter column numbers separated by commas, or 0 for none.")
+    else:
+        print("Enter column numbers separated by commas.")
+
+    raw = input("> ").strip()
+
+    if allow_none and raw == "0":
+        return []
+
     indices = [int(x.strip()) - 1 for x in raw.split(",")]
     return [columns[i] for i in indices]
 
 
 def choose_one_column(columns, prompt):
     print(f"\n{prompt}")
-    show_columns(columns)
-    raw = input("\nEnter one column number: ").strip()
+    raw = input("> ").strip()
     return columns[int(raw) - 1]
 
 
@@ -37,27 +44,28 @@ def find_matching_file(folder, source_code):
     return matches[0]
 
 
-def build_segments_lookup(segments_rows, fsw_column, segment_id_column, segment_class_column):
+def build_segments_lookup(segments_rows, fsw_column, segment_id_column):
     lookup = {}
     for row in segments_rows:
         fsw = row.get(fsw_column, "").strip()
         if fsw:
-            lookup[fsw] = {
-                "segment_id": row.get(segment_id_column, "").strip(),
-                "segment_class": row.get(segment_class_column, "").strip(),
-            }
+            lookup[fsw] = dict(row)
+            lookup[fsw]["segment_id"] = row.get(segment_id_column, "").strip()
     return lookup
 
 
-def join_inventory_rows(source_rows, source_fsw_column, segments_lookup):
+def join_inventory_rows(source_rows, source_fsw_column, segments_lookup, segment_columns_to_add):
     joined = []
     for row in source_rows:
         fsw_value = row.get(source_fsw_column, "").strip()
-        segment_info = segments_lookup.get(fsw_value, {"segment_id": "", "segment_class": ""})
+        segment_row = segments_lookup.get(fsw_value, {})
 
         new_row = dict(row)
-        new_row["segment_id"] = segment_info["segment_id"]
-        new_row["segment_class"] = segment_info["segment_class"]
+        new_row["segment_id"] = segment_row.get("segment_id", "")
+
+        for col in segment_columns_to_add:
+            new_row[col] = segment_row.get(col, "")
+
         joined.append(new_row)
 
     return joined
@@ -145,11 +153,18 @@ def write_inventory_page(output_path, title, metadata_html, table_html):
     out.write_text(page, encoding="utf-8")
 
 
+def get_source_family(source_code):
+    return source_code.split("_")[0].strip()
+
+
 def main():
     inventories_csv = input("Inventories CSV path: ").strip()
     segments_csv = input("Segments CSV path: ").strip()
     output_folder = input("Output folder for inventory pages (example: inventories): ").strip()
-    page_count = int(input("How many inventory pages to generate? ").strip())
+
+    page_count_input = input(
+        "How many inventory pages to generate? Enter a number or 'all': "
+    ).strip().lower()
 
     inventories_rows = load_csv(inventories_csv)
     segments_rows = load_csv(segments_csv)
@@ -164,54 +179,102 @@ def main():
     segments_columns = list(segments_rows[0].keys())
     inventories_columns = list(inventories_rows[0].keys())
 
+    print("\n--- segments.csv columns ---")
+    show_columns(segments_columns)
     segment_id_column = choose_one_column(segments_columns, "Select the segment ID column from segments.csv")
     segment_fsw_column = choose_one_column(segments_columns, "Select the FSW column from segments.csv")
-    segment_class_column = choose_one_column(segments_columns, "Select the segment class column from segments.csv")
 
+    # Ask once globally which segment columns to include on all inventory pages.
+    segment_columns_to_add = choose_columns(
+        segments_columns,
+        "Select the columns from segments.csv to include on all inventory pages",
+        allow_none=True,
+    )
+
+    if segment_id_column in segment_columns_to_add:
+        segment_columns_to_add = [
+            col for col in segment_columns_to_add
+            if col != segment_id_column
+        ]
+
+    print("\n--- inventories.csv columns ---")
+    show_columns(inventories_columns)
     source_file_column = choose_one_column(inventories_columns, "Select the data source column from inventories.csv")
     source_folder_column = choose_one_column(inventories_columns, "Select the source folder column from inventories.csv")
     inventory_id_column = choose_one_column(inventories_columns, "Select the inventory ID column from inventories.csv")
     inventory_title_column = choose_one_column(inventories_columns, "Select the inventory name column from inventories.csv")
 
-    first_inventory_file = None
-    for inv in inventories_rows[:page_count]:
-        first_inventory_file = find_matching_file(
+    valid_inventories = [
+        row for row in inventories_rows
+        if row.get(inventory_id_column, "").strip().startswith("inv")
+    ]
+
+    if not valid_inventories:
+        print("No valid inventory rows found.")
+        return
+
+    if page_count_input != "all":
+        page_count = int(page_count_input)
+        valid_inventories = valid_inventories[:page_count]
+
+    family_configs = {}
+
+    for inv in valid_inventories:
+        source_code = inv[source_file_column].strip()
+        family = get_source_family(source_code)
+
+        if family in family_configs:
+            continue
+
+        sample_file = find_matching_file(
             inv[source_folder_column],
             inv[source_file_column],
         )
-        if first_inventory_file:
-            break
 
-    if not first_inventory_file:
-        print("No matching inventory source file found.")
-        return
+        if not sample_file:
+            print(f"Skipping source family {family}: no matching sample file found.")
+            continue
 
-    sample_source_rows = load_csv(first_inventory_file)
-    if not sample_source_rows:
-        print("The sample inventory source CSV is empty.")
-        return
+        sample_rows = load_csv(sample_file)
+        if not sample_rows:
+            print(f"Skipping source family {family}: sample file is empty.")
+            continue
 
-    source_columns = list(sample_source_rows[0].keys())
-    source_fsw_column = choose_one_column(source_columns, "Select the FSW column from the inventory source files")
-    source_display_columns = choose_columns(
-        source_columns,
-        "Select the columns from the inventory source files to display on the inventory pages",
-    )
+        source_columns = list(sample_rows[0].keys())
 
-    add_segment_class = input("\nAdd segment_class to the displayed table? (y/n): ").strip().lower() == "y"
-    if add_segment_class and "segment_class" not in source_display_columns:
-        source_display_columns = ["segment_class"] + source_display_columns
+        print(f"\n--- Source family: {family} ---")
+        show_columns(source_columns)
+
+        source_fsw_column = choose_one_column(
+            source_columns,
+            f"Select the FSW column for all {family} source files",
+        )
+        source_display_columns = choose_columns(
+            source_columns,
+            f"Select the columns to display for all {family} source files",
+        )
+
+        family_configs[family] = {
+            "source_fsw_column": source_fsw_column,
+            "source_display_columns": source_display_columns,
+        }
 
     segments_lookup = build_segments_lookup(
         segments_rows,
         fsw_column=segment_fsw_column,
         segment_id_column=segment_id_column,
-        segment_class_column=segment_class_column,
     )
 
     generated = 0
 
-    for inv in inventories_rows[:page_count]:
+    for inv in valid_inventories:
+        source_code = inv[source_file_column].strip()
+        family = get_source_family(source_code)
+
+        if family not in family_configs:
+            print(f"Skipping {inv[inventory_id_column]}: no configuration found for source family {family}.")
+            continue
+
         source_file = find_matching_file(
             inv[source_folder_column],
             inv[source_file_column],
@@ -223,6 +286,10 @@ def main():
 
         source_rows = load_csv(source_file)
 
+        config = family_configs[family]
+        source_fsw_column = config["source_fsw_column"]
+        source_display_columns = list(config["source_display_columns"])
+
         source_rows = [
             row for row in source_rows
             if row.get(source_fsw_column, "").strip() != ""
@@ -232,13 +299,19 @@ def main():
             source_rows,
             source_fsw_column=source_fsw_column,
             segments_lookup=segments_lookup,
+            segment_columns_to_add=segment_columns_to_add,
         )
+
+        final_columns_to_show = list(source_display_columns)
+        for col in reversed(segment_columns_to_add):
+            if col not in final_columns_to_show:
+                final_columns_to_show.insert(0, col)
 
         title = inv[inventory_title_column]
         metadata_html = render_inventory_metadata(inv)
         table_html = render_table(
             rows=joined_rows,
-            columns_to_show=source_display_columns,
+            columns_to_show=final_columns_to_show,
             fsw_column=source_fsw_column,
         )
 
