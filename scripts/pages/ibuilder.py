@@ -1,6 +1,9 @@
 import csv
 import html
 from pathlib import Path
+import sys
+
+csv.field_size_limit(sys.maxsize)
 
 
 def load_csv(csv_path):

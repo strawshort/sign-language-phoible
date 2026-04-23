@@ -4,6 +4,8 @@ import subprocess
 import sys
 from pathlib import Path
 
+csv.field_size_limit(sys.maxsize)
+
 
 def load_csv(csv_path):
     with open(csv_path, newline="", encoding="utf-8") as f:
