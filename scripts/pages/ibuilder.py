@@ -81,7 +81,7 @@ def build_fsw_link(fsw_value, segment_id):
     return f'<a href="{html.escape(href)}">{html.escape(fsw_value)}</a>'
 
 
-def render_table(rows, columns_to_show, fsw_column):
+def render_table(rows, columns_to_show, fsw_column, signwriting_column="SignWriting"):
     parts = []
     parts.append("<table border='1' cellspacing='0' cellpadding='6'>")
     parts.append("<thead><tr>")
@@ -98,9 +98,12 @@ def render_table(rows, columns_to_show, fsw_column):
             value = row.get(col, "")
             if col == fsw_column:
                 cell = build_fsw_link(value, row.get("segment_id", ""))
+                parts.append(f"<td>{cell}</td>")
+            elif col == signwriting_column:
+                parts.append(f'<td class="signwriting">{html.escape(value)}</td>')
             else:
                 cell = html.escape(value)
-            parts.append(f"<td>{cell}</td>")
+                parts.append(f"<td>{cell}</td>")
         parts.append("</tr>")
 
     parts.append("</tbody></table>")
@@ -132,6 +135,34 @@ def render_inventory_metadata(inventory_row):
     return "\n".join(parts)
 
 
+SIGNWRITING_FONT_CSS = """
+<style>
+@font-face {
+  font-family: "SuttonSignWritingLine";
+  src:
+    local('SuttonSignWritingLine'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingFill";
+  src:
+    local('SuttonSignWritingFill'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingOneD";
+  src:
+    local('SuttonSignWritingOneD'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
+}
+.signwriting {
+  font-family: "SuttonSignWritingOneD", "SuttonSignWritingLine", "SuttonSignWritingFill";
+  font-size: 2em;
+}
+</style>
+"""
+
+
 def write_inventory_page(output_path, title, metadata_html, table_html):
     page = f"""<!DOCTYPE html>
 <html lang="en">
@@ -139,6 +170,7 @@ def write_inventory_page(output_path, title, metadata_html, table_html):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(title)}</title>
+  {SIGNWRITING_FONT_CSS}
 </head>
 <body>
   <h1>{html.escape(title)}</h1>
