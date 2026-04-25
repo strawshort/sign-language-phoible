@@ -115,6 +115,8 @@ def get_known_defaults(csv_path):
                 "hamnosys_2_basic_handshape",
                 "hamnosys_3_handshape_modifications",
                 "fsw",
+                "signwriting_1",
+                "signwriting_2",
             ],
             "id_column": "segment_id",
             "clickable_column": "fsw",

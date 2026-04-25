@@ -1,279 +1,279 @@
-segment_id,hamnosys_1_initial_configuration,hamnosys_2_basic_handshape,hamnosys_3_handshape_modifications,fsw,segment_class
-seg00001,Selected fingers,0_finger(Fist),(Selected Fingers extended),S1f5,handshape
-seg00002,Selected fingers,0_finger(Fist),(Selected Fingers extended),S1f7,handshape
-seg00003,Selected fingers,0_finger(Fist),(Selected Fingers extended),S1f8,handshape
-seg00004,Selected fingers,0_finger(Fist),(Selected Fingers extended),S203,handshape
-seg00005,Selected fingers,0_finger(Fist),(Selected Fingers bent),S1f9,handshape
-seg00006,Selected fingers,0_finger(Fist),(fistDerivation),S1fb,handshape
-seg00007,Selected fingers,0_finger(Fist),(fistDerivation),S1fc,handshape
-seg00008,Selected fingers,0_finger(Fist),(fistDerivation),S1fd,handshape
-seg00009,Selected fingers,0_finger(Fist),(fistDerivation),S1ff,handshape
-seg00010,Selected fingers,0_finger(Fist),(fistDerivation),S200,handshape
-seg00011,Selected fingers,0_finger(Fist),(fistDerivation),S201,handshape
-seg00012,Selected fingers,1_finger,(Selected Fingers extended),S100,handshape
-seg00013,Selected fingers,1_finger,(Selected Fingers extended),S101,handshape
-seg00014,Selected fingers,1_finger,(Selected Fingers extended),S103,handshape
-seg00015,Selected fingers,1_finger,(Selected Fingers extended),S108,handshape
-seg00016,Selected fingers,1_finger,(Selected Fingers extended),S192,handshape
-seg00017,Selected fingers,1_finger,(Selected Fingers extended),S193,handshape
-seg00018,Selected fingers,1_finger,(Selected Fingers extended),S19a,handshape
-seg00019,Selected fingers,1_finger,(Selected Fingers extended),S1ae,handshape
-seg00020,Selected fingers,1_finger,(Selected Fingers extended),S1c6,handshape
-seg00021,Selected fingers,1_finger,(Selected Fingers extended),S1dc,handshape
-seg00022,Selected fingers,1_finger,(Selected Fingers extended),S1de,handshape
-seg00023,Selected fingers,1_finger,(Selected Fingers extended),S1df,handshape
-seg00024,Selected fingers,1_finger,(Selected Fingers extended),S1e0,handshape
-seg00025,Selected fingers,1_finger,(Selected Fingers flattened),S10c,handshape
-seg00026,Selected fingers,1_finger,(Selected Fingers flattened),S1f2,handshape
-seg00027,Selected fingers,1_finger,(Selected Fingers flattened),S1f3,handshape
-seg00028,Selected fingers,1_finger,(Selected Fingers bent),S106,handshape
-seg00029,Selected fingers,1_finger,(Selected Fingers bent),S10a,handshape
-seg00030,Selected fingers,1_finger,(Selected Fingers bent),S198,handshape
-seg00031,Selected fingers,1_finger,(Selected Fingers bent),S1e1,handshape
-seg00032,Selected fingers,1_finger,(Selected Fingers bent),S1e2,handshape
-seg00033,Selected fingers,1_finger,(Selected Fingers bent),Missing,handshape
-seg00034,Selected fingers,1_finger,(Selected Fingers bent),Missing,handshape
-seg00035,Selected fingers,1_finger,(Selected Fingers Hooked),S1ea,handshape
-seg00036,Selected fingers,2_nonspread,(Selected Fingers extended),S115,handshape
-seg00037,Selected fingers,2_nonspread,(Selected Fingers extended),S12d,handshape
-seg00038,Selected fingers,2_nonspread,(Selected Fingers extended),S1b5,handshape
-seg00039,Selected fingers,2_nonspread,(Selected Fingers flattened),S119,handshape
-seg00040,Selected fingers,2_nonspread,(Selected Fingers flattened),S132,handshape
-seg00041,Selected fingers,2_nonspread,(Selected Fingers flattened),S13e,handshape
-seg00042,Selected fingers,2_nonspread,(Selected Fingers bent),S110,handshape
-seg00043,Selected fingers,2_nonspread,(Selected Fingers bent),S118,handshape
-seg00044,Selected fingers,2_nonspread,(Selected Fingers bent),S121,handshape
-seg00045,Selected fingers,2_nonspread,(Selected Fingers Hooked),None,handshape
-seg00046,Selected fingers,2_nonspread,2finger_differshape,S116,handshape
-seg00047,Selected fingers,2_nonspread,2finger_differshape,S11a,handshape
-seg00048,Selected fingers,2_nonspread,2finger_differshape,S11d,handshape
-seg00049,Selected fingers,2_nonspread,2finger_differshape,S126,handshape
-seg00050,Selected fingers,2_spread,(Selected Fingers extended),S10e,handshape
-seg00051,Selected fingers,2_spread,(Selected Fingers extended),S11e,handshape
-seg00052,Selected fingers,2_spread,(Selected Fingers extended),S125,handshape
-seg00053,Selected fingers,2_spread,(Selected Fingers extended),S19c,handshape
-seg00054,Selected fingers,2_spread,(Selected Fingers extended),S1a0,handshape
-seg00055,Selected fingers,2_spread,(Selected Fingers extended),S1b0,handshape
-seg00056,Selected fingers,2_spread,(Selected Fingers extended),S1b4,handshape
-seg00057,Selected fingers,2_spread,(Selected Fingers extended),S1cb,handshape
-seg00058,Selected fingers,2_spread,(Selected Fingers flattened),S112,handshape
-seg00059,Selected fingers,2_spread,(Selected Fingers flattened),S123,handshape
-seg00060,Selected fingers,2_spread,(Selected Fingers bent),S110,handshape
-seg00061,Selected fingers,2_spread,(Selected Fingers bent),S121,handshape
-seg00062,Selected fingers,2_spread,(Selected Fingers bent),S122,handshape
-seg00063,Selected fingers,2_spread,2finger_differshape,S126,handshape
-seg00064,Selected fingers,2_spread,2finger_differshape,S140,handshape
-seg00065,Selected fingers,2_spread,2finger_differshape,S142,handshape
-seg00066,Selected fingers,3_nonspread,extended,S18e,handshape
-seg00067,Selected fingers,3_nonspread,flattened,None,handshape
-seg00068,Selected fingers,3_nonspread,bent,None,handshape
-seg00069,Selected fingers,3_nonspread,hooked,None,handshape
-seg00070,Selected fingers,3_nonspread,3finger_differshape,None,handshape
-seg00071,Selected fingers,3_spread,extended,S18f,handshape
-seg00072,Selected fingers,3_spread,extended,S1a4,handshape
-seg00073,Selected fingers,3_spread,extended,S1ab,handshape
-seg00074,Selected fingers,3_spread,extended,S1c4,handshape
-seg00075,Selected fingers,3_spread,flattened,None,handshape
-seg00076,Selected fingers,3_spread,bent,S190,handshape
-seg00077,Selected fingers,3_spread,hooked,None,handshape
-seg00078,Selected fingers,3_spread,3finger_differshape,None,handshape
-seg00079,Selected fingers,4_nonspread,(Selected Fingers extended),S147,handshape
-seg00080,Selected fingers,4_nonspread,(Selected Fingers extended),S15a,handshape
-seg00081,Selected fingers,4_nonspread,(Selected Fingers extended),S15d,handshape
-seg00082,Selected fingers,4_nonspread,(Selected Fingers flattened),S14b,handshape
-seg00083,Selected fingers,4_nonspread,(Selected Fingers flattened),S180,handshape
-seg00084,Selected fingers,4_nonspread,(Selected Fingers flattened),S182,handshape
-seg00085,Selected fingers,4_nonspread,(Selected Fingers bent),S149,handshape
-seg00086,Selected fingers,4_nonspread,(Selected Fingers bent),S168,handshape
-seg00087,Selected fingers,4_nonspread,(Selected Fingers bent),S16e,handshape
-seg00088,Selected fingers,4_nonspread,(Selected Fingers bent),S170,handshape
-seg00089,Selected fingers,4_nonspread,(Selected Fingers bent),S171,handshape
-seg00090,Selected fingers,4_nonspread,(Selected Fingers Hooked),S202,handshape
-seg00091,Selected fingers,4_nonspread,4finger_differshape,S1d7,handshape
-seg00092,Selected fingers,4_spread,(Selected Fingers extended),S144,handshape
-seg00093,Selected fingers,4_spread,(Selected Fingers extended),S14c,handshape
-seg00094,Selected fingers,4_spread,(Selected Fingers flattened),S146,handshape
-seg00095,Selected fingers,4_spread,(Selected Fingers flattened),S158,handshape
-seg00096,Selected fingers,4_spread,(Selected Fingers flattened),S159,handshape
-seg00097,Selected fingers,4_spread,(Selected Fingers bent),S145,handshape
-seg00098,Selected fingers,4_spread,(Selected Fingers bent),S14e,handshape
-seg00099,Selected fingers,4_spread,(Selected Fingers bent),S150,handshape
-seg00100,Selected fingers,4_spread,(Selected Fingers Hooked),None,handshape
-seg00101,Selected fingers,4_spread,4finger_differshape,S157,handshape
-seg00102,Selected fingers,4_spread,4finger_differshape,S1a7,handshape
-seg00103,Selected fingers,4_spread,4finger_differshape,S1c5,handshape
-seg00104,Thumb Opposition,1fin_othersFist,(fingers rounded),S199,handshape
-seg00105,Thumb Opposition,1fin_othersFist,(fingers rounded),S1e5,handshape
-seg00106,Thumb Opposition,1fin_othersFist,(fingers rounded),S1e7,handshape
-seg00107,Thumb Opposition,1fin_othersFist,(fingers rounded),S1eb,handshape
-seg00108,Thumb Opposition,1fin_othersFist,(fingers rounded),S1ed,handshape
-seg00109,Thumb Opposition,1fin_othersFist,FlattenedandInFistfingerUp,S19f,handshape
-seg00110,Thumb Opposition,1fin_othersFist,(fingers straight),S1e4,handshape
-seg00111,Thumb Opposition,1fin_othersFist,(fingers flattened),S1ee,handshape
-seg00112,Thumb Opposition,1fin_othersFist,(fingers flattened),S1f0,handshape
-seg00113,Thumb Opposition,1fin_othersFist,(fingers flattened),S1f4,handshape
-seg00114,Thumb Opposition,2finNonspread_othersFist,(fingers rounded),S129,handshape
-seg00115,Thumb Opposition,2finNonspread_othersFist,(fingers flattened),S13d,handshape
-seg00116,Thumb Opposition,2finNonspread_othersFist,(fingers flattened),S13f,handshape
-seg00117,Thumb Opposition,2finNonspread_othersFist,(fingers straight),None,handshape
-seg00118,Thumb Opposition,2finNonspread_othersFist,FlattenedandInFistfingerUp,S1a3,handshape
-seg00119,Thumb Opposition,2finNonspread_othersFist,FlattenedandInFistfingerUp,S1b2,handshape
-seg00120,Thumb Opposition,2finNonspread_othersFist,FlattenedandInFistfingerUp,S1b3,handshape
-seg00121,Thumb Opposition,2finSpread_othersFist,(fingers rounded),S128,handshape
-seg00122,Thumb Opposition,2finSpread_othersFist,(fingers rounded),S12a,handshape
-seg00123,Thumb Opposition,2finSpread_othersFist,(fingers flattened),S12b,handshape
-seg00124,Thumb Opposition,2finSpread_othersFist,(fingers straight),S127,handshape
-seg00125,Thumb Opposition,2finSpread_othersFist,FlattenedandInFistfingerUp,None,handshape
-seg00126,Thumb Opposition,4finNonspread,(fingers rounded),S16d,handshape
-seg00127,Thumb Opposition,4finNonspread,(fingers rounded),S173,handshape
-seg00128,Thumb Opposition,4finNonspread,(fingers rounded),S176,handshape
-seg00129,Thumb Opposition,4finNonspread,(fingers rounded),S177,handshape
-seg00130,Thumb Opposition,4finNonspread,(fingers flattened),S17c,handshape
-seg00131,Thumb Opposition,4finNonspread,(fingers flattened),S17d,handshape
-seg00132,Thumb Opposition,4finNonspread,(fingers flattened),S185,handshape
-seg00133,Thumb Opposition,4finNonspread,(fingers straight),S160,handshape
-seg00134,Thumb Opposition,4finSpread,(fingers rounded),S153,handshape
-seg00135,Thumb Opposition,4finSpread,(fingers rounded),S154,handshape
-seg00136,Thumb Opposition,4finSpread,(fingers rounded),S155,handshape
-seg00137,Thumb Opposition,4finSpread,(fingers flattened),S155,handshape
-seg00138,Thumb Opposition,4finSpread,(fingers straight),None,handshape
-seg00139,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S187,handshape
-seg00140,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S18b,handshape
-seg00141,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1a4,handshape
-seg00142,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1a5,handshape
-seg00143,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1ba,handshape
-seg00144,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1bb,handshape
-seg00145,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1ce,handshape
-seg00146,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1d0,handshape
-seg00147,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1d5,handshape
-seg00148,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1d6,handshape
-seg00149,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",Missing,handshape
-seg00150,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others nonspread)",S18c,handshape
-seg00151,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others nonspread)",S18d,handshape
-seg00152,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others nonspread)",S1da,handshape
-seg00153,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1c1,handshape
-seg00154,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1c3,handshape
-seg00155,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d1,handshape
-seg00156,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d2,handshape
-seg00157,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d3,handshape
-seg00158,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d4,handshape
-seg00159,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d8,handshape
-seg00160,Thumb Opposition,1fin_othersNonfist,FlattenedandInFistfingerUp,S105,handshape
-seg00161,Thumb Opposition,1fin_othersNonfist,FlattenedandInFistfingerUp,S196,handshape
-seg00162,,,,S10b,handshape
-seg00163,,,,S14a,handshape
-seg00164,,,,S14d,handshape
-seg00165,,,,S16f,handshape
-seg00166,,,,S17e,handshape
-seg00167,,,,S1cd,handshape
-seg00168,,,,S1dd,handshape
-seg00169,,,,S102,handshape
-seg00170,,,,S104,handshape
-seg00171,,,,S107,handshape
-seg00172,,,,S109,handshape
-seg00173,,,,S10d,handshape
-seg00174,,,,S10f,handshape
-seg00175,,,,S111,handshape
-seg00176,,,,S113,handshape
-seg00177,,,,S114,handshape
-seg00178,,,,S117,handshape
-seg00179,,,,S11b,handshape
-seg00180,,,,S11c,handshape
-seg00181,,,,S11f,handshape
-seg00182,,,,S120,handshape
-seg00183,,,,S124,handshape
-seg00184,,,,S12c,handshape
-seg00185,,,,S12e,handshape
-seg00186,,,,S12f,handshape
-seg00187,,,,S130,handshape
-seg00188,,,,S131,handshape
-seg00189,,,,S133,handshape
-seg00190,,,,S134,handshape
-seg00191,,,,S135,handshape
-seg00192,,,,S136,handshape
-seg00193,,,,S137,handshape
-seg00194,,,,S138,handshape
-seg00195,,,,S139,handshape
-seg00196,,,,S13a,handshape
-seg00197,,,,S13b,handshape
-seg00198,,,,S13c,handshape
-seg00199,,,,S141,handshape
-seg00200,,,,S143,handshape
-seg00201,,,,S148,handshape
-seg00202,,,,S14f,handshape
-seg00203,,,,S151,handshape
-seg00204,,,,S152,handshape
-seg00205,,,,S156,handshape
-seg00206,,,,S15b,handshape
-seg00207,,,,S15c,handshape
-seg00208,,,,S15e,handshape
-seg00209,,,,S15f,handshape
-seg00210,,,,S161,handshape
-seg00211,,,,S162,handshape
-seg00212,,,,S163,handshape
-seg00213,,,,S164,handshape
-seg00214,,,,S165,handshape
-seg00215,,,,S166,handshape
-seg00216,,,,S167,handshape
-seg00217,,,,S169,handshape
-seg00218,,,,S16a,handshape
-seg00219,,,,S16b,handshape
-seg00220,,,,S16c,handshape
-seg00221,,,,S172,handshape
-seg00222,,,,S174,handshape
-seg00223,,,,S175,handshape
-seg00224,,,,S178,handshape
-seg00225,,,,S179,handshape
-seg00226,,,,S17a,handshape
-seg00227,,,,S17b,handshape
-seg00228,,,,S17f,handshape
-seg00229,,,,S181,handshape
-seg00230,,,,S183,handshape
-seg00231,,,,S184,handshape
-seg00232,,,,S186,handshape
-seg00233,,,,S188,handshape
-seg00234,,,,S189,handshape
-seg00235,,,,S18a,handshape
-seg00236,,,,S191,handshape
-seg00237,,,,S194,handshape
-seg00238,,,,S195,handshape
-seg00239,,,,S197,handshape
-seg00240,,,,S19b,handshape
-seg00241,,,,S19d,handshape
-seg00242,,,,S19e,handshape
-seg00243,,,,S1a1,handshape
-seg00244,,,,S1a2,handshape
-seg00245,,,,S1a6,handshape
-seg00246,,,,S1a8,handshape
-seg00247,,,,S1a9,handshape
-seg00248,,,,S1aa,handshape
-seg00249,,,,S1ac,handshape
-seg00250,,,,S1af,handshape
-seg00251,,,,S1b1,handshape
-seg00252,,,,S1b6,handshape
-seg00253,,,,S1b7,handshape
-seg00254,,,,S1b8,handshape
-seg00255,,,,S1b9,handshape
-seg00256,,,,S1bc,handshape
-seg00257,,,,S1bd,handshape
-seg00258,,,,S1be,handshape
-seg00259,,,,S1bf,handshape
-seg00260,,,,S1c0,handshape
-seg00261,,,,S1c2,handshape
-seg00262,,,,S1c7,handshape
-seg00263,,,,S1c8,handshape
-seg00264,,,,S1c9,handshape
-seg00265,,,,S1ca,handshape
-seg00266,,,,S1cc,handshape
-seg00267,,,,S1cf,handshape
-seg00268,,,,S1d9,handshape
-seg00269,,,,S1db,handshape
-seg00270,,,,S1e3,handshape
-seg00271,,,,S1e6,handshape
-seg00272,,,,S1e8,handshape
-seg00273,,,,S1ec,handshape
-seg00274,,,,S1ef,handshape
-seg00275,,,,S1f1,handshape
-seg00276,,,,S1f6,handshape
-seg00277,,,,S1fa,handshape
-seg00278,,,,S1fe,handshape
+segment_id,segment_class,hamnosys_1_initial_configuration,hamnosys_2_basic_handshape,hamnosys_3_handshape_modifications,fsw,signwriting_1,signwriting_2
+seg00001,handshape,Selected fingers,0_finger(Fist),(Selected Fingers extended),S1f5,񅯣,񅯡
+seg00002,handshape,Selected fingers,0_finger(Fist),(Selected Fingers extended),S1f7,񅲱,񅳁
+seg00003,handshape,Selected fingers,0_finger(Fist),(Selected Fingers extended),S1f8,񅴑,
+seg00004,handshape,Selected fingers,0_finger(Fist),(Selected Fingers extended),S203,񆄱,񆅁
+seg00005,handshape,Selected fingers,0_finger(Fist),(Selected Fingers bent),S1f9,񅵱,
+seg00006,handshape,Selected fingers,0_finger(Fist),(fistDerivation),S1fb,񅸱,
+seg00007,handshape,Selected fingers,0_finger(Fist),(fistDerivation),S1fc,񅺡,񅺑
+seg00008,handshape,Selected fingers,0_finger(Fist),(fistDerivation),S1fd,񅼁,񅻱
+seg00009,handshape,Selected fingers,0_finger(Fist),(fistDerivation),S1ff,񅾱,
+seg00010,handshape,Selected fingers,0_finger(Fist),(fistDerivation),S200,񆀑,
+seg00011,handshape,Selected fingers,0_finger(Fist),(fistDerivation),S201,񆁱,
+seg00012,handshape,Selected fingers,1_finger,(Selected Fingers extended),S100,񀀁,
+seg00013,handshape,Selected fingers,1_finger,(Selected Fingers extended),S101,񀁱,
+seg00014,handshape,Selected fingers,1_finger,(Selected Fingers extended),S103,񀄱,
+seg00015,handshape,Selected fingers,1_finger,(Selected Fingers extended),S108,񀌑,
+seg00016,handshape,Selected fingers,1_finger,(Selected Fingers extended),S192,񃛑,񃛁
+seg00017,handshape,Selected fingers,1_finger,(Selected Fingers extended),S193,񃜱,
+seg00018,handshape,Selected fingers,1_finger,(Selected Fingers extended),S19a,񃧑,񃧁
+seg00019,handshape,Selected fingers,1_finger,(Selected Fingers extended),S1ae,񄅑,
+seg00020,handshape,Selected fingers,1_finger,(Selected Fingers extended),S1c6,񄩁,񄩑
+seg00021,handshape,Selected fingers,1_finger,(Selected Fingers extended),S1dc,񅊑,񅊡
+seg00022,handshape,Selected fingers,1_finger,(Selected Fingers extended),S1de,񅍑,
+seg00023,handshape,Selected fingers,1_finger,(Selected Fingers extended),S1df,񅎱,
+seg00024,handshape,Selected fingers,1_finger,(Selected Fingers extended),S1e0,񅐁,񅐑
+seg00025,handshape,Selected fingers,1_finger,(Selected Fingers flattened),S10c,񀒑,
+seg00026,handshape,Selected fingers,1_finger,(Selected Fingers flattened),S1f2,񅫁,
+seg00027,handshape,Selected fingers,1_finger,(Selected Fingers flattened),S1f3,񅬱,
+seg00028,handshape,Selected fingers,1_finger,(Selected Fingers bent),S106,񀉑,
+seg00029,handshape,Selected fingers,1_finger,(Selected Fingers bent),S10a,񀏑,
+seg00030,handshape,Selected fingers,1_finger,(Selected Fingers bent),S198,񃤑,
+seg00031,handshape,Selected fingers,1_finger,(Selected Fingers bent),S1e1,񅑱,񅑡
+seg00032,handshape,Selected fingers,1_finger,(Selected Fingers bent),S1e2,񅓁,
+seg00033,handshape,Selected fingers,1_finger,(Selected Fingers bent),Missing,,
+seg00034,handshape,Selected fingers,1_finger,(Selected Fingers bent),Missing,,
+seg00035,handshape,Selected fingers,1_finger,(Selected Fingers Hooked),S1ea,񅟑,񅟁
+seg00036,handshape,Selected fingers,2_nonspread,(Selected Fingers extended),S115,񀟱,
+seg00037,handshape,Selected fingers,2_nonspread,(Selected Fingers extended),S12d,񁃡,񁃱
+seg00038,handshape,Selected fingers,2_nonspread,(Selected Fingers extended),S1b5,񄏱,
+seg00039,handshape,Selected fingers,2_nonspread,(Selected Fingers flattened),S119,񀥱,
+seg00040,handshape,Selected fingers,2_nonspread,(Selected Fingers flattened),S132,񁋑,
+seg00041,handshape,Selected fingers,2_nonspread,(Selected Fingers flattened),S13e,񁝑,
+seg00042,handshape,Selected fingers,2_nonspread,(Selected Fingers bent),S110,񀘑,
+seg00043,handshape,Selected fingers,2_nonspread,(Selected Fingers bent),S118,񀤑,
+seg00044,handshape,Selected fingers,2_nonspread,(Selected Fingers bent),S121,񀱱,
+seg00045,handshape,Selected fingers,2_nonspread,(Selected Fingers Hooked),None,,
+seg00046,handshape,Selected fingers,2_nonspread,2finger_differshape,S116,񀡑,
+seg00047,handshape,Selected fingers,2_nonspread,2finger_differshape,S11a,񀧑,񀧁
+seg00048,handshape,Selected fingers,2_nonspread,2finger_differshape,S11d,񀫡,
+seg00049,handshape,Selected fingers,2_nonspread,2finger_differshape,S126,񀹑,
+seg00050,handshape,Selected fingers,2_spread,(Selected Fingers extended),S10e,񀕁,
+seg00051,handshape,Selected fingers,2_spread,(Selected Fingers extended),S11e,񀭁,
+seg00052,handshape,Selected fingers,2_spread,(Selected Fingers extended),S125,񀷱,
+seg00053,handshape,Selected fingers,2_spread,(Selected Fingers extended),S19c,񃪑,
+seg00054,handshape,Selected fingers,2_spread,(Selected Fingers extended),S1a0,񃰑,
+seg00055,handshape,Selected fingers,2_spread,(Selected Fingers extended),S1b0,񄈑,
+seg00056,handshape,Selected fingers,2_spread,(Selected Fingers extended),S1b4,񄎑,
+seg00057,handshape,Selected fingers,2_spread,(Selected Fingers extended),S1cb,񄰱,
+seg00058,handshape,Selected fingers,2_spread,(Selected Fingers flattened),S112,񀛑,
+seg00059,handshape,Selected fingers,2_spread,(Selected Fingers flattened),S123,񀴱,
+seg00060,handshape,Selected fingers,2_spread,(Selected Fingers bent),S110,񀘑,
+seg00061,handshape,Selected fingers,2_spread,(Selected Fingers bent),S121,񀱱,
+seg00062,handshape,Selected fingers,2_spread,(Selected Fingers bent),S122,񀳑,
+seg00063,handshape,Selected fingers,2_spread,2finger_differshape,S126,񀹑,
+seg00064,handshape,Selected fingers,2_spread,2finger_differshape,S140,񁠑,
+seg00065,handshape,Selected fingers,2_spread,2finger_differshape,S142,񁣑,
+seg00066,handshape,Selected fingers,3_nonspread,extended,S18e,񃕑,
+seg00067,handshape,Selected fingers,3_nonspread,flattened,None,,
+seg00068,handshape,Selected fingers,3_nonspread,bent,None,,
+seg00069,handshape,Selected fingers,3_nonspread,hooked,None,,
+seg00070,handshape,Selected fingers,3_nonspread,3finger_differshape,None,,
+seg00071,handshape,Selected fingers,3_spread,extended,S18f,񃖱,
+seg00072,handshape,Selected fingers,3_spread,extended,S1a4,񃶁,
+seg00073,handshape,Selected fingers,3_spread,extended,S1ab,񄀱,
+seg00074,handshape,Selected fingers,3_spread,extended,S1c4,񄦑,
+seg00075,handshape,Selected fingers,3_spread,flattened,None,,
+seg00076,handshape,Selected fingers,3_spread,bent,S190,񃘑,
+seg00077,handshape,Selected fingers,3_spread,hooked,None,,
+seg00078,handshape,Selected fingers,3_spread,3finger_differshape,None,,
+seg00079,handshape,Selected fingers,4_nonspread,(Selected Fingers extended),S147,񁪱,񁫁
+seg00080,handshape,Selected fingers,4_nonspread,(Selected Fingers extended),S15a,񂇁,񂇑
+seg00081,handshape,Selected fingers,4_nonspread,(Selected Fingers extended),S15d,񂋱,񂋡
+seg00082,handshape,Selected fingers,4_nonspread,(Selected Fingers flattened),S14b,񁰱,
+seg00083,handshape,Selected fingers,4_nonspread,(Selected Fingers flattened),S180,񃀑,񃀁
+seg00084,handshape,Selected fingers,4_nonspread,(Selected Fingers flattened),S182,񃃑,
+seg00085,handshape,Selected fingers,4_nonspread,(Selected Fingers bent),S149,񁭱,
+seg00086,handshape,Selected fingers,4_nonspread,(Selected Fingers bent),S168,񂜑,
+seg00087,handshape,Selected fingers,4_nonspread,(Selected Fingers bent),S16e,񂥑,
+seg00088,handshape,Selected fingers,4_nonspread,(Selected Fingers bent),S170,񂨑,
+seg00089,handshape,Selected fingers,4_nonspread,(Selected Fingers bent),S171,񂩱,
+seg00090,handshape,Selected fingers,4_nonspread,(Selected Fingers Hooked),S202,񆃑,
+seg00091,handshape,Selected fingers,4_nonspread,4finger_differshape,S1d7,񅂱,
+seg00092,handshape,Selected fingers,4_spread,(Selected Fingers extended),S144,񁦁,񁦡
+seg00093,handshape,Selected fingers,4_spread,(Selected Fingers extended),S14c,񁲁,
+seg00094,handshape,Selected fingers,4_spread,(Selected Fingers flattened),S146,񁩑,
+seg00095,handshape,Selected fingers,4_spread,(Selected Fingers flattened),S158,񂄑,
+seg00096,handshape,Selected fingers,4_spread,(Selected Fingers flattened),S159,񂅱,
+seg00097,handshape,Selected fingers,4_spread,(Selected Fingers bent),S145,񁧱,
+seg00098,handshape,Selected fingers,4_spread,(Selected Fingers bent),S14e,񁵑,
+seg00099,handshape,Selected fingers,4_spread,(Selected Fingers bent),S150,񁸑,
+seg00100,handshape,Selected fingers,4_spread,(Selected Fingers Hooked),None,,
+seg00101,handshape,Selected fingers,4_spread,4finger_differshape,S157,񂂱,
+seg00102,handshape,Selected fingers,4_spread,4finger_differshape,S1a7,񃺱,
+seg00103,handshape,Selected fingers,4_spread,4finger_differshape,S1c5,񄧱,
+seg00104,handshape,Thumb Opposition,1fin_othersFist,(fingers rounded),S199,񃥱,
+seg00105,handshape,Thumb Opposition,1fin_othersFist,(fingers rounded),S1e5,񅗱,
+seg00106,handshape,Thumb Opposition,1fin_othersFist,(fingers rounded),S1e7,񅚱,
+seg00107,handshape,Thumb Opposition,1fin_othersFist,(fingers rounded),S1eb,񅠱,
+seg00108,handshape,Thumb Opposition,1fin_othersFist,(fingers rounded),S1ed,񅣡,񅢑
+seg00109,handshape,Thumb Opposition,1fin_othersFist,FlattenedandInFistfingerUp,S19f,񃮱,
+seg00110,handshape,Thumb Opposition,1fin_othersFist,(fingers straight),S1e4,񅖑,
+seg00111,handshape,Thumb Opposition,1fin_othersFist,(fingers flattened),S1ee,񅥑,
+seg00112,handshape,Thumb Opposition,1fin_othersFist,(fingers flattened),S1f0,񅨑,񅨁
+seg00113,handshape,Thumb Opposition,1fin_othersFist,(fingers flattened),S1f4,񅮁,񅮑
+seg00114,handshape,Thumb Opposition,2finNonspread_othersFist,(fingers rounded),S129,񀽱,
+seg00115,handshape,Thumb Opposition,2finNonspread_othersFist,(fingers flattened),S13d,񁛡,񁛱
+seg00116,handshape,Thumb Opposition,2finNonspread_othersFist,(fingers flattened),S13f,񁞱,
+seg00117,handshape,Thumb Opposition,2finNonspread_othersFist,(fingers straight),None,,
+seg00118,handshape,Thumb Opposition,2finNonspread_othersFist,FlattenedandInFistfingerUp,S1a3,񃴱,
+seg00119,handshape,Thumb Opposition,2finNonspread_othersFist,FlattenedandInFistfingerUp,S1b2,񄋑,
+seg00120,handshape,Thumb Opposition,2finNonspread_othersFist,FlattenedandInFistfingerUp,S1b3,񄌱,
+seg00121,handshape,Thumb Opposition,2finSpread_othersFist,(fingers rounded),S128,񀼑,
+seg00122,handshape,Thumb Opposition,2finSpread_othersFist,(fingers rounded),S12a,񀿑,
+seg00123,handshape,Thumb Opposition,2finSpread_othersFist,(fingers flattened),S12b,񁀱,
+seg00124,handshape,Thumb Opposition,2finSpread_othersFist,(fingers straight),S127,񀺱,
+seg00125,handshape,Thumb Opposition,2finSpread_othersFist,FlattenedandInFistfingerUp,None,,
+seg00126,handshape,Thumb Opposition,4finNonspread,(fingers rounded),S16d,񂣱,
+seg00127,handshape,Thumb Opposition,4finNonspread,(fingers rounded),S173,񂬱,
+seg00128,handshape,Thumb Opposition,4finNonspread,(fingers rounded),S176,񂱑,
+seg00129,handshape,Thumb Opposition,4finNonspread,(fingers rounded),S177,񂲱,
+seg00130,handshape,Thumb Opposition,4finNonspread,(fingers flattened),S17c,񂺑,
+seg00131,handshape,Thumb Opposition,4finNonspread,(fingers flattened),S17d,񂻱,
+seg00132,handshape,Thumb Opposition,4finNonspread,(fingers flattened),S185,񃇱,
+seg00133,handshape,Thumb Opposition,4finNonspread,(fingers straight),S160,񂐑,
+seg00134,handshape,Thumb Opposition,4finSpread,(fingers rounded),S153,񁼱,
+seg00135,handshape,Thumb Opposition,4finSpread,(fingers rounded),S154,񁾑,
+seg00136,handshape,Thumb Opposition,4finSpread,(fingers rounded),S155,񁿱,
+seg00137,handshape,Thumb Opposition,4finSpread,(fingers flattened),S155,񁿱,
+seg00138,handshape,Thumb Opposition,4finSpread,(fingers straight),None,,
+seg00139,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S187,񃊱,
+seg00140,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S18b,񃐱,
+seg00141,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1a4,񃶁,
+seg00142,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1a5,񃷱,
+seg00143,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1ba,񄗁,
+seg00144,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1bb,񄘱,
+seg00145,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1ce,񄵑,
+seg00146,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1d0,񄸑,
+seg00147,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1d5,񄿱,
+seg00148,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",S1d6,񅁑,
+seg00149,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others spread)",Missing,,
+seg00150,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others nonspread)",S18c,񃒑,
+seg00151,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others nonspread)",S18d,񃓱,
+seg00152,handshape,Thumb Opposition,1fin_othersNonfist,"(thumb rounded,others nonspread)",S1da,񅇑,
+seg00153,handshape,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1c1,񄡱,
+seg00154,handshape,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1c3,񄤱,
+seg00155,handshape,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d1,񄹱,
+seg00156,handshape,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d2,񄻑,
+seg00157,handshape,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d3,񄼱,
+seg00158,handshape,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d4,񄾑,
+seg00159,handshape,Thumb Opposition,1fin_othersNonfist,(thumb flattened),S1d8,񅄑,
+seg00160,handshape,Thumb Opposition,1fin_othersNonfist,FlattenedandInFistfingerUp,S105,񀇱,
+seg00161,handshape,Thumb Opposition,1fin_othersNonfist,FlattenedandInFistfingerUp,S196,񃡑,
+seg00162,,,,,S10b,,
+seg00163,,,,,S14a,,
+seg00164,,,,,S14d,,
+seg00165,,,,,S16f,,
+seg00166,,,,,S17e,,
+seg00167,,,,,S1cd,,
+seg00168,,,,,S1dd,,
+seg00169,,,,,S102,,
+seg00170,,,,,S104,,
+seg00171,,,,,S107,,
+seg00172,,,,,S109,,
+seg00173,,,,,S10d,,
+seg00174,,,,,S10f,,
+seg00175,,,,,S111,,
+seg00176,,,,,S113,,
+seg00177,,,,,S114,,
+seg00178,,,,,S117,,
+seg00179,,,,,S11b,,
+seg00180,,,,,S11c,,
+seg00181,,,,,S11f,,
+seg00182,,,,,S120,,
+seg00183,,,,,S124,,
+seg00184,,,,,S12c,,
+seg00185,,,,,S12e,,
+seg00186,,,,,S12f,,
+seg00187,,,,,S130,,
+seg00188,,,,,S131,,
+seg00189,,,,,S133,,
+seg00190,,,,,S134,,
+seg00191,,,,,S135,,
+seg00192,,,,,S136,,
+seg00193,,,,,S137,,
+seg00194,,,,,S138,,
+seg00195,,,,,S139,,
+seg00196,,,,,S13a,,
+seg00197,,,,,S13b,,
+seg00198,,,,,S13c,,
+seg00199,,,,,S141,,
+seg00200,,,,,S143,,
+seg00201,,,,,S148,,
+seg00202,,,,,S14f,,
+seg00203,,,,,S151,,
+seg00204,,,,,S152,,
+seg00205,,,,,S156,,
+seg00206,,,,,S15b,,
+seg00207,,,,,S15c,,
+seg00208,,,,,S15e,,
+seg00209,,,,,S15f,,
+seg00210,,,,,S161,,
+seg00211,,,,,S162,,
+seg00212,,,,,S163,,
+seg00213,,,,,S164,,
+seg00214,,,,,S165,,
+seg00215,,,,,S166,,
+seg00216,,,,,S167,,
+seg00217,,,,,S169,,
+seg00218,,,,,S16a,,
+seg00219,,,,,S16b,,
+seg00220,,,,,S16c,,
+seg00221,,,,,S172,,
+seg00222,,,,,S174,,
+seg00223,,,,,S175,,
+seg00224,,,,,S178,,
+seg00225,,,,,S179,,
+seg00226,,,,,S17a,,
+seg00227,,,,,S17b,,
+seg00228,,,,,S17f,,
+seg00229,,,,,S181,,
+seg00230,,,,,S183,,
+seg00231,,,,,S184,,
+seg00232,,,,,S186,,
+seg00233,,,,,S188,,
+seg00234,,,,,S189,,
+seg00235,,,,,S18a,,
+seg00236,,,,,S191,,
+seg00237,,,,,S194,,
+seg00238,,,,,S195,,
+seg00239,,,,,S197,,
+seg00240,,,,,S19b,,
+seg00241,,,,,S19d,,
+seg00242,,,,,S19e,,
+seg00243,,,,,S1a1,,
+seg00244,,,,,S1a2,,
+seg00245,,,,,S1a6,,
+seg00246,,,,,S1a8,,
+seg00247,,,,,S1a9,,
+seg00248,,,,,S1aa,,
+seg00249,,,,,S1ac,,
+seg00250,,,,,S1af,,
+seg00251,,,,,S1b1,,
+seg00252,,,,,S1b6,,
+seg00253,,,,,S1b7,,
+seg00254,,,,,S1b8,,
+seg00255,,,,,S1b9,,
+seg00256,,,,,S1bc,,
+seg00257,,,,,S1bd,,
+seg00258,,,,,S1be,,
+seg00259,,,,,S1bf,,
+seg00260,,,,,S1c0,,
+seg00261,,,,,S1c2,,
+seg00262,,,,,S1c7,,
+seg00263,,,,,S1c8,,
+seg00264,,,,,S1c9,,
+seg00265,,,,,S1ca,,
+seg00266,,,,,S1cc,,
+seg00267,,,,,S1cf,,
+seg00268,,,,,S1d9,,
+seg00269,,,,,S1db,,
+seg00270,,,,,S1e3,,
+seg00271,,,,,S1e6,,
+seg00272,,,,,S1e8,,
+seg00273,,,,,S1ec,,
+seg00274,,,,,S1ef,,
+seg00275,,,,,S1f1,,
+seg00276,,,,,S1f6,,
+seg00277,,,,,S1fa,,
+seg00278,,,,,S1fe,,
