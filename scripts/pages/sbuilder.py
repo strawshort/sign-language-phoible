@@ -110,7 +110,13 @@ def render_segment_details(segment_row, columns_to_show):
     return "\n".join(parts)
 
 
-def render_inventory_table(matching_inventories, inventory_id_column, inventory_name_column, language_name_column, source_label_column):
+def render_inventory_table(
+    matching_inventories,
+    inventory_id_column,
+    inventory_name_column,
+    language_name_column,
+    source_label_column,
+):
     if not matching_inventories:
         return "<p>No inventories found for this segment.</p>"
 
@@ -165,12 +171,52 @@ def write_segment_page(output_path, title, details_html, inventory_table_html):
     out.write_text(page, encoding="utf-8")
 
 
-def main():
-    print("This program builds individual segment pages and lists the inventories that contain each segment.")
+def get_known_defaults(segments_csv, inventories_csv):
+    seg_norm = str(Path(segments_csv)).replace("\\", "/").lower()
+    inv_norm = str(Path(inventories_csv)).replace("\\", "/").lower()
 
-    segments_csv = input("\nSegments CSV path: ").strip()
-    inventories_csv = input("Inventories CSV path: ").strip()
-    output_folder = input("Output folder for segment pages (for example: segments): ").strip()
+    if seg_norm.endswith("segments.csv") and inv_norm.endswith("inventories.csv"):
+        return {
+            "output_folder": "segments",
+            "segment_id_column": "segment_id",
+            "segment_fsw_column": "fsw",
+            "segment_class_column": "segment_class",
+            "segment_detail_columns": [
+                "segment_id",
+                "segment_class",
+                "hamnosys_1_initial_configuration",
+                "hamnosys_2_basic_handshape",
+                "hamnosys_3_handshape_modifications",
+                "fsw",
+                "signwriting_1",
+                "signwriting_2",
+            ],
+            "inventory_id_column": "inventory_id",
+            "inventory_name_column": "inventory_name",
+            "language_name_column": "language_name",
+            "contributor_column": "contributor",
+            "year_column": "year",
+            "data_source_column": "data_source",
+            "data_source_location_column": "data_source_location",
+        }
+
+    return None
+
+
+def main():
+    print()
+    print("This program creates individual segment HTML pages from segments.csv.")
+    print("Each segment page shows the segment details and the inventories that contain that segment.")
+
+    segments_csv = input(
+        "\nEnter the path to the segments CSV "
+        "(for example: data/slphoible/segments.csv): "
+    ).strip()
+
+    inventories_csv = input(
+        "Enter the path to the inventories CSV "
+        "(for example: data/slphoible/inventories.csv): "
+    ).strip()
 
     segments_rows = load_csv(segments_csv)
     inventories_rows = load_csv(inventories_csv)
@@ -185,25 +231,92 @@ def main():
     segment_columns = list(segments_rows[0].keys())
     inventory_columns = list(inventories_rows[0].keys())
 
-    print("\n--- segments.csv columns ---")
-    show_columns(segment_columns)
-    segment_id_column = choose_one_column(segment_columns, "Select the segment ID column from segments.csv")
-    segment_fsw_column = choose_one_column(segment_columns, "Select the FSW column from segments.csv")
-    segment_class_column = choose_one_column(segment_columns, "Select the segment class column from segments.csv")
-    segment_detail_columns = choose_columns(
-        segment_columns,
-        "Enter the column numbers to show in the segment details table, separated by commas:"
-    )
+    defaults = get_known_defaults(segments_csv, inventories_csv)
 
-    print("\n--- inventories.csv columns ---")
-    show_columns(inventory_columns)
-    inventory_id_column = choose_one_column(inventory_columns, "Select the inventory ID column from inventories.csv")
-    inventory_name_column = choose_one_column(inventory_columns, "Select the inventory name column from inventories.csv")
-    language_name_column = choose_one_column(inventory_columns, "Select the language name column from inventories.csv")
-    contributor_column = choose_one_column(inventory_columns, "Select the contributor column from inventories.csv")
-    year_column = choose_one_column(inventory_columns, "Select the year column from inventories.csv")
-    data_source_column = choose_one_column(inventory_columns, "Select the data source column from inventories.csv")
-    data_source_location_column = choose_one_column(inventory_columns, "Select the data source location column from inventories.csv")
+    if defaults:
+        print("\nDetected known CSV files.")
+        print(f"\nSuggested output folder: {defaults['output_folder']}")
+
+        print("\nSuggested default columns from segments.csv:")
+        print(f"  ID column: {defaults['segment_id_column']}")
+        print(f"  FSW column: {defaults['segment_fsw_column']}")
+        print(f"  Segment class column: {defaults['segment_class_column']}")
+        print("  Segment detail columns: " + ", ".join(defaults["segment_detail_columns"]))
+
+        print("\nSuggested default columns from inventories.csv:")
+        print(f"  Inventory ID column: {defaults['inventory_id_column']}")
+        print(f"  Inventory name column: {defaults['inventory_name_column']}")
+        print(f"  Language name column: {defaults['language_name_column']}")
+        print(f"  Contributor column: {defaults['contributor_column']}")
+        print(f"  Year column: {defaults['year_column']}")
+        print(f"  Data source column: {defaults['data_source_column']}")
+        print(f"  Data source location column: {defaults['data_source_location_column']}")
+
+        use_defaults = input("\nUse these defaults? (y/n): ").strip().lower()
+
+        if use_defaults == "y":
+            output_folder = defaults["output_folder"]
+            segment_id_column = defaults["segment_id_column"]
+            segment_fsw_column = defaults["segment_fsw_column"]
+            segment_class_column = defaults["segment_class_column"]
+            segment_detail_columns = defaults["segment_detail_columns"]
+            inventory_id_column = defaults["inventory_id_column"]
+            inventory_name_column = defaults["inventory_name_column"]
+            language_name_column = defaults["language_name_column"]
+            contributor_column = defaults["contributor_column"]
+            year_column = defaults["year_column"]
+            data_source_column = defaults["data_source_column"]
+            data_source_location_column = defaults["data_source_location_column"]
+        else:
+            output_folder = input(
+                "\nEnter the output folder for the segment pages "
+                "(for example: segments): "
+            ).strip()
+
+            print("\n--- segments.csv columns ---")
+            show_columns(segment_columns)
+            segment_id_column = choose_one_column(segment_columns, "Select the segment ID column from segments.csv")
+            segment_fsw_column = choose_one_column(segment_columns, "Select the FSW column from segments.csv")
+            segment_class_column = choose_one_column(segment_columns, "Select the segment class column from segments.csv")
+            segment_detail_columns = choose_columns(
+                segment_columns,
+                "Enter the column numbers to show in the segment details table, separated by commas:"
+            )
+
+            print("\n--- inventories.csv columns ---")
+            show_columns(inventory_columns)
+            inventory_id_column = choose_one_column(inventory_columns, "Select the inventory ID column from inventories.csv")
+            inventory_name_column = choose_one_column(inventory_columns, "Select the inventory name column from inventories.csv")
+            language_name_column = choose_one_column(inventory_columns, "Select the language name column from inventories.csv")
+            contributor_column = choose_one_column(inventory_columns, "Select the contributor column from inventories.csv")
+            year_column = choose_one_column(inventory_columns, "Select the year column from inventories.csv")
+            data_source_column = choose_one_column(inventory_columns, "Select the data source column from inventories.csv")
+            data_source_location_column = choose_one_column(inventory_columns, "Select the data source location column from inventories.csv")
+    else:
+        output_folder = input(
+            "\nEnter the output folder for the segment pages "
+            "(for example: segments): "
+        ).strip()
+
+        print("\n--- segments.csv columns ---")
+        show_columns(segment_columns)
+        segment_id_column = choose_one_column(segment_columns, "Select the segment ID column from segments.csv")
+        segment_fsw_column = choose_one_column(segment_columns, "Select the FSW column from segments.csv")
+        segment_class_column = choose_one_column(segment_columns, "Select the segment class column from segments.csv")
+        segment_detail_columns = choose_columns(
+            segment_columns,
+            "Enter the column numbers to show in the segment details table, separated by commas:"
+        )
+
+        print("\n--- inventories.csv columns ---")
+        show_columns(inventory_columns)
+        inventory_id_column = choose_one_column(inventory_columns, "Select the inventory ID column from inventories.csv")
+        inventory_name_column = choose_one_column(inventory_columns, "Select the inventory name column from inventories.csv")
+        language_name_column = choose_one_column(inventory_columns, "Select the language name column from inventories.csv")
+        contributor_column = choose_one_column(inventory_columns, "Select the contributor column from inventories.csv")
+        year_column = choose_one_column(inventory_columns, "Select the year column from inventories.csv")
+        data_source_column = choose_one_column(inventory_columns, "Select the data source column from inventories.csv")
+        data_source_location_column = choose_one_column(inventory_columns, "Select the data source location column from inventories.csv")
 
     valid_segments = [
         row for row in segments_rows
