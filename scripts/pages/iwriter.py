@@ -30,6 +30,21 @@ def choose_one_column(columns, prompt):
     return columns[int(raw) - 1]
 
 
+def get_known_defaults(inventories_csv):
+    normalized = str(Path(inventories_csv)).replace("\\", "/").lower()
+
+    if normalized.endswith("inventories.csv"):
+        return {
+            "inventory_id_column": "inventory_id",
+            "inventory_name_column": "inventory_name",
+            "data_source_column": "data_source",
+            "data_source_location_column": "data_source_location",
+            "count_target_column": "ct_handshapes",
+        }
+
+    return None
+
+
 def find_matching_file(folder, source_code):
     folder_path = Path(folder)
     matches = sorted(folder_path.glob(f"{source_code}_*.csv"))
@@ -74,8 +89,31 @@ def count_non_empty_fsw_rows(source_file, fsw_column):
     return sum(1 for row in rows if row.get(fsw_column, "").strip() != "")
 
 
+def safe_int(value):
+    value = str(value).strip()
+    if value == "":
+        return 0
+    return int(value)
+
+
+def recompute_ct_segments(row, count_columns, ct_segments_column):
+    total = 0
+    for col in count_columns:
+        if col == ct_segments_column:
+            continue
+        total += safe_int(row.get(col, ""))
+    row[ct_segments_column] = str(total)
+
+
 def main():
-    inventories_csv = input("Inventories CSV path: ").strip()
+    print("This program updates a source-specific ct_ column in inventories.csv.")
+    print("It also recalculates ct_segments automatically as the sum of the ct_ columns.")
+
+    inventories_csv = input(
+        "\nEnter the path to the inventories CSV "
+        "(for example: data/slphoible/inventories.csv): "
+    ).strip()
+
     inventories_rows = load_csv(inventories_csv)
 
     if not inventories_rows:
@@ -83,30 +121,83 @@ def main():
         return
 
     inventory_columns = list(inventories_rows[0].keys())
+    defaults = get_known_defaults(inventories_csv)
 
-    print("\n--- inventories.csv columns ---")
-    show_columns(inventory_columns)
+    if defaults:
+        print("\nDetected known CSV file.")
 
-    inventory_id_column = choose_one_column(
-        inventory_columns,
-        "Select the inventory ID column from inventories.csv",
-    )
-    inventory_name_column = choose_one_column(
-        inventory_columns,
-        "Select the inventory name column from inventories.csv",
-    )
-    data_source_column = choose_one_column(
-        inventory_columns,
-        "Select the data source column from inventories.csv",
-    )
-    data_source_location_column = choose_one_column(
-        inventory_columns,
-        "Select the data source location column from inventories.csv",
-    )
-    count_target_column = choose_one_column(
-        inventory_columns,
-        "Select the count column to update in inventories.csv",
-    )
+        print("\nFrom inventories.csv:")
+        print(f"  Inventory ID column: {defaults['inventory_id_column']}")
+        print(f"  Inventory name column: {defaults['inventory_name_column']}")
+        print(f"  Data source column: {defaults['data_source_column']}")
+        print(f"  Data source location column: {defaults['data_source_location_column']}")
+        print(f"  Suggested segment-specific ct_ column: {defaults['count_target_column']}")
+
+        use_defaults = input("\nUse these defaults? (y/n): ").strip().lower()
+
+        if use_defaults == "y":
+            inventory_id_column = defaults["inventory_id_column"]
+            inventory_name_column = defaults["inventory_name_column"]
+            data_source_column = defaults["data_source_column"]
+            data_source_location_column = defaults["data_source_location_column"]
+            count_target_column = defaults["count_target_column"]
+        else:
+            print("\n--- inventories.csv columns ---")
+            show_columns(inventory_columns)
+
+            inventory_id_column = choose_one_column(
+                inventory_columns,
+                "Select the inventory ID column from inventories.csv",
+            )
+            inventory_name_column = choose_one_column(
+                inventory_columns,
+                "Select the inventory name column from inventories.csv",
+            )
+            data_source_column = choose_one_column(
+                inventory_columns,
+                "Select the data source column from inventories.csv",
+            )
+            data_source_location_column = choose_one_column(
+                inventory_columns,
+                "Select the data source location column from inventories.csv",
+            )
+            count_target_column = choose_one_column(
+                inventory_columns,
+                "Select the segment-specific ct_ column to update "
+                "(for example: ct_handshapes). ct_segments will be recalculated automatically.",
+            )
+    else:
+        print("\n--- inventories.csv columns ---")
+        show_columns(inventory_columns)
+
+        inventory_id_column = choose_one_column(
+            inventory_columns,
+            "Select the inventory ID column from inventories.csv",
+        )
+        inventory_name_column = choose_one_column(
+            inventory_columns,
+            "Select the inventory name column from inventories.csv",
+        )
+        data_source_column = choose_one_column(
+            inventory_columns,
+            "Select the data source column from inventories.csv",
+        )
+        data_source_location_column = choose_one_column(
+            inventory_columns,
+            "Select the data source location column from inventories.csv",
+        )
+        count_target_column = choose_one_column(
+            inventory_columns,
+            "Select the segment-specific ct_ column to update "
+            "(for example: ct_handshapes). ct_segments will be recalculated automatically.",
+        )
+
+    ct_segments_column = "ct_segments"
+    count_columns = [col for col in inventory_columns if col.startswith("ct_")]
+
+    if ct_segments_column not in inventory_columns:
+        print("\nWarning: ct_segments column not found. Only the selected count column will be updated.")
+        ct_segments_column = None
 
     valid_inventories = [
         row for row in inventories_rows
@@ -240,6 +331,8 @@ def main():
     print(f"Target count column: {count_target_column}")
     print(f"Inventories selected: {len(selected_inventories)}")
     print(f"Inventories with computed updates: {len(updates)}")
+    if ct_segments_column:
+        print("ct_segments will also be recalculated as the sum of all ct_ columns.")
 
     preview_count = min(10, len(updates))
     print(f"\nFirst {preview_count} updates:")
@@ -260,10 +353,14 @@ def main():
         inv_id = row.get(inventory_id_column, "")
         if inv_id in updates_by_id:
             row[count_target_column] = updates_by_id[inv_id]
+            if ct_segments_column:
+                recompute_ct_segments(row, count_columns, ct_segments_column)
 
     write_csv(inventories_csv, inventories_rows, inventory_columns)
 
     print(f"\nUpdated {len(updates)} inventory row(s) in {inventories_csv}.")
+    if ct_segments_column:
+        print("Recomputed ct_segments for the updated inventories.")
 
     run_generator = input("Do you want to run generator.py now? (y/n): ").strip().lower()
     if run_generator == "y":
