@@ -25,14 +25,14 @@ lan00023,Swiss-German Sign Language,DSGS,University of Geneva: https://bfc.unige
 lan00024,Swiss-French Sign Language,LSF-SR,University of Geneva: https://bfc.unige.ch/research-areas-bfc/sign-language-interpreting,swis1241,ssr,Eurasia,Glottolog
 lan00025,Swiss-Italian Sign Language,LIS-SI,University of Geneva: https://bfc.unige.ch/research-areas-bfc/sign-language-interpreting,swis1235,slf,Eurasia,Glottolog
 lan00026,Chilean Sign Language,LSCh,Wikipedia,chil1264,csg,South America,Glottolog
-lan00027,Colombian Sign Language,LSC,Wikipedia,colo1249,csn,South America,Glottolog
+lan00027,Colombian Sign Language,LSC (CO),Wikipedia,colo1249,csn,South America,Glottolog
 lan00028,Costa Rican Sign Language,LESCO,Costa Rica Government Education Page: https://lesco.cenarec.go.cr,cost1249,csr,North America,Glottolog
 lan00029,Czech Sign Language,ČZJ,Wikipedia,czec1253,cse,Eurasia,Glottolog
 lan00030,Ecuadorian Sign Language,LSEC,Wikipedia,ecua1243,ecs,South America,Glottolog
 lan00031,Estonian Sign Language,EVK,Wikipedia,esto1238,eso,Eurasia,Glottolog
 lan00032,Egypt Sign Language,ESL,African Sign Languages Resource Center: https://africansignlanguagesresourcecenter.com/egypt/,egyp1238,esl,Africa,Glottolog
 lan00033,Spanish Sign Language,LSE,Wikipedia,span1263,ssp,Eurasia,Glottolog
-lan00034,Catalan Sign Language,LSC,Wikipedia,cata1241,csc,Eurasia,Glottolog
+lan00034,Catalan Sign Language,LSC (CT),Wikipedia,cata1241,csc,Eurasia,Glottolog
 lan00035,Ethiopian Sign Language,EthSL,Addis Ababa University Dictionary of Ethiopian Sign Language: https://ethsl.aau.edu.et,ethi1238,eth,Africa,Glottolog
 lan00036,Finnish Sign Language,FinSL,The Corpus of Finnish Sign Language: https://aclanthology.org/2020.signlang-1.32/,finn1310,fse,Eurasia,Glottolog
 lan00037,French Sign Language,LSF,Wikipedia,fren1243,fsl,Eurasia,Glottolog
@@ -42,9 +42,9 @@ lan00040,Guatemalan Sign Language,Lensegua,Wikipedia,guat1249,gsm,North America,
 lan00041,Honduras Sign Language,LESHO,Wikipedia,hond1239,hds,North America,Glottolog
 lan00042,Haitian Sign Language,LSH,Gallaudet University Linguistics Department: https://lingdept.wordpress.com/2014/06/18/introduction-to-haitian-sign-language-documentation-project-lshdop/,hait1245,(none),North America,Glottolog
 lan00043,Hungarian Sign Language,HSL,CLARIN: https://www.clarin.eu/resource-families/sign-language-resources,hung1263,hsh,Eurasia,Glottolog
-lan00044,Irish Sign Language,ISL,Wikipedia,iris1235,isg,Eurasia,Glottolog
+lan00044,Irish Sign Language,ISL (IE),Wikipedia,iris1235,isg,Eurasia,Glottolog
 lan00045,Israeli Sign Language,"Shassi, ISL",Wikipedia,isra1236,isr,Eurasia,Glottolog
-lan00046,Indian Sign Language,ISL,Indian Sign Language Research and Training Centre: https://islrtc.nic.in/online-basic-isl-course-in-self-learning-mode/,indi1237,ins,Eurasia,Glottolog
+lan00046,Indian Sign Language,ISL (IN),Indian Sign Language Research and Training Centre: https://islrtc.nic.in/online-basic-isl-course-in-self-learning-mode/,indi1237,ins,Eurasia,Glottolog
 lan00047,Icelandic Sign Language,ÍTM,SignWiki: https://is.signwiki.org/index.php/On_ÍTM_-_the_basics,icel1236,icl,Eurasia,Glottolog
 lan00048,Italian Sign Language,LIS,Wikipedia,ital1275,ise,Eurasia,Glottolog
 lan00049,Jordanian Sign Language or Levantine Arabic Sign Language,LIU,Wikipedia,jord1238,jos,Eurasia,Glottolog
@@ -53,14 +53,14 @@ lan00051,Kenya-Somali Sign Language,"KSL, LAK",Wikipedia,keny1241,xki,Africa,Glo
 lan00052,Lithuanian Sign Language,LGK,Wikipedia,lith1236,lls,Eurasia,Glottolog
 lan00053,Latvian Sign Language,LSL,Wikipedia,latv1245,lsl,Eurasia,Glottolog
 lan00054,"Myanmar Sign Languages or Burmese Sign Languages (Mandalay Myanmar Sign Language, Yangon Myanmar Sign Language)",MSLs,original (combination of multiple languages),"mand1477, yang1309","(none), ysm",Eurasia,Glottolog
-lan00055,Maltese Sign Language,LSM,Wikipedia,malt1238,mdl,Eurasia,Glottolog
+lan00055,Maltese Sign Language,LSM (MT),Wikipedia,malt1238,mdl,Eurasia,Glottolog
 lan00056,Malawian Sign Language,MSL,MAlawi National Association of the Deaf: https://manadmw.org/sign-language/,mala1549,lws,Africa,Glottolog
-lan00057,Mexican Sign Language,LSM,Wikipedia,mexi1237,mfs,North America,Glottolog
+lan00057,Mexican Sign Language,LSM (MX),Wikipedia,mexi1237,mfs,North America,Glottolog
 lan00058,Malaysian Sign Language,BIM,Wikipedia,mala1412,xml,Eurasia,Glottolog
-lan00059,Nigerian Sign Language,NSL,Wikipedia,nige1240,nsi,Africa,Glottolog
+lan00059,Nigerian Sign Language,NSL (NG),Wikipedia,nige1240,nsi,Africa,Glottolog
 lan00060,Nicaraguan Sign Language,ISN,Wikipedia,nica1238,ncs,North America,Glottolog
 lan00061,Norwegian Sign Language,"NTS, NSL",Wikipedia,norw1255,nsl,Eurasia,Glottolog
-lan00062,Nepalese Sign Language or Nepali Sign Language,NSL,Wikipedia,nepa1250,nsp,Eurasia,Glottolog
+lan00062,Nepalese Sign Language or Nepali Sign Language,NSL (NP),Wikipedia,nepa1250,nsp,Eurasia,Glottolog
 lan00063,Peruvian Sign Language,LSP,Wikipedia,peru1235,prl,South America,Glottolog
 lan00064,Philippine Sign Language,FSL,Wikipedia,phil1239,psp,Papunesia,Glottolog
 lan00065,Pakistan Sign Language,PSL,Pakistan Sign Language: https://psl.org.pk,paki1242,pks,Eurasia,Glottolog
@@ -69,7 +69,7 @@ lan00067,Portuguese Sign Language,LGP,Wikipedia,port1277,psr,Eurasia,Glottolog
 lan00068,Paraguayan Sign Language,LSPy,Wikipedia,para1318,pys,South America,Glottolog
 lan00069,Romanian Sign Language,LSR,Wikipedia,roma1324,rms,Eurasia,Glottolog
 lan00070,Russian-Tajik Sign Language,RSL,Wikipedia,russ1255,rsl,Eurasia,Glottolog
-lan00071,Saudi Arabian Sign Language,SASL,Wikipedia,saud1238,sdl,Eurasia,Glottolog
+lan00071,Saudi Sign Language or Saudi Arabian Sign Language,"SSL, SASL",Wikipedia,saud1238,sdl,Eurasia,Glottolog
 lan00072,Singapore Sign Language,SgSL,Wikipedia,sing1237,sls,Eurasia,Original
 lan00073,Slovakian Sign Language,SPJ,Wikipedia,slov1263,svk,Eurasia,Glottolog
 lan00074,Salvadoran Sign Language,LESSA,Wikipedia,salv1237,esn,North America,Glottolog
