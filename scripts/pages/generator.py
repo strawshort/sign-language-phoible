@@ -31,8 +31,10 @@ def build_link(cell_value, row_id, target_folder):
     href = f"{target_folder}/{row_id}.html"
     return f'<a href="{html.escape(href)}">{html.escape(cell_value)}</a>'
 
+
 def format_header(column_name):
     return column_name.replace("_", " ").title()
+
 
 def render_table(rows, columns_to_show, id_column=None, clickable_column=None, target_folder=None):
     parts = []
@@ -85,9 +87,9 @@ def write_page(output_path, title, table_html):
 
 
 def get_known_defaults(csv_path):
-    normalized = str(Path(csv_path)).replace("\\", "/").lower()
+    file_name = Path(csv_path).name
 
-    if normalized.endswith("inventories.csv"):
+    if file_name.startswith("inventories") and Path(csv_path).suffix == ".csv":
         return {
             "output_path": "inventories.html",
             "title": "Inventories",
@@ -105,7 +107,7 @@ def get_known_defaults(csv_path):
             "target_folder": "inventories",
         }
 
-    if normalized.endswith("segments.csv"):
+    if file_name.startswith("segments") and Path(csv_path).suffix == ".csv":
         return {
             "output_path": "segments.html",
             "title": "Segments",
@@ -123,6 +125,24 @@ def get_known_defaults(csv_path):
             "filter_column": "segment_id",
             "id_prefix": "seg",
             "target_folder": "segments",
+        }
+
+    if file_name.startswith("languages") and Path(csv_path).suffix == ".csv":
+        return {
+            "output_path": "languages.html",
+            "title": "Languages",
+            "columns_to_show": [
+                "language_name",
+                "language_abbreviation",
+                "glottocode",
+                "ISO-639-3",
+                "macro-area",
+            ],
+            "id_column": "language_id",
+            "clickable_column": "language_name",
+            "filter_column": "language_id",
+            "id_prefix": "lan",
+            "target_folder": "languages",
         }
 
     return None
@@ -193,11 +213,11 @@ def get_manual_settings(columns):
 def main():
     print()
     print("This program converts a CSV file into an HTML table page with optional clickable links.")
-    print("For inventories.csv and segments.csv, it suggests default settings automatically.")
+    print("For inventories.csv, segments.csv, and languages.csv, it suggests default settings automatically.")
 
     csv_path = input(
         "\nEnter the CSV path for the file that you want to convert to HTML: "
-        "(for example: data/slphoible/segments.csv or data/slphoible/inventories.csv): "
+        "(for example: data/slphoible/segments.csv, data/slphoible/inventories.csv, or data/slphoible/languages.csv): "
     ).strip()
 
     rows = load_csv(csv_path)
