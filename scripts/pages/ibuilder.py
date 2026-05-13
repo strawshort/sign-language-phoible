@@ -5,6 +5,32 @@ import sys
 
 csv.field_size_limit(sys.maxsize)
 
+SIGNWRITING_FONT_CSS = """
+<style>
+@font-face {
+  font-family: "SuttonSignWritingLine";
+  src:
+    local('SuttonSignWritingLine'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingFill";
+  src:
+    local('SuttonSignWritingFill'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingOneD";
+  src:
+    local('SuttonSignWritingOneD'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
+}
+.signwriting {
+  font-family: "SuttonSignWritingOneD", "SuttonSignWritingLine", "SuttonSignWritingFill";
+  font-size: 2em;
+}
+</style>
+"""
 
 def load_csv(csv_path):
     with open(csv_path, newline="", encoding="utf-8") as f:
@@ -103,7 +129,11 @@ def render_table(rows, columns_to_show, fsw_column):
                 cell = build_fsw_link(value, row.get("segment_id", ""))
             else:
                 cell = html.escape(value)
-            parts.append(f"<td>{cell}</td>")
+
+            if col.startswith("signwriting"):
+                parts.append(f'<td class="signwriting">{cell}</td>')
+            else:
+                parts.append(f"<td>{cell}</td>")
         parts.append("</tr>")
 
     parts.append("</tbody></table>")
@@ -142,6 +172,7 @@ def write_inventory_page(output_path, title, metadata_html, table_html):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(title)}</title>
+  {SIGNWRITING_FONT_CSS}
 </head>
 <body>
   <h1>{html.escape(title)}</h1>

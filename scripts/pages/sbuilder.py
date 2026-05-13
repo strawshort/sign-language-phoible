@@ -4,6 +4,33 @@ from pathlib import Path
 
 csv.field_size_limit(sys.maxsize)
 
+SIGNWRITING_FONT_CSS = """
+<style>
+@font-face {
+  font-family: "SuttonSignWritingLine";
+  src:
+    local('SuttonSignWritingLine'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingFill";
+  src:
+    local('SuttonSignWritingFill'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
+}
+@font-face {
+  font-family: "SuttonSignWritingOneD";
+  src:
+    local('SuttonSignWritingOneD'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
+}
+.signwriting {
+  font-family: "SuttonSignWritingOneD", "SuttonSignWritingLine", "SuttonSignWritingFill";
+  font-size: 2em;
+}
+</style>
+"""
+
 
 def load_csv(csv_path):
     with open(csv_path, newline="", encoding="utf-8") as f:
@@ -101,9 +128,16 @@ def render_segment_details(segment_row, columns_to_show):
     parts.append("<tbody>")
 
     for col in columns_to_show:
+        value = html_escape(segment_row.get(col, ""))
+
         parts.append("<tr>")
         parts.append(f"<th>{html_escape(format_header(col))}</th>")
-        parts.append(f"<td>{html_escape(segment_row.get(col, ''))}</td>")
+
+        if col.startswith("signwriting"):
+            parts.append(f'<td class="signwriting">{value}</td>')
+        else:
+            parts.append(f"<td>{value}</td>")
+
         parts.append("</tr>")
 
     parts.append("</tbody></table>")
@@ -154,6 +188,7 @@ def write_segment_page(output_path, title, details_html, inventory_table_html):
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html_escape(title)}</title>
+  {SIGNWRITING_FONT_CSS}
 </head>
 <body>
   <h1>{html_escape(title)}</h1>
