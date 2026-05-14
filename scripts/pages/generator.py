@@ -2,7 +2,7 @@ import csv
 import html
 from pathlib import Path
 
-SIGNWRITING_FONT_CSS = """
+PAGE_CSS = """
 <style>
 @font-face {
   font-family: "SuttonSignWritingLine";
@@ -10,24 +10,240 @@ SIGNWRITING_FONT_CSS = """
     local('SuttonSignWritingLine'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
 }
+
 @font-face {
   font-family: "SuttonSignWritingFill";
   src:
     local('SuttonSignWritingFill'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
 }
+
 @font-face {
   font-family: "SuttonSignWritingOneD";
   src:
     local('SuttonSignWritingOneD'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
 }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #222;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.site-nav a {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-description {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.table-search {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  background-color: white;
+}
+
+.table-search:focus {
+  outline: 2px solid #c7d2fe;
+  border-color: #6b7280;
+}
+
+.table-container {
+  max-height: 70vh;
+  overflow: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #eef1f5;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #eef1f5;
+}
+
+th,
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  vertical-align: top;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #333;
+}
+
+th span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+}
+
+td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.col-language-name {
+  white-space: normal;
+  min-width: 260px;
+  max-width: 520px;
+  overflow-wrap: break-word;
+}
+
+.col-inventory-name {
+  white-space: normal;
+  min-width: 220px;
+  max-width: 340px;
+  overflow-wrap: break-word;
+}
+
+.col-contributor,
+.col-cite {
+  white-space: normal;
+  max-width: 260px;
+  overflow-wrap: break-word;
+}
+
+.col-glottocode,
+.col-iso-639-3 {
+  white-space: normal;
+  min-width: 120px;
+}
+
+.col-language-abbreviation,
+.col-macro-area,
+.col-ct-handshapes,
+.col-fsw,
+.col-signwriting-1,
+.col-signwriting-2 {
+  white-space: nowrap;
+}
+
+tbody tr:hover {
+  background-color: #f4f7fb;
+}
+
+a {
+  color: #5b2ea6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .signwriting {
   font-family: "SuttonSignWritingOneD", "SuttonSignWritingLine", "SuttonSignWritingFill";
-  font-size: 2em;
+  font-size: 1.8em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.empty-cell {
+  color: #aaa;
 }
 </style>
 """
+
+TABLE_FILTER_SCRIPT = """
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("table-search");
+  const tableRows = document.querySelectorAll("tbody tr");
+
+  if (!searchInput) {
+    return;
+  }
+
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+
+    tableRows.forEach(function (row) {
+      const rowText = row.textContent.toLowerCase();
+
+      if (rowText.includes(query)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+});
+</script>
+"""
+
+
+def choose_csv_path():
+    default_csv_paths = {
+        "1": ("Inventories", "data/slphoible/inventories.csv"),
+        "2": ("Segments", "data/slphoible/segments.csv"),
+        "3": ("Languages", "data/slphoible/languages.csv"),
+    }
+
+    print("\nChoose a CSV file:")
+
+    for number, (label, path) in default_csv_paths.items():
+        print(f"{number}. {label} — {path}")
+
+    while True:
+        choice = input("> ").strip()
+
+        if choice in default_csv_paths:
+            return default_csv_paths[choice][1]
+
+        print("Please enter 1, 2, or 3.")
 
 
 def load_csv(csv_path):
@@ -37,20 +253,61 @@ def load_csv(csv_path):
 
 def show_columns(columns):
     print("\nAvailable columns:")
+
     for i, col in enumerate(columns, start=1):
         print(f"{i}. {col}")
 
 
-def choose_columns(columns, prompt):
-    print(f"\n{prompt}")
-    raw = input("> ").strip()
+def prompt_with_default(label, default_value):
+    value = input(
+        f"\n{label} [{default_value}] (Enter = default): "
+    ).strip()
+
+    if value == "":
+        return default_value
+
+    return value
+
+
+def format_columns_with_numbers(columns, selected_columns):
+    formatted_columns = []
+
+    for selected_column in selected_columns:
+        column_number = columns.index(selected_column) + 1
+        formatted_columns.append(f"{column_number}. {selected_column}")
+
+    return ", ".join(formatted_columns)
+
+
+def format_column_with_number(columns, selected_column):
+    column_number = columns.index(selected_column) + 1
+    return f"{column_number}. {selected_column}"
+
+
+def prompt_columns_with_default(columns, label, default_columns):
+    default_text = format_columns_with_numbers(columns, default_columns)
+
+    raw = input(
+        f"\n{label} [{default_text}] (Enter = default, or type numbers): "
+    ).strip()
+
+    if raw == "":
+        return default_columns
+
     indices = [int(x.strip()) - 1 for x in raw.split(",")]
     return [columns[i] for i in indices]
 
 
-def choose_one_column(columns, prompt):
-    print(f"\n{prompt}")
-    raw = input("> ").strip()
+def prompt_column_with_default(columns, label, default_column):
+    default_text = format_column_with_number(columns, default_column)
+
+    raw = input(
+        f"\n{label} [{default_text}] (Enter = default, or type number): "
+    ).strip()
+
+    if raw == "":
+        return default_column
+
     return columns[int(raw) - 1]
 
 
@@ -60,59 +317,120 @@ def build_link(cell_value, row_id, target_folder):
 
 
 def format_header(column_name):
-    return column_name.replace("_", " ").title()
+    special_headers = {
+        "fsw": "FSW",
+        "ISO-639-3": "ISO 639-3",
+        "ct_handshapes": "Handshape<br><span>Count</span>",
+        "hamnosys_1_initial_configuration": "HamNoSys 1<br><span>Initial Configuration</span>",
+        "hamnosys_2_basic_handshape": "HamNoSys 2<br><span>Basic Handshape</span>",
+        "hamnosys_3_handshape_modifications": "HamNoSys 3<br><span>Handshape Modifications</span>",
+    }
+
+    if column_name in special_headers:
+        return special_headers[column_name]
+
+    return html.escape(column_name.replace("_", " ").title())
+
+
+def format_cell_value(column_name, value):
+    if column_name in ["glottocode", "ISO-639-3"] and "," in value:
+        values = [html.escape(part.strip()) for part in value.split(",")]
+        return "<br>".join(values)
+
+    return html.escape(value)
+
+
+def render_search_box():
+    return (
+        '<input id="table-search" class="table-search" type="search" '
+        'placeholder="Type to filter rows...">'
+    )
+
+
+def render_site_nav():
+    return """
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="segments.html">Segments</a>
+  <a href="inventories.html">Inventories</a>
+  <a href="languages.html">Languages</a>
+</nav>
+"""
 
 
 def render_table(rows, columns_to_show, id_column=None, clickable_column=None, target_folder=None):
     parts = []
-    parts.append("<table border='1' cellspacing='0' cellpadding='6'>")
+    parts.append(render_search_box())
+    parts.append('<div class="table-container">')
+    parts.append("<table>")
     parts.append("<thead><tr>")
 
     for col in columns_to_show:
-        parts.append(f"<th>{html.escape(format_header(col))}</th>")
+        column_class = f"col-{col.replace('_', '-').lower()}"
+        parts.append(f'<th class="{column_class}">{format_header(col)}</th>')
 
     parts.append("</tr></thead>")
     parts.append("<tbody>")
 
     for row in rows:
         parts.append("<tr>")
+
         for col in columns_to_show:
-            value = row.get(col, "")
+            value = row.get(col, "").strip()
+            column_class = f"col-{col.replace('_', '-').lower()}"
+
             if (
                 clickable_column == col
                 and target_folder
                 and id_column
                 and row.get(id_column, "")
+                and value
             ):
                 cell = build_link(value, row[id_column], target_folder)
+            elif value == "":
+                cell = '<span class="empty-cell">—</span>'
             else:
-                cell = html.escape(value)
+                cell = format_cell_value(col, value)
 
             if col.startswith("signwriting"):
-                parts.append(f'<td class="signwriting">{cell}</td>')
+                parts.append(f'<td class="signwriting {column_class}">{cell}</td>')
             else:
-                parts.append(f"<td>{cell}</td>")
+                parts.append(f'<td class="{column_class}">{cell}</td>')
+
         parts.append("</tr>")
 
     parts.append("</tbody></table>")
+    parts.append("</div>")
+
     return "\n".join(parts)
 
 
-def write_page(output_path, title, table_html):
+def write_page(output_path, title, table_html, description=None):
+    description_html = ""
+
+    if description:
+        description_html = f'<p class="page-description">{html.escape(description)}</p>'
+
     page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{html.escape(title)}</title>
-  {SIGNWRITING_FONT_CSS}
+  {PAGE_CSS}
 </head>
 <body>
-  <h1>{html.escape(title)}</h1>
-  {table_html}
+  <main class="page">
+    {render_site_nav()}
+    <h1>{html.escape(title)}</h1>
+    {description_html}
+    {table_html}
+  </main>
+  {TABLE_FILTER_SCRIPT}
 </body>
 </html>
 """
+
     out = Path(output_path)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(page, encoding="utf-8")
@@ -123,7 +441,7 @@ def get_known_defaults(csv_path):
 
     if file_name.startswith("inventories") and Path(csv_path).suffix == ".csv":
         return {
-            "output_path": "inventories.html",
+            "output_path": "docs/inventories.html",
             "title": "Inventories",
             "columns_to_show": [
                 "inventory_name",
@@ -137,11 +455,12 @@ def get_known_defaults(csv_path):
             "filter_column": "inventory_id",
             "id_prefix": "inv",
             "target_folder": "inventories",
+            "description": "This page lists handshape inventories currently included in the repository. A single sign language may have more than one inventory when data comes from different sources or datasets. See the Home page for more information about the dataset sources.",
         }
 
     if file_name.startswith("segments") and Path(csv_path).suffix == ".csv":
         return {
-            "output_path": "segments.html",
+            "output_path": "docs/segments.html",
             "title": "Segments",
             "columns_to_show": [
                 "segment_class",
@@ -157,11 +476,12 @@ def get_known_defaults(csv_path):
             "filter_column": "segment_id",
             "id_prefix": "seg",
             "target_folder": "segments",
+            "description": "This page lists the segment symbols used in the repository. At this stage, the data centers on handshapes, with values represented through HamNoSys and Formal SignWriting.",
         }
 
     if file_name.startswith("languages") and Path(csv_path).suffix == ".csv":
         return {
-            "output_path": "languages.html",
+            "output_path": "docs/languages.html",
             "title": "Languages",
             "columns_to_show": [
                 "language_name",
@@ -175,60 +495,59 @@ def get_known_defaults(csv_path):
             "filter_column": "language_id",
             "id_prefix": "lan",
             "target_folder": "languages",
+"description": "This page lists the sign languages represented in the repository. Abbreviations generally follow common usage. Where multiple abbreviations exist, all are included. Shared abbreviations are distinguished with country labels. For combined language entries, a custom abbreviation was created. Languages without a Glottocode or ISO 639-3 code are marked as (none). See the Home page for more information about how languages were identified.",
         }
 
     return None
 
 
-def get_manual_settings(columns):
+def get_settings_from_defaults(columns, defaults):
     print("\n--- CSV columns ---")
     show_columns(columns)
 
-    output_path = input(
-        "\nEnter the output HTML filename or path: "
-    ).strip()
-
-    title = input(
-        "Enter the page title to display at the top of the HTML page: "
-    ).strip()
-
-    columns_to_show = choose_columns(
-        columns,
-        "Enter the column numbers to display in the HTML table, separated by commas.\n"
-        "Suggested column selections: choose the columns you want shown on the page.",
+    output_path = prompt_with_default(
+        "Output HTML filename or path",
+        defaults["output_path"],
     )
 
-    filter_column = choose_one_column(
-        columns,
-        "Select the column used to keep only valid rows (for example, an ID column):",
+    title = prompt_with_default(
+        "Page title",
+        defaults["title"],
     )
 
-    id_prefix = input(
-        "\nEnter the prefix in that column that indicates a valid row: "
-    ).strip()
+    columns_to_show = prompt_columns_with_default(
+        columns,
+        "Columns to display in the HTML table",
+        defaults["columns_to_show"],
+    )
 
-    add_links = input(
-        "\nDo you want to add clickable links to one of the displayed columns? (y/n): "
-    ).strip().lower()
+    filter_column = prompt_column_with_default(
+        columns,
+        "Column used to keep only valid rows",
+        defaults["filter_column"],
+    )
 
-    clickable_column = None
-    id_column = None
-    target_folder = None
+    id_prefix = prompt_with_default(
+        "Prefix that indicates a valid row",
+        defaults["id_prefix"],
+    )
 
-    if add_links == "y":
-        clickable_column = choose_one_column(
-            columns,
-            "Select the column whose values should become clickable links:",
-        )
+    clickable_column = prompt_column_with_default(
+        columns,
+        "Column whose values should become clickable links",
+        defaults["clickable_column"],
+    )
 
-        id_column = choose_one_column(
-            columns,
-            "Select the ID column used to build those page links:",
-        )
+    id_column = prompt_column_with_default(
+        columns,
+        "ID column used to build page links",
+        defaults["id_column"],
+    )
 
-        target_folder = input(
-            "\nEnter the target folder for those links: "
-        ).strip()
+    target_folder = prompt_with_default(
+        "Target folder for page links",
+        defaults["target_folder"],
+    )
 
     return {
         "output_path": output_path,
@@ -239,20 +558,19 @@ def get_manual_settings(columns):
         "clickable_column": clickable_column,
         "id_column": id_column,
         "target_folder": target_folder,
+        "description": defaults.get("description"),
     }
 
 
 def main():
     print()
-    print("This program converts a CSV file into an HTML table page with optional clickable links.")
+    print("This program converts a known SL-PHOIBLE CSV file into an HTML table page.")
     print("For inventories.csv, segments.csv, and languages.csv, it suggests default settings automatically.")
 
-    csv_path = input(
-        "\nEnter the CSV path for the file that you want to convert to HTML: "
-        "(for example: data/slphoible/segments.csv, data/slphoible/inventories.csv, or data/slphoible/languages.csv): "
-    ).strip()
+    csv_path = choose_csv_path()
 
     rows = load_csv(csv_path)
+
     if not rows:
         print("CSV is empty.")
         return
@@ -260,25 +578,15 @@ def main():
     columns = list(rows[0].keys())
     defaults = get_known_defaults(csv_path)
 
-    if defaults:
-        print("\nDetected known CSV file.")
-        print(f"Suggested output HTML path: {defaults['output_path']}")
-        print(f"Suggested page title: {defaults['title']}")
-        print("Suggested columns to display: " + ", ".join(defaults["columns_to_show"]))
-        print(f"Suggested ID column: {defaults['id_column']}")
-        print(f"Suggested clickable column: {defaults['clickable_column']}")
-        print(f"Suggested filter column: {defaults['filter_column']}")
-        print(f"Suggested valid ID prefix: {defaults['id_prefix']}")
-        print(f"Suggested target folder: {defaults['target_folder']}")
+    if not defaults:
+        print(f"No defaults found for: {csv_path}")
+        print("Add this CSV to get_known_defaults() before generating a page.")
+        return
 
-        use_defaults = input("\nUse these defaults? (y/n): ").strip().lower()
+    print("\nDetected known CSV file.")
+    print("Press Enter to keep each default, or type a replacement value.")
 
-        if use_defaults == "y":
-            settings = defaults
-        else:
-            settings = get_manual_settings(columns)
-    else:
-        settings = get_manual_settings(columns)
+    settings = get_settings_from_defaults(columns, defaults)
 
     rows = [
         row for row in rows
@@ -293,7 +601,13 @@ def main():
         target_folder=settings["target_folder"],
     )
 
-    write_page(settings["output_path"], settings["title"], table_html)
+    write_page(
+        settings["output_path"],
+        settings["title"],
+        table_html,
+        description=settings.get("description"),
+    )
+
     print(f"\nCreated: {settings['output_path']}")
 
 

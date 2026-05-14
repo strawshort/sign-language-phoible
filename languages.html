@@ -4,613 +4,847 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Languages</title>
+  
+<style>
+@font-face {
+  font-family: "SuttonSignWritingLine";
+  src:
+    local('SuttonSignWritingLine'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SuttonSignWritingFill";
+  src:
+    local('SuttonSignWritingFill'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "SuttonSignWritingOneD";
+  src:
+    local('SuttonSignWritingOneD'),
+    url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #222;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.site-nav a {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-description {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.table-search {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  background-color: white;
+}
+
+.table-search:focus {
+  outline: 2px solid #c7d2fe;
+  border-color: #6b7280;
+}
+
+.table-container {
+  max-height: 70vh;
+  overflow: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #eef1f5;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #eef1f5;
+}
+
+th,
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  vertical-align: top;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #333;
+}
+
+th span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+}
+
+td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.col-language-name {
+  white-space: normal;
+  min-width: 260px;
+  max-width: 520px;
+  overflow-wrap: break-word;
+}
+
+.col-inventory-name {
+  white-space: normal;
+  min-width: 220px;
+  max-width: 340px;
+  overflow-wrap: break-word;
+}
+
+.col-contributor,
+.col-cite {
+  white-space: normal;
+  max-width: 260px;
+  overflow-wrap: break-word;
+}
+
+.col-glottocode,
+.col-iso-639-3 {
+  white-space: normal;
+  min-width: 120px;
+}
+
+.col-language-abbreviation,
+.col-macro-area,
+.col-ct-handshapes,
+.col-fsw,
+.col-signwriting-1,
+.col-signwriting-2 {
+  white-space: nowrap;
+}
+
+tbody tr:hover {
+  background-color: #f4f7fb;
+}
+
+a {
+  color: #5b2ea6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.signwriting {
+  font-family: "SuttonSignWritingOneD", "SuttonSignWritingLine", "SuttonSignWritingFill";
+  font-size: 1.8em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.empty-cell {
+  color: #aaa;
+}
+</style>
+
 </head>
 <body>
-  <h1>Languages</h1>
-  <table border='1' cellspacing='0' cellpadding='6'>
+  <main class="page">
+    
+<nav class="site-nav">
+  <a href="index.html">Home</a>
+  <a href="segments.html">Segments</a>
+  <a href="inventories.html">Inventories</a>
+  <a href="languages.html">Languages</a>
+</nav>
+
+    <h1>Languages</h1>
+    <p class="page-description">This page lists the sign languages represented in the repository. Abbreviations generally follow common usage. Where multiple abbreviations exist, all are included. Shared abbreviations are distinguished with country labels. For combined language entries, a custom abbreviation was created. Languages without a Glottocode or ISO 639-3 code are marked as (none). See the Home page for more information about how languages were identified.</p>
+    <input id="table-search" class="table-search" type="search" placeholder="Type to filter rows...">
+<div class="table-container">
+<table>
 <thead><tr>
-<th>Language Name</th>
-<th>Language Abbreviation</th>
-<th>Glottocode</th>
-<th>Iso-639-3</th>
-<th>Macro-Area</th>
+<th class="col-language-name">Language Name</th>
+<th class="col-language-abbreviation">Language Abbreviation</th>
+<th class="col-glottocode">Glottocode</th>
+<th class="col-iso-639-3">ISO 639-3</th>
+<th class="col-macro-area">Macro-Area</th>
 </tr></thead>
 <tbody>
 <tr>
-<td><a href="languages/lan00001.html">American Sign Language</a></td>
-<td>ASL</td>
-<td>afgh1239</td>
-<td>ase</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00001.html">American Sign Language</a></td>
+<td class="col-language-abbreviation">ASL</td>
+<td class="col-glottocode">afgh1239</td>
+<td class="col-iso-639-3">ase</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00002.html">Chinese Sign Language</a></td>
-<td>CSL, ZGS </td>
-<td>chin1283</td>
-<td>csl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00002.html">Chinese Sign Language</a></td>
+<td class="col-language-abbreviation">CSL, ZGS</td>
+<td class="col-glottocode">chin1283</td>
+<td class="col-iso-639-3">csl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00003.html">German Sign Language</a></td>
-<td>DGS</td>
-<td>germ1281</td>
-<td>gsg</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00003.html">German Sign Language</a></td>
+<td class="col-language-abbreviation">DGS</td>
+<td class="col-glottocode">germ1281</td>
+<td class="col-iso-639-3">gsg</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00004.html">Hong Kong Sign Language or Hong Kong-Macau Sign Language</a></td>
-<td>HKSL</td>
-<td>hong1241</td>
-<td>hks</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00004.html">Hong Kong Sign Language or Hong Kong-Macau Sign Language</a></td>
+<td class="col-language-abbreviation">HKSL</td>
+<td class="col-glottocode">hong1241</td>
+<td class="col-iso-639-3">hks</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00005.html">Swedish Sign Language</a></td>
-<td>SSL, STS</td>
-<td>swed1236</td>
-<td>swl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00005.html">Swedish Sign Language</a></td>
+<td class="col-language-abbreviation">SSL, STS</td>
+<td class="col-glottocode">swed1236</td>
+<td class="col-iso-639-3">swl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00006.html">British Sign Language</a></td>
-<td>BSL</td>
-<td>brit1235</td>
-<td>bfi</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00006.html">British Sign Language</a></td>
+<td class="col-language-abbreviation">BSL</td>
+<td class="col-glottocode">brit1235</td>
+<td class="col-iso-639-3">bfi</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00007.html">Auslan (Australian Sign Language)</a></td>
-<td>Auslan</td>
-<td>aust1271</td>
-<td>asf</td>
-<td>Australia</td>
+<td class="col-language-name"><a href="languages/lan00007.html">Auslan (Australian Sign Language)</a></td>
+<td class="col-language-abbreviation">Auslan</td>
+<td class="col-glottocode">aust1271</td>
+<td class="col-iso-639-3">asf</td>
+<td class="col-macro-area">Australia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00008.html">New Zealand Sign Language</a></td>
-<td>NZSL</td>
-<td>newz1236</td>
-<td>nzs</td>
-<td>Papunesia</td>
+<td class="col-language-name"><a href="languages/lan00008.html">New Zealand Sign Language</a></td>
+<td class="col-language-abbreviation">NZSL</td>
+<td class="col-glottocode">newz1236</td>
+<td class="col-iso-639-3">nzs</td>
+<td class="col-macro-area">Papunesia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00009.html">Taiwan Sign Language</a></td>
-<td>TSL</td>
-<td>taiw1241</td>
-<td>tss</td>
-<td>Papunesia</td>
+<td class="col-language-name"><a href="languages/lan00009.html">Taiwan Sign Language</a></td>
+<td class="col-language-abbreviation">TSL</td>
+<td class="col-glottocode">taiw1241</td>
+<td class="col-iso-639-3">tss</td>
+<td class="col-macro-area">Papunesia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00010.html">Korean Sign Language</a></td>
-<td>KSL</td>
-<td>kore1273</td>
-<td>kvk</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00010.html">Korean Sign Language</a></td>
+<td class="col-language-abbreviation">KSL</td>
+<td class="col-glottocode">kore1273</td>
+<td class="col-iso-639-3">kvk</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00011.html">Danish Sign Language</a></td>
-<td>DSL, DTS</td>
-<td>dani1246</td>
-<td>dsl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00011.html">Danish Sign Language</a></td>
+<td class="col-language-abbreviation">DSL, DTS</td>
+<td class="col-glottocode">dani1246</td>
+<td class="col-iso-639-3">dsl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00012.html">Dutch Sign Language or Sign Language of the Netherlands</a></td>
-<td>NGT, SLN</td>
-<td>dutc1253</td>
-<td>dse</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00012.html">Dutch Sign Language or Sign Language of the Netherlands</a></td>
+<td class="col-language-abbreviation">NGT, SLN</td>
+<td class="col-glottocode">dutc1253</td>
+<td class="col-iso-639-3">dse</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00013.html">Afghan Sign Language</a></td>
-<td>AFSL</td>
-<td>afgh1239</td>
-<td>afg</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00013.html">Afghan Sign Language</a></td>
+<td class="col-language-abbreviation">AFSL</td>
+<td class="col-glottocode">afgh1239</td>
+<td class="col-iso-639-3">afg</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00014.html">Albanian Sign Language</a></td>
-<td>AlbSL</td>
-<td>alba1271</td>
-<td>sqk</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00014.html">Albanian Sign Language</a></td>
+<td class="col-language-abbreviation">AlbSL</td>
+<td class="col-glottocode">alba1271</td>
+<td class="col-iso-639-3">sqk</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00015.html">Argentine Sign Language</a></td>
-<td>LSA</td>
-<td>arge1236</td>
-<td>aed</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00015.html">Argentine Sign Language</a></td>
+<td class="col-language-abbreviation">LSA</td>
+<td class="col-glottocode">arge1236</td>
+<td class="col-iso-639-3">aed</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00016.html">Austrian Sign Language</a></td>
-<td>ÖGS</td>
-<td>aust1252</td>
-<td>asq</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00016.html">Austrian Sign Language</a></td>
+<td class="col-language-abbreviation">ÖGS</td>
+<td class="col-glottocode">aust1252</td>
+<td class="col-iso-639-3">asq</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00017.html">French Belgian Sign Language (Langue des signes de Belgique Francophone)</a></td>
-<td>LSFB</td>
-<td>lang1248</td>
-<td>sfb</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00017.html">French Belgian Sign Language (Langue des signes de Belgique Francophone)</a></td>
+<td class="col-language-abbreviation">LSFB</td>
+<td class="col-glottocode">lang1248</td>
+<td class="col-iso-639-3">sfb</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00018.html">Flemish Sign Language (Vlaamse Gebarentaal)</a></td>
-<td>VGT</td>
-<td>vlaa1235</td>
-<td>vgt</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00018.html">Flemish Sign Language (Vlaamse Gebarentaal)</a></td>
+<td class="col-language-abbreviation">VGT</td>
+<td class="col-glottocode">vlaa1235</td>
+<td class="col-iso-639-3">vgt</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00019.html">Bulgarian Sign Language</a></td>
-<td>BZhE</td>
-<td>bulg1240</td>
-<td>bqn</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00019.html">Bulgarian Sign Language</a></td>
+<td class="col-language-abbreviation">BZhE</td>
+<td class="col-glottocode">bulg1240</td>
+<td class="col-iso-639-3">bqn</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00020.html">Bolivian Sign Language</a></td>
-<td>LSB</td>
-<td>boli1236</td>
-<td>bvl</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00020.html">Bolivian Sign Language</a></td>
+<td class="col-language-abbreviation">LSB</td>
+<td class="col-glottocode">boli1236</td>
+<td class="col-iso-639-3">bvl</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00021.html">Brazilian Sign Language</a></td>
-<td>Libras</td>
-<td>braz1236</td>
-<td>bzs</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00021.html">Brazilian Sign Language</a></td>
+<td class="col-language-abbreviation">Libras</td>
+<td class="col-glottocode">braz1236</td>
+<td class="col-iso-639-3">bzs</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00022.html">Quebec Sign Language</a></td>
-<td>LSQ</td>
-<td>queb1245</td>
-<td>fcs</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00022.html">Quebec Sign Language</a></td>
+<td class="col-language-abbreviation">LSQ</td>
+<td class="col-glottocode">queb1245</td>
+<td class="col-iso-639-3">fcs</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00023.html">Swiss-German Sign Language</a></td>
-<td>DSGS</td>
-<td>swis1240</td>
-<td>sgg</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00023.html">Swiss-German Sign Language</a></td>
+<td class="col-language-abbreviation">DSGS</td>
+<td class="col-glottocode">swis1240</td>
+<td class="col-iso-639-3">sgg</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00024.html">Swiss-French Sign Language</a></td>
-<td>LSF-SR</td>
-<td>swis1241</td>
-<td>ssr</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00024.html">Swiss-French Sign Language</a></td>
+<td class="col-language-abbreviation">LSF-SR</td>
+<td class="col-glottocode">swis1241</td>
+<td class="col-iso-639-3">ssr</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00025.html">Swiss-Italian Sign Language</a></td>
-<td>LIS-SI</td>
-<td>swis1235</td>
-<td>slf</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00025.html">Swiss-Italian Sign Language</a></td>
+<td class="col-language-abbreviation">LIS-SI</td>
+<td class="col-glottocode">swis1235</td>
+<td class="col-iso-639-3">slf</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00026.html">Chilean Sign Language</a></td>
-<td>LSCh</td>
-<td>chil1264</td>
-<td>csg</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00026.html">Chilean Sign Language</a></td>
+<td class="col-language-abbreviation">LSCh</td>
+<td class="col-glottocode">chil1264</td>
+<td class="col-iso-639-3">csg</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00027.html">Colombian Sign Language</a></td>
-<td>LSC (CO)</td>
-<td>colo1249</td>
-<td>csn</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00027.html">Colombian Sign Language</a></td>
+<td class="col-language-abbreviation">LSC (CO)</td>
+<td class="col-glottocode">colo1249</td>
+<td class="col-iso-639-3">csn</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00028.html">Costa Rican Sign Language</a></td>
-<td>LESCO</td>
-<td>cost1249</td>
-<td>csr</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00028.html">Costa Rican Sign Language</a></td>
+<td class="col-language-abbreviation">LESCO</td>
+<td class="col-glottocode">cost1249</td>
+<td class="col-iso-639-3">csr</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00029.html">Czech Sign Language</a></td>
-<td>ČZJ</td>
-<td>czec1253</td>
-<td>cse</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00029.html">Czech Sign Language</a></td>
+<td class="col-language-abbreviation">ČZJ</td>
+<td class="col-glottocode">czec1253</td>
+<td class="col-iso-639-3">cse</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00030.html">Ecuadorian Sign Language</a></td>
-<td>LSEC</td>
-<td>ecua1243</td>
-<td>ecs</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00030.html">Ecuadorian Sign Language</a></td>
+<td class="col-language-abbreviation">LSEC</td>
+<td class="col-glottocode">ecua1243</td>
+<td class="col-iso-639-3">ecs</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00031.html">Estonian Sign Language</a></td>
-<td>EVK</td>
-<td>esto1238</td>
-<td>eso</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00031.html">Estonian Sign Language</a></td>
+<td class="col-language-abbreviation">EVK</td>
+<td class="col-glottocode">esto1238</td>
+<td class="col-iso-639-3">eso</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00032.html">Egypt Sign Language</a></td>
-<td>ESL</td>
-<td>egyp1238</td>
-<td>esl</td>
-<td>Africa</td>
+<td class="col-language-name"><a href="languages/lan00032.html">Egypt Sign Language</a></td>
+<td class="col-language-abbreviation">ESL</td>
+<td class="col-glottocode">egyp1238</td>
+<td class="col-iso-639-3">esl</td>
+<td class="col-macro-area">Africa</td>
 </tr>
 <tr>
-<td><a href="languages/lan00033.html">Spanish Sign Language</a></td>
-<td>LSE</td>
-<td>span1263</td>
-<td>ssp</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00033.html">Spanish Sign Language</a></td>
+<td class="col-language-abbreviation">LSE</td>
+<td class="col-glottocode">span1263</td>
+<td class="col-iso-639-3">ssp</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00034.html">Catalan Sign Language</a></td>
-<td>LSC (CT)</td>
-<td>cata1241</td>
-<td>csc</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00034.html">Catalan Sign Language</a></td>
+<td class="col-language-abbreviation">LSC (CT)</td>
+<td class="col-glottocode">cata1241</td>
+<td class="col-iso-639-3">csc</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00035.html">Ethiopian Sign Language</a></td>
-<td>EthSL</td>
-<td>ethi1238</td>
-<td>eth</td>
-<td>Africa</td>
+<td class="col-language-name"><a href="languages/lan00035.html">Ethiopian Sign Language</a></td>
+<td class="col-language-abbreviation">EthSL</td>
+<td class="col-glottocode">ethi1238</td>
+<td class="col-iso-639-3">eth</td>
+<td class="col-macro-area">Africa</td>
 </tr>
 <tr>
-<td><a href="languages/lan00036.html">Finnish Sign Language</a></td>
-<td>FinSL</td>
-<td>finn1310</td>
-<td>fse</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00036.html">Finnish Sign Language</a></td>
+<td class="col-language-abbreviation">FinSL</td>
+<td class="col-glottocode">finn1310</td>
+<td class="col-iso-639-3">fse</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00037.html">French Sign Language</a></td>
-<td>LSF</td>
-<td>fren1243</td>
-<td>fsl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00037.html">French Sign Language</a></td>
+<td class="col-language-abbreviation">LSF</td>
+<td class="col-glottocode">fren1243</td>
+<td class="col-iso-639-3">fsl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00038.html">Northern Irish Sign Languages (British Sign Language, Irish Sign Language)</a></td>
-<td>NISLs</td>
-<td>brit1235, iris1235</td>
-<td>bfi, isg</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00038.html">Northern Irish Sign Languages (British Sign Language, Irish Sign Language)</a></td>
+<td class="col-language-abbreviation">NISLs</td>
+<td class="col-glottocode">brit1235<br>iris1235</td>
+<td class="col-iso-639-3">bfi<br>isg</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00039.html">Greek Sign Language</a></td>
-<td>ENG</td>
-<td>gree1271</td>
-<td>gss</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00039.html">Greek Sign Language</a></td>
+<td class="col-language-abbreviation">ENG</td>
+<td class="col-glottocode">gree1271</td>
+<td class="col-iso-639-3">gss</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00040.html">Guatemalan Sign Language</a></td>
-<td>Lensegua</td>
-<td>guat1249</td>
-<td>gsm</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00040.html">Guatemalan Sign Language</a></td>
+<td class="col-language-abbreviation">Lensegua</td>
+<td class="col-glottocode">guat1249</td>
+<td class="col-iso-639-3">gsm</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00041.html">Honduras Sign Language</a></td>
-<td>LESHO</td>
-<td>hond1239</td>
-<td>hds</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00041.html">Honduras Sign Language</a></td>
+<td class="col-language-abbreviation">LESHO</td>
+<td class="col-glottocode">hond1239</td>
+<td class="col-iso-639-3">hds</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00042.html">Haitian Sign Language</a></td>
-<td>LSH</td>
-<td>hait1245</td>
-<td>(none)</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00042.html">Haitian Sign Language</a></td>
+<td class="col-language-abbreviation">LSH</td>
+<td class="col-glottocode">hait1245</td>
+<td class="col-iso-639-3">(none)</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00043.html">Hungarian Sign Language</a></td>
-<td>HSL</td>
-<td>hung1263</td>
-<td>hsh</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00043.html">Hungarian Sign Language</a></td>
+<td class="col-language-abbreviation">HSL</td>
+<td class="col-glottocode">hung1263</td>
+<td class="col-iso-639-3">hsh</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00044.html">Irish Sign Language</a></td>
-<td>ISL (IE)</td>
-<td>iris1235</td>
-<td>isg</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00044.html">Irish Sign Language</a></td>
+<td class="col-language-abbreviation">ISL (IE)</td>
+<td class="col-glottocode">iris1235</td>
+<td class="col-iso-639-3">isg</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00045.html">Israeli Sign Language</a></td>
-<td>Shassi, ISL</td>
-<td>isra1236</td>
-<td>isr</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00045.html">Israeli Sign Language</a></td>
+<td class="col-language-abbreviation">Shassi, ISL</td>
+<td class="col-glottocode">isra1236</td>
+<td class="col-iso-639-3">isr</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00046.html">Indian Sign Language</a></td>
-<td>ISL (IN)</td>
-<td>indi1237</td>
-<td>ins</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00046.html">Indian Sign Language</a></td>
+<td class="col-language-abbreviation">ISL (IN)</td>
+<td class="col-glottocode">indi1237</td>
+<td class="col-iso-639-3">ins</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00047.html">Icelandic Sign Language</a></td>
-<td>ÍTM</td>
-<td>icel1236</td>
-<td>icl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00047.html">Icelandic Sign Language</a></td>
+<td class="col-language-abbreviation">ÍTM</td>
+<td class="col-glottocode">icel1236</td>
+<td class="col-iso-639-3">icl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00048.html">Italian Sign Language</a></td>
-<td>LIS</td>
-<td>ital1275</td>
-<td>ise</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00048.html">Italian Sign Language</a></td>
+<td class="col-language-abbreviation">LIS</td>
+<td class="col-glottocode">ital1275</td>
+<td class="col-iso-639-3">ise</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00049.html">Jordanian Sign Language or Levantine Arabic Sign Language</a></td>
-<td>LIU</td>
-<td>jord1238</td>
-<td>jos</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00049.html">Jordanian Sign Language or Levantine Arabic Sign Language</a></td>
+<td class="col-language-abbreviation">LIU</td>
+<td class="col-glottocode">jord1238</td>
+<td class="col-iso-639-3">jos</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00050.html">Japanese Sign Language</a></td>
-<td>JSL</td>
-<td>japa1238</td>
-<td>jsl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00050.html">Japanese Sign Language</a></td>
+<td class="col-language-abbreviation">JSL</td>
+<td class="col-glottocode">japa1238</td>
+<td class="col-iso-639-3">jsl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00051.html">Kenya-Somali Sign Language</a></td>
-<td>KSL, LAK</td>
-<td>keny1241</td>
-<td>xki</td>
-<td>Africa</td>
+<td class="col-language-name"><a href="languages/lan00051.html">Kenya-Somali Sign Language</a></td>
+<td class="col-language-abbreviation">KSL, LAK</td>
+<td class="col-glottocode">keny1241</td>
+<td class="col-iso-639-3">xki</td>
+<td class="col-macro-area">Africa</td>
 </tr>
 <tr>
-<td><a href="languages/lan00052.html">Lithuanian Sign Language</a></td>
-<td>LGK</td>
-<td>lith1236</td>
-<td>lls</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00052.html">Lithuanian Sign Language</a></td>
+<td class="col-language-abbreviation">LGK</td>
+<td class="col-glottocode">lith1236</td>
+<td class="col-iso-639-3">lls</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00053.html">Latvian Sign Language</a></td>
-<td>LSL</td>
-<td>latv1245</td>
-<td>lsl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00053.html">Latvian Sign Language</a></td>
+<td class="col-language-abbreviation">LSL</td>
+<td class="col-glottocode">latv1245</td>
+<td class="col-iso-639-3">lsl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00054.html">Myanmar Sign Languages or Burmese Sign Languages (Mandalay Myanmar Sign Language, Yangon Myanmar Sign Language)</a></td>
-<td>MSLs</td>
-<td>mand1477, yang1309</td>
-<td>(none), ysm</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00054.html">Myanmar Sign Languages or Burmese Sign Languages (Mandalay Myanmar Sign Language, Yangon Myanmar Sign Language)</a></td>
+<td class="col-language-abbreviation">MSLs</td>
+<td class="col-glottocode">mand1477<br>yang1309</td>
+<td class="col-iso-639-3">(none)<br>ysm</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00055.html">Maltese Sign Language</a></td>
-<td>LSM (MT)</td>
-<td>malt1238</td>
-<td>mdl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00055.html">Maltese Sign Language</a></td>
+<td class="col-language-abbreviation">LSM (MT)</td>
+<td class="col-glottocode">malt1238</td>
+<td class="col-iso-639-3">mdl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00056.html">Malawian Sign Language</a></td>
-<td>MSL</td>
-<td>mala1549</td>
-<td>lws</td>
-<td>Africa</td>
+<td class="col-language-name"><a href="languages/lan00056.html">Malawian Sign Language</a></td>
+<td class="col-language-abbreviation">MSL</td>
+<td class="col-glottocode">mala1549</td>
+<td class="col-iso-639-3">lws</td>
+<td class="col-macro-area">Africa</td>
 </tr>
 <tr>
-<td><a href="languages/lan00057.html">Mexican Sign Language</a></td>
-<td>LSM (MX)</td>
-<td>mexi1237</td>
-<td>mfs</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00057.html">Mexican Sign Language</a></td>
+<td class="col-language-abbreviation">LSM (MX)</td>
+<td class="col-glottocode">mexi1237</td>
+<td class="col-iso-639-3">mfs</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00058.html">Malaysian Sign Language</a></td>
-<td>BIM</td>
-<td>mala1412</td>
-<td>xml</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00058.html">Malaysian Sign Language</a></td>
+<td class="col-language-abbreviation">BIM</td>
+<td class="col-glottocode">mala1412</td>
+<td class="col-iso-639-3">xml</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00059.html">Nigerian Sign Language</a></td>
-<td>NSL (NG)</td>
-<td>nige1240</td>
-<td>nsi</td>
-<td>Africa</td>
+<td class="col-language-name"><a href="languages/lan00059.html">Nigerian Sign Language</a></td>
+<td class="col-language-abbreviation">NSL (NG)</td>
+<td class="col-glottocode">nige1240</td>
+<td class="col-iso-639-3">nsi</td>
+<td class="col-macro-area">Africa</td>
 </tr>
 <tr>
-<td><a href="languages/lan00060.html">Nicaraguan Sign Language</a></td>
-<td>ISN</td>
-<td>nica1238</td>
-<td>ncs</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00060.html">Nicaraguan Sign Language</a></td>
+<td class="col-language-abbreviation">ISN</td>
+<td class="col-glottocode">nica1238</td>
+<td class="col-iso-639-3">ncs</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00061.html">Norwegian Sign Language</a></td>
-<td>NTS, NSL</td>
-<td>norw1255</td>
-<td>nsl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00061.html">Norwegian Sign Language</a></td>
+<td class="col-language-abbreviation">NTS, NSL</td>
+<td class="col-glottocode">norw1255</td>
+<td class="col-iso-639-3">nsl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00062.html">Nepalese Sign Language or Nepali Sign Language</a></td>
-<td>NSL (NP)</td>
-<td>nepa1250</td>
-<td>nsp</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00062.html">Nepalese Sign Language or Nepali Sign Language</a></td>
+<td class="col-language-abbreviation">NSL (NP)</td>
+<td class="col-glottocode">nepa1250</td>
+<td class="col-iso-639-3">nsp</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00063.html">Peruvian Sign Language</a></td>
-<td>LSP</td>
-<td>peru1235</td>
-<td>prl</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00063.html">Peruvian Sign Language</a></td>
+<td class="col-language-abbreviation">LSP</td>
+<td class="col-glottocode">peru1235</td>
+<td class="col-iso-639-3">prl</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00064.html">Philippine Sign Language</a></td>
-<td>FSL</td>
-<td>phil1239</td>
-<td>psp</td>
-<td>Papunesia</td>
+<td class="col-language-name"><a href="languages/lan00064.html">Philippine Sign Language</a></td>
+<td class="col-language-abbreviation">FSL</td>
+<td class="col-glottocode">phil1239</td>
+<td class="col-iso-639-3">psp</td>
+<td class="col-macro-area">Papunesia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00065.html">Pakistan Sign Language</a></td>
-<td>PSL</td>
-<td>paki1242</td>
-<td>pks</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00065.html">Pakistan Sign Language</a></td>
+<td class="col-language-abbreviation">PSL</td>
+<td class="col-glottocode">paki1242</td>
+<td class="col-iso-639-3">pks</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00066.html">Polish Sign Language</a></td>
-<td>PJM</td>
-<td>poli1259</td>
-<td>pso</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00066.html">Polish Sign Language</a></td>
+<td class="col-language-abbreviation">PJM</td>
+<td class="col-glottocode">poli1259</td>
+<td class="col-iso-639-3">pso</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00067.html">Portuguese Sign Language</a></td>
-<td>LGP</td>
-<td>port1277</td>
-<td>psr</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00067.html">Portuguese Sign Language</a></td>
+<td class="col-language-abbreviation">LGP</td>
+<td class="col-glottocode">port1277</td>
+<td class="col-iso-639-3">psr</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00068.html">Paraguayan Sign Language</a></td>
-<td>LSPy</td>
-<td>para1318</td>
-<td>pys</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00068.html">Paraguayan Sign Language</a></td>
+<td class="col-language-abbreviation">LSPy</td>
+<td class="col-glottocode">para1318</td>
+<td class="col-iso-639-3">pys</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00069.html">Romanian Sign Language</a></td>
-<td>LSR</td>
-<td>roma1324</td>
-<td>rms</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00069.html">Romanian Sign Language</a></td>
+<td class="col-language-abbreviation">LSR</td>
+<td class="col-glottocode">roma1324</td>
+<td class="col-iso-639-3">rms</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00070.html">Russian-Tajik Sign Language</a></td>
-<td>RSL</td>
-<td>russ1255</td>
-<td>rsl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00070.html">Russian-Tajik Sign Language</a></td>
+<td class="col-language-abbreviation">RSL</td>
+<td class="col-glottocode">russ1255</td>
+<td class="col-iso-639-3">rsl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00071.html">Saudi Sign Language or Saudi Arabian Sign Language</a></td>
-<td>SSL, SASL</td>
-<td>saud1238</td>
-<td>sdl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00071.html">Saudi Sign Language or Saudi Arabian Sign Language</a></td>
+<td class="col-language-abbreviation">SSL, SASL</td>
+<td class="col-glottocode">saud1238</td>
+<td class="col-iso-639-3">sdl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00072.html">Singapore Sign Language</a></td>
-<td>SgSL</td>
-<td>sing1237</td>
-<td>sls</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00072.html">Singapore Sign Language</a></td>
+<td class="col-language-abbreviation">SgSL</td>
+<td class="col-glottocode">sing1237</td>
+<td class="col-iso-639-3">sls</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00073.html">Slovakian Sign Language</a></td>
-<td>SPJ</td>
-<td>slov1263</td>
-<td>svk</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00073.html">Slovakian Sign Language</a></td>
+<td class="col-language-abbreviation">SPJ</td>
+<td class="col-glottocode">slov1263</td>
+<td class="col-iso-639-3">svk</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00074.html">Salvadoran Sign Language</a></td>
-<td>LESSA</td>
-<td>salv1237</td>
-<td>esn</td>
-<td>North America</td>
+<td class="col-language-name"><a href="languages/lan00074.html">Salvadoran Sign Language</a></td>
+<td class="col-language-abbreviation">LESSA</td>
+<td class="col-glottocode">salv1237</td>
+<td class="col-iso-639-3">esn</td>
+<td class="col-macro-area">North America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00075.html">Thai Sign Language</a></td>
-<td>TSL, MSTSL</td>
-<td>thai1240</td>
-<td>tsq</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00075.html">Thai Sign Language</a></td>
+<td class="col-language-abbreviation">TSL, MSTSL</td>
+<td class="col-glottocode">thai1240</td>
+<td class="col-iso-639-3">tsq</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00076.html">Tunisian Sign Language</a></td>
-<td>TunSL</td>
-<td>tuni1249</td>
-<td>tse</td>
-<td>Africa</td>
+<td class="col-language-name"><a href="languages/lan00076.html">Tunisian Sign Language</a></td>
+<td class="col-language-abbreviation">TunSL</td>
+<td class="col-glottocode">tuni1249</td>
+<td class="col-iso-639-3">tse</td>
+<td class="col-macro-area">Africa</td>
 </tr>
 <tr>
-<td><a href="languages/lan00077.html">Turkish Sign Language</a></td>
-<td>TİD</td>
-<td>turk1288</td>
-<td>tsm</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00077.html">Turkish Sign Language</a></td>
+<td class="col-language-abbreviation">TİD</td>
+<td class="col-glottocode">turk1288</td>
+<td class="col-iso-639-3">tsm</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00078.html">Ukrainian Sign Language</a></td>
-<td>USL, UZhM</td>
-<td>ukra1235</td>
-<td>ukl</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00078.html">Ukrainian Sign Language</a></td>
+<td class="col-language-abbreviation">USL, UZhM</td>
+<td class="col-glottocode">ukra1235</td>
+<td class="col-iso-639-3">ukl</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00079.html">Uruguayan Sign Language</a></td>
-<td>LSU</td>
-<td>urug1238</td>
-<td>ugy</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00079.html">Uruguayan Sign Language</a></td>
+<td class="col-language-abbreviation">LSU</td>
+<td class="col-glottocode">urug1238</td>
+<td class="col-iso-639-3">ugy</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00080.html">Venezuelan Sign Language</a></td>
-<td>VSL</td>
-<td>vene1237</td>
-<td>vsl</td>
-<td>South America</td>
+<td class="col-language-name"><a href="languages/lan00080.html">Venezuelan Sign Language</a></td>
+<td class="col-language-abbreviation">VSL</td>
+<td class="col-glottocode">vene1237</td>
+<td class="col-iso-639-3">vsl</td>
+<td class="col-macro-area">South America</td>
 </tr>
 <tr>
-<td><a href="languages/lan00081.html">Vietnamese Sign Languages (Haiphong Sign Language, Hanoi Sign Language, Ho Chi Minh City Sign Language)</a></td>
-<td>VSLs</td>
-<td>haip1238, hano1243, hoch1237</td>
-<td>haf, hab, hos</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00081.html">Vietnamese Sign Languages (Haiphong Sign Language, Hanoi Sign Language, Ho Chi Minh City Sign Language)</a></td>
+<td class="col-language-abbreviation">VSLs</td>
+<td class="col-glottocode">haip1238<br>hano1243<br>hoch1237</td>
+<td class="col-iso-639-3">haf<br>hab<br>hos</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00082.html">International Sign</a></td>
-<td>IS</td>
-<td>inte1259</td>
-<td>ils</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00082.html">International Sign</a></td>
+<td class="col-language-abbreviation">IS</td>
+<td class="col-glottocode">inte1259</td>
+<td class="col-iso-639-3">ils</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 <tr>
-<td><a href="languages/lan00083.html">South African Sign Language</a></td>
-<td>SASL</td>
-<td>sout1404</td>
-<td>sfs</td>
-<td>Africa</td>
+<td class="col-language-name"><a href="languages/lan00083.html">South African Sign Language</a></td>
+<td class="col-language-abbreviation">SASL</td>
+<td class="col-glottocode">sout1404</td>
+<td class="col-iso-639-3">sfs</td>
+<td class="col-macro-area">Africa</td>
 </tr>
 <tr>
-<td><a href="languages/lan00084.html">Esperanto-SignUno</a></td>
-<td>Signuno</td>
-<td>(none)</td>
-<td>(none)</td>
-<td>(none)</td>
+<td class="col-language-name"><a href="languages/lan00084.html">Esperanto-SignUno</a></td>
+<td class="col-language-abbreviation">Signuno</td>
+<td class="col-glottocode">(none)</td>
+<td class="col-iso-639-3">(none)</td>
+<td class="col-macro-area">(none)</td>
 </tr>
 <tr>
-<td><a href="languages/lan00085.html">Yugoslavian Sign Language</a></td>
-<td>YSL</td>
-<td>(none)</td>
-<td>(none)</td>
-<td>Eurasia</td>
+<td class="col-language-name"><a href="languages/lan00085.html">Yugoslavian Sign Language</a></td>
+<td class="col-language-abbreviation">YSL</td>
+<td class="col-glottocode">(none)</td>
+<td class="col-iso-639-3">(none)</td>
+<td class="col-macro-area">Eurasia</td>
 </tr>
 </tbody></table>
+</div>
+  </main>
+  
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("table-search");
+  const tableRows = document.querySelectorAll("tbody tr");
+
+  if (!searchInput) {
+    return;
+  }
+
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+
+    tableRows.forEach(function (row) {
+      const rowText = row.textContent.toLowerCase();
+
+      if (rowText.includes(query)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
