@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LESCO (SP_101)</title>
+  <title>Inventory: LESCO (SP_101)</title>
   
 <style>
 @font-face {
@@ -12,87 +12,309 @@
     local('SuttonSignWritingLine'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
 }
+
 @font-face {
   font-family: "SuttonSignWritingFill";
   src:
     local('SuttonSignWritingFill'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
 }
+
 @font-face {
   font-family: "SuttonSignWritingOneD";
   src:
     local('SuttonSignWritingOneD'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
 }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #222;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.site-nav a {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.page-description {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.content-card .page-description {
+  margin-bottom: 0;
+}
+
+.page-description em {
+  color: #555;
+}
+
+.content-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content-card:first-of-type {
+  margin-top: 0;
+}
+
+.table-search {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  background-color: white;
+}
+
+.table-search:focus {
+  outline: 2px solid #c7d2fe;
+  border-color: #6b7280;
+}
+
+.table-container {
+  max-height: 70vh;
+  overflow: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.metadata-table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #eef1f5;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #eef1f5;
+}
+
+th,
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  vertical-align: top;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #333;
+}
+
+th span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+}
+
+td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.metadata-table th {
+  background-color: #eef1f5;
+}
+
+.metadata-table .col-inventory-id {
+  white-space: nowrap;
+}
+
+.metadata-table .col-language-name,
+.metadata-table .col-contributor {
+  white-space: normal;
+  max-width: 420px;
+  overflow-wrap: break-word;
+}
+
+.col-fsw,
+.col-signwriting-1,
+.col-signwriting-2 {
+  white-space: nowrap;
+}
+
+.col-hamnosys-1-initial-configuration,
+.col-hamnosys-2-basic-handshape,
+.col-hamnosys-3-handshape-modifications {
+  white-space: normal;
+  min-width: 180px;
+  max-width: 320px;
+  overflow-wrap: break-word;
+}
+
+tbody tr:hover {
+  background-color: #f4f7fb;
+}
+
+a {
+  color: #5b2ea6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .signwriting {
   font-family: "SuttonSignWritingOneD", "SuttonSignWritingLine", "SuttonSignWritingFill";
-  font-size: 2em;
+  font-size: 1.8em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.empty-cell {
+  color: #aaa;
 }
 </style>
 
 </head>
 <body>
-  <h1>LESCO (SP_101)</h1>
+  <main class="page">
+    
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../segments.html">Segments</a>
+  <a href="../inventories.html">Inventories</a>
+  <a href="../languages.html">Languages</a>
+</nav>
 
-  <h2>Inventory Details</h2>
-  <table border='1' cellspacing='0' cellpadding='6'>
-<tbody>
-<tr>
-<th>Inventory Id</th>
-<td>inv00031</td>
-</tr>
-<tr>
-<th>Inventory Name</th>
-<td>LESCO (SP_101)</td>
-</tr>
-<tr>
-<th>Language Name</th>
-<td>Costa Rican Sign Language</td>
-</tr>
-<tr>
-<th>Data Source</th>
-<td>SP_101</td>
-</tr>
-<tr>
-<th>Contributor</th>
-<td>Luz Diaz</td>
-</tr>
-<tr>
-<th>Cite</th>
-<td>[cite]</td>
-</tr>
-</tbody></table>
 
-  <h2>Segments</h2>
-  <table border='1' cellspacing='0' cellpadding='6'>
+    <section class="content-card">
+      <h1>Inventory: LESCO (SP_101)</h1>
+      <div class="metadata-table-container">
+<table class="metadata-table">
 <thead><tr>
-<th>Segment Class</th>
-<th>Hamnosys 1 Initial Configuration</th>
-<th>Hamnosys 2 Basic Handshape</th>
-<th>Hamnosys 3 Handshape Modifications</th>
-<th>Fsw</th>
-<th>Signwriting 1</th>
-<th>Signwriting 2</th>
+<th class="col-inventory-id">Inventory Id</th>
+<th class="col-language-name">Language Name</th>
+<th class="col-contributor">Contributor</th>
+</tr></thead>
+<tbody><tr>
+<td class="col-inventory-id">inv00031</td>
+<td class="col-language-name">Costa Rican Sign Language</td>
+<td class="col-contributor">Luz Diaz</td>
+</tr></tbody>
+</table>
+</div>
+      <p class="page-description">
+        This page lists the segments associated with a single inventory.
+        <em><strong>Data note:</strong> The dataset is derived from the cited source, and the repository does not independently evaluate or correct the original data. As a result, extracted inventories may retain source-level inconsistencies or errors.</em>
+      </p>
+    </section>
+
+    <section class="content-card">
+      <h2>Segments</h2>
+      <input id="table-search" class="table-search" type="search" placeholder="Type to filter rows...">
+<div class="table-container">
+<table class="filterable-table">
+<thead><tr>
+<th class="col-segment-class">Segment Class</th>
+<th class="col-hamnosys-1-initial-configuration">HamNoSys 1<br><span>Initial Configuration</span></th>
+<th class="col-hamnosys-2-basic-handshape">HamNoSys 2<br><span>Basic Handshape</span></th>
+<th class="col-hamnosys-3-handshape-modifications">HamNoSys 3<br><span>Handshape Modifications</span></th>
+<th class="col-fsw">FSW</th>
+<th class="col-signwriting-1">Signwriting 1</th>
+<th class="col-signwriting-2">Signwriting 2</th>
 </tr></thead>
 <tbody>
 <tr>
-<td>handshape</td>
-<td>Thumb Opposition</td>
-<td>4finNonspread</td>
-<td>(fingers rounded)</td>
-<td><a href="../segments/seg00126.html">S16d</a></td>
-<td class="signwriting">񂣱</td>
-<td class="signwriting"></td>
+<td class="col-segment-class">handshape</td>
+<td class="col-hamnosys-1-initial-configuration">Thumb Opposition</td>
+<td class="col-hamnosys-2-basic-handshape">4finNonspread</td>
+<td class="col-hamnosys-3-handshape-modifications">(fingers rounded)</td>
+<td class="col-fsw"><a href="../segments/seg00126.html">S16d</a></td>
+<td class="signwriting col-signwriting-1">񂣱</td>
+<td class="signwriting col-signwriting-2"><span class="empty-cell">—</span></td>
 </tr>
 <tr>
-<td>handshape</td>
-<td>Selected fingers</td>
-<td>2_nonspread</td>
-<td>2finger_differshape</td>
-<td><a href="../segments/seg00047.html">S11a</a></td>
-<td class="signwriting">񀧑</td>
-<td class="signwriting">񀧁</td>
+<td class="col-segment-class">handshape</td>
+<td class="col-hamnosys-1-initial-configuration">Selected fingers</td>
+<td class="col-hamnosys-2-basic-handshape">2_nonspread</td>
+<td class="col-hamnosys-3-handshape-modifications">2finger_differshape</td>
+<td class="col-fsw"><a href="../segments/seg00047.html">S11a</a></td>
+<td class="signwriting col-signwriting-1">񀧑</td>
+<td class="signwriting col-signwriting-2">񀧁</td>
 </tr>
 </tbody></table>
+</div>
+    </section>
+  </main>
+  
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("table-search");
+  const tableRows = document.querySelectorAll(".filterable-table tbody tr");
+
+  if (!searchInput) {
+    return;
+  }
+
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+
+    tableRows.forEach(function (row) {
+      const rowText = row.textContent.toLowerCase();
+
+      if (rowText.includes(query)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
