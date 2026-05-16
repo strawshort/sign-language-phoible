@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Handshape S19c</title>
+  <title>Segment: Handshape S19c</title>
   
 <style>
 @font-face {
@@ -12,273 +12,487 @@
     local('SuttonSignWritingLine'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingLine.ttf') format('truetype');
 }
+
 @font-face {
   font-family: "SuttonSignWritingFill";
   src:
     local('SuttonSignWritingFill'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingFill.ttf') format('truetype');
 }
+
 @font-face {
   font-family: "SuttonSignWritingOneD";
   src:
     local('SuttonSignWritingOneD'),
     url('https://unpkg.com/@sutton-signwriting/font-ttf@1.0.0/font/SuttonSignWritingOneD.ttf') format('truetype');
 }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  background-color: #f8f9fb;
+  color: #222;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.site-nav a {
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  background-color: white;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+.page-description {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.content-card .page-description {
+  margin-bottom: 0;
+}
+
+.content-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.content-card:first-of-type {
+  margin-top: 0;
+}
+
+.table-search {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font: inherit;
+  background-color: white;
+}
+
+.table-search:focus {
+  outline: 2px solid #c7d2fe;
+  border-color: #6b7280;
+}
+
+.table-container {
+  max-height: 70vh;
+  overflow: auto;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.metadata-table-container {
+  overflow-x: auto;
+  border-radius: 12px;
+  background-color: white;
+}
+
+table {
+  width: 100%;
+  min-width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #eef1f5;
+}
+
+thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: #eef1f5;
+}
+
+th,
+td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  vertical-align: top;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #333;
+}
+
+th span {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+}
+
+td {
+  vertical-align: middle;
+  font-size: 0.95rem;
+}
+
+.metadata-table th {
+  background-color: #eef1f5;
+}
+
+.col-segment-id,
+.col-segment-class,
+.col-fsw,
+.col-signwriting-1,
+.col-signwriting-2 {
+  white-space: nowrap;
+}
+
+.col-hamnosys-1-initial-configuration,
+.col-hamnosys-2-basic-handshape,
+.col-hamnosys-3-handshape-modifications {
+  white-space: normal;
+  min-width: 180px;
+  max-width: 320px;
+  overflow-wrap: break-word;
+}
+
+.col-inventory,
+.col-language,
+.col-source {
+  white-space: normal;
+  max-width: 420px;
+  overflow-wrap: break-word;
+}
+
+tbody tr:hover {
+  background-color: #f4f7fb;
+}
+
+a {
+  color: #5b2ea6;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .signwriting {
   font-family: "SuttonSignWritingOneD", "SuttonSignWritingLine", "SuttonSignWritingFill";
-  font-size: 2em;
+  font-size: 1.8em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.empty-cell {
+  color: #aaa;
 }
 </style>
 
 </head>
 <body>
-  <h1>Handshape S19c</h1>
+  <main class="page">
+    
+<nav class="site-nav">
+  <a href="../index.html">Home</a>
+  <a href="../segments.html">Segments</a>
+  <a href="../inventories.html">Inventories</a>
+  <a href="../languages.html">Languages</a>
+</nav>
 
-  <h2>Segment Details</h2>
-  <table border='1' cellspacing='0' cellpadding='6'>
-<tbody>
-<tr>
-<th>Segment Id</th>
-<td>seg00053</td>
-</tr>
-<tr>
-<th>Segment Class</th>
-<td>handshape</td>
-</tr>
-<tr>
-<th>Hamnosys 1 Initial Configuration</th>
-<td>Selected fingers</td>
-</tr>
-<tr>
-<th>Hamnosys 2 Basic Handshape</th>
-<td>2_spread</td>
-</tr>
-<tr>
-<th>Hamnosys 3 Handshape Modifications</th>
-<td>(Selected Fingers extended)</td>
-</tr>
-<tr>
-<th>Fsw</th>
-<td>S19c</td>
-</tr>
-<tr>
-<th>Signwriting 1</th>
-<td class="signwriting">񃪑</td>
-</tr>
-<tr>
-<th>Signwriting 2</th>
-<td class="signwriting"></td>
-</tr>
-</tbody></table>
 
-  <h2>Inventories Containing This Segment</h2>
-  <table border='1' cellspacing='0' cellpadding='6'>
+    <section class="content-card">
+      <h1>Segment: Handshape S19c</h1>
+      <div class="metadata-table-container">
+<table class="metadata-table">
 <thead><tr>
-<th>Inventory</th>
-<th>Language</th>
-<th>Source</th>
+<th class="col-segment-id">Segment Id</th>
+<th class="col-hamnosys-1-initial-configuration">HamNoSys 1<br><span>Initial Configuration</span></th>
+<th class="col-hamnosys-2-basic-handshape">HamNoSys 2<br><span>Basic Handshape</span></th>
+<th class="col-hamnosys-3-handshape-modifications">HamNoSys 3<br><span>Handshape Modifications</span></th>
+<th class="col-fsw">FSW</th>
+<th class="col-signwriting-1">Signwriting 1</th>
+<th class="col-signwriting-2">Signwriting 2</th>
+</tr></thead>
+<tbody><tr>
+<td class="col-segment-id">seg00053</td>
+<td class="col-hamnosys-1-initial-configuration">Selected fingers</td>
+<td class="col-hamnosys-2-basic-handshape">2_spread</td>
+<td class="col-hamnosys-3-handshape-modifications">(Selected Fingers extended)</td>
+<td class="col-fsw">S19c</td>
+<td class="signwriting col-signwriting-1">񃪑</td>
+<td class="signwriting col-signwriting-2"><span class="empty-cell">—</span></td>
+</tr></tbody>
+</table>
+</div>
+      <p class="page-description">This page lists the details for a single segment and the inventories that contain it.</p>
+    </section>
+
+    <section class="content-card">
+      <h2>Inventories Containing This Segment</h2>
+      <input id="table-search" class="table-search" type="search" placeholder="Type to filter rows...">
+<div class="table-container">
+<table class="filterable-table">
+<thead><tr>
+<th class="col-inventory">Inventory</th>
+<th class="col-language">Language</th>
+<th class="col-source">Source</th>
 </tr></thead>
 <tbody>
 <tr>
-<td><a href="../inventories/inv00001.html">ASL (LQ_1)</a></td>
-<td>American Sign Language</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00001.html">ASL (LQ_1)</a></td>
+<td class="col-language">American Sign Language</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00002.html">CSL, ZGS (LQ_2)</a></td>
-<td>Chinese Sign Language</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00002.html">CSL, ZGS (LQ_2)</a></td>
+<td class="col-language">Chinese Sign Language</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00004.html">HKSL (LQ_4)</a></td>
-<td>Hong Kong Sign Language or Hong Kong-Macau Sign Language</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00004.html">HKSL (LQ_4)</a></td>
+<td class="col-language">Hong Kong Sign Language or Hong Kong-Macau Sign Language</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00006.html">BSL (LQ_6)</a></td>
-<td>British Sign Language</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00006.html">BSL (LQ_6)</a></td>
+<td class="col-language">British Sign Language</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00007.html">Auslan (LQ_7)</a></td>
-<td>Auslan (Australian Sign Language)</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00007.html">Auslan (LQ_7)</a></td>
+<td class="col-language">Auslan (Australian Sign Language)</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00009.html">TSL (LQ_9)</a></td>
-<td>Taiwan Sign Language</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00009.html">TSL (LQ_9)</a></td>
+<td class="col-language">Taiwan Sign Language</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00011.html">DSL, DTS (LQ_11)</a></td>
-<td>Danish Sign Language</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00011.html">DSL, DTS (LQ_11)</a></td>
+<td class="col-language">Danish Sign Language</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00012.html">NGT, SLN (LQ_12)</a></td>
-<td>Dutch Sign Language or Sign Language of the Netherlands</td>
-<td>Longqian Ming (2024)</td>
+<td class="col-inventory"><a href="../inventories/inv00012.html">NGT, SLN (LQ_12)</a></td>
+<td class="col-language">Dutch Sign Language or Sign Language of the Netherlands</td>
+<td class="col-source">Longqian Ming (2024)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00018.html">LSFB (SP_43)</a></td>
-<td>French Belgian Sign Language (Langue des signes de Belgique Francophone)</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00018.html">LSFB (SP_43)</a></td>
+<td class="col-language">French Belgian Sign Language (Langue des signes de Belgique Francophone)</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00019.html">VGT (SP_44)</a></td>
-<td>Flemish Sign Language (Vlaamse Gebarentaal)</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00019.html">VGT (SP_44)</a></td>
+<td class="col-language">Flemish Sign Language (Vlaamse Gebarentaal)</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00022.html">Libras (SP_46)</a></td>
-<td>Brazilian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00022.html">Libras (SP_46)</a></td>
+<td class="col-language">Brazilian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00023.html">ASL (SP_4)</a></td>
-<td>American Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00023.html">ASL (SP_4)</a></td>
+<td class="col-language">American Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00024.html">LSQ (SP_47)</a></td>
-<td>Quebec Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00024.html">LSQ (SP_47)</a></td>
+<td class="col-language">Quebec Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00025.html">DSGS (SP_48)</a></td>
-<td>Swiss-German Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00025.html">DSGS (SP_48)</a></td>
+<td class="col-language">Swiss-German Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00026.html">LSF-SR (SP_49)</a></td>
-<td>Swiss-French Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00026.html">LSF-SR (SP_49)</a></td>
+<td class="col-language">Swiss-French Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00029.html">CSL, ZGS (SP_83)</a></td>
-<td>Chinese Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00029.html">CSL, ZGS (SP_83)</a></td>
+<td class="col-language">Chinese Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00030.html">LSC (CO) (SP_51)</a></td>
-<td>Colombian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00030.html">LSC (CO) (SP_51)</a></td>
+<td class="col-language">Colombian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00032.html">ČZJ (SP_52)</a></td>
-<td>Czech Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00032.html">ČZJ (SP_52)</a></td>
+<td class="col-language">Czech Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00033.html">DGS (SP_53)</a></td>
-<td>German Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00033.html">DGS (SP_53)</a></td>
+<td class="col-language">German Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00038.html">LSE (SP_55)</a></td>
-<td>Spanish Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00038.html">LSE (SP_55)</a></td>
+<td class="col-language">Spanish Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00040.html">EthSL (SP_18)</a></td>
-<td>Ethiopian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00040.html">EthSL (SP_18)</a></td>
+<td class="col-language">Ethiopian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00042.html">LSF (SP_58)</a></td>
-<td>French Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00042.html">LSF (SP_58)</a></td>
+<td class="col-language">French Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00048.html">LESHO (SP_16)</a></td>
-<td>Honduras Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00048.html">LESHO (SP_16)</a></td>
+<td class="col-language">Honduras Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00055.html">LIS (SP_63)</a></td>
-<td>Italian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00055.html">LIS (SP_63)</a></td>
+<td class="col-language">Italian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00059.html">KSL (SP_78)</a></td>
-<td>Korean Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00059.html">KSL (SP_78)</a></td>
+<td class="col-language">Korean Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00063.html">MSL (SP_128)</a></td>
-<td>Malawian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00063.html">MSL (SP_128)</a></td>
+<td class="col-language">Malawian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00064.html">LSM (MX) (SP_65)</a></td>
-<td>Mexican Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00064.html">LSM (MX) (SP_65)</a></td>
+<td class="col-language">Mexican Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00067.html">ISN (SP_67)</a></td>
-<td>Nicaraguan Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00067.html">ISN (SP_67)</a></td>
+<td class="col-language">Nicaraguan Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00069.html">NTS, NSL (SP_69)</a></td>
-<td>Norwegian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00069.html">NTS, NSL (SP_69)</a></td>
+<td class="col-language">Norwegian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00072.html">LSP (SP_71)</a></td>
-<td>Peruvian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00072.html">LSP (SP_71)</a></td>
+<td class="col-language">Peruvian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00073.html">FSL (SP_72)</a></td>
-<td>Philippine Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00073.html">FSL (SP_72)</a></td>
+<td class="col-language">Philippine Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00082.html">SgSL (SP_11)</a></td>
-<td>Singapore Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00082.html">SgSL (SP_11)</a></td>
+<td class="col-language">Singapore Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00085.html">TSL, MSTSL (SP_34)</a></td>
-<td>Thai Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00085.html">TSL, MSTSL (SP_34)</a></td>
+<td class="col-language">Thai Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00086.html">TunSL (SP_104)</a></td>
-<td>Tunisian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00086.html">TunSL (SP_104)</a></td>
+<td class="col-language">Tunisian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00088.html">TSL (SP_75)</a></td>
-<td>Taiwan Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00088.html">TSL (SP_75)</a></td>
+<td class="col-language">Taiwan Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00090.html">VSL (SP_76)</a></td>
-<td>Venezuelan Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00090.html">VSL (SP_76)</a></td>
+<td class="col-language">Venezuelan Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00091.html">VSLs (SP_153)</a></td>
-<td>Vietnamese Sign Languages (Haiphong Sign Language, Hanoi Sign Language, Ho Chi Minh City Sign Language)</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00091.html">VSLs (SP_153)</a></td>
+<td class="col-language">Vietnamese Sign Languages (Haiphong Sign Language, Hanoi Sign Language, Ho Chi Minh City Sign Language)</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00091.html">IS (SP_35)</a></td>
-<td>International Sign</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00091.html">IS (SP_35)</a></td>
+<td class="col-language">International Sign</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00093.html">Signuno (SP_54)</a></td>
-<td>Esperanto-SignUno</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00093.html">Signuno (SP_54)</a></td>
+<td class="col-language">Esperanto-SignUno</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 <tr>
-<td><a href="../inventories/inv00094.html">YSL (SP_74)</a></td>
-<td>Yugoslavian Sign Language</td>
-<td>Luz Diaz (2025)</td>
+<td class="col-inventory"><a href="../inventories/inv00094.html">YSL (SP_74)</a></td>
+<td class="col-language">Yugoslavian Sign Language</td>
+<td class="col-source">Luz Diaz (2025)</td>
 </tr>
 </tbody></table>
+</div>
+    </section>
+  </main>
+  
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const searchInput = document.getElementById("table-search");
+  const tableRows = document.querySelectorAll(".filterable-table tbody tr");
+
+  if (!searchInput) {
+    return;
+  }
+
+  searchInput.addEventListener("input", function () {
+    const query = searchInput.value.toLowerCase();
+
+    tableRows.forEach(function (row) {
+      const rowText = row.textContent.toLowerCase();
+
+      if (rowText.includes(query)) {
+        row.style.display = "";
+      } else {
+        row.style.display = "none";
+      }
+    });
+  });
+});
+</script>
+
 </body>
 </html>
