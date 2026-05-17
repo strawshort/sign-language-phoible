@@ -194,6 +194,75 @@ a:hover {
 .empty-cell {
   color: #aaa;
 }
+
+@media (max-width: 700px) {
+  .page {
+    max-width: 100%;
+    padding: 0.75rem;
+  }
+
+  .site-nav {
+    gap: 0.35rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .site-nav a {
+    font-size: 0.86rem;
+    padding: 0.39rem 0.64rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .language-title {
+    max-width: 100%;
+  }
+
+  .title-extra {
+    font-size: 0.72em;
+  }
+
+  .page-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .content-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .table-search {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.75rem;
+  }
+
+  .table-container,
+  .metadata-table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 560px;
+  }
+
+  th,
+  td {
+    padding: 0.6rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .signwriting {
+    font-size: 1.5em;
+  }
+}
 </style>
 """
 
@@ -321,9 +390,9 @@ def format_header(column_name):
         "fsw": "FSW",
         "ISO-639-3": "ISO 639-3",
         "ct_handshapes": "Handshape<br><span>Count</span>",
-        "hamnosys_1_initial_configuration": "HamNoSys 1<br><span>Initial Configuration</span>",
-        "hamnosys_2_basic_handshape": "HamNoSys 2<br><span>Basic Handshape</span>",
-        "hamnosys_3_handshape_modifications": "HamNoSys 3<br><span>Handshape Modifications</span>",
+        "hamnosys_1_initial_configuration": "HamNoSys&nbsp;1<br><span>Initial Configuration</span>",
+        "hamnosys_2_basic_handshape": "HamNoSys&nbsp;2<br><span>Basic Handshape</span>",
+        "hamnosys_3_handshape_modifications": "HamNoSys&nbsp;3<br><span>Handshape Modifications</span>",
     }
 
     if column_name in special_headers:
