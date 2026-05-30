@@ -1,5 +1,5 @@
 language_id,language_name,language_abbreviation,abbreviation_source,glottocode,ISO-639-3,macro-area,macro-area_source
-lan00001,American Sign Language,ASL,Wikipedia,afgh1239,ase,North America,Glottolog
+lan00001,American Sign Language,ASL,Wikipedia,amer1248,ase,North America,Glottolog
 lan00002,Chinese Sign Language,"CSL, ZGS ",Wikipedia,chin1283,csl,Eurasia,Glottolog
 lan00003,German Sign Language,DGS,Wikipedia,germ1281,gsg,Eurasia,Glottolog
 lan00004,Hong Kong Sign Language or Hong Kong-Macau Sign Language,HKSL,Wikipedia,hong1241,hks,Eurasia,Glottolog
